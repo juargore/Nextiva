@@ -1,0 +1,33 @@
+<configuration>
+    <property name="LOG_DIR" value="${DATA_DIR}/Logs" />
+
+    <appender name="LOGCAT" class="ch.qos.logback.classic.android.LogcatAppender">
+        <encoder>
+            <pattern>%msg</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_DIR}/log-latest.log</file>
+
+        <encoder>
+            <pattern>%msg%n</pattern>
+        </encoder>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_DIR}/log-%d{yyyy-MM-dd}-%i.log</fileNamePattern>
+
+            <timeBasedFileNamingAndTriggeringPolicy
+                class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>1MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+
+            <maxHistory>7</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <root level="DEBUG">
+        <appender-ref ref="ROLLING" />
+        <appender-ref ref="LOGCAT" />
+    </root>
+</configuration>

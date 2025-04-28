@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/license_acceptance_fragment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nextiva.nextivaapp.android.fragments.LicenseAcceptanceFragment">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/license_acceptance_fragment_agreement_fragment"
+        android:name="com.nextiva.nextivaapp.android.fragments.LicenseAgreementFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_license" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/license_acceptance_fullscreen_content_controls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        style="@style/TwoButtonBaseBar">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/license_acceptance_decline_button"
+            style="@style/TwoButtonBaseBar.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/general_horizontal_margin_small"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/license_agreement_decline"
+            android:contentDescription="@string/license_acceptance_decline_button_content_description"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/license_acceptance_accept_button"
+            style="@style/TwoButtonBaseBar.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/general_horizontal_margin_small"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/license_agreement_accept"
+            android:contentDescription="@string/license_acceptance_accept_button_content_description"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

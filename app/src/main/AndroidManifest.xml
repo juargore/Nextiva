@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.nextiva.nextivaapp.android">
+
+    <application
+        android:name=".NextivaApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:name, android:allowBackup"
+        tools:targetApi="31">
+        <activity android:name="com.nextiva.androidNextivaAuth.presentation.ui.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".sip.tone.ToneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DevicePolicyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MessageCountAPIActivity"
+            android:exported="false" />
+        <activity
+            android:name=".core.notifications.view.CustomDateActivity"
+            android:exported="false"
+            android:label="@string/title_activity_custom_date"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".DatabaseCountUtilityActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreateBusinessContactActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/ConnectTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ConnectMainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/ConnectTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".meetings.MeetingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/ConnectTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".FontAwesomeUtilityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DesignSystemUtilityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".features.rooms.view.DesignSystemRoomsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ConnectContactDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/ConnectTheme" />
+        <activity
+            android:name=".FeatureFlagsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SipConfigurationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".features.messaging.view.MessageListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/ConnectTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ConnectUserDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ConnectNewTextActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".features.messaging.view.ConversationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/ConnectTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".features.rooms.view.RoomConversationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/ConnectTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".features.rooms.view.AttachmentDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/ConnectTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".IncomingCallActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensorPortrait"
+            android:showOnLockScreen="true"
+            android:showWhenLocked="true"
+            android:theme="@style/TranparentTheme"
+            android:turnScreenOn="true"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LicenseAcceptanceActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="@string/license_agreement_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".DevicePhoneNumberActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateVisible" />
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.canhub.cropper.CropImageActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/CropBarTheme" />
+        <activity
+            android:name=".AddEditContactActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".CallSettingsActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SetCallSettingsSimultaneousRingActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".AboutActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".AppPreferencesActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".core.notifications.view.ScheduleActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/ConnectTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".core.notifications.view.CreateScheduleActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/ConnectTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".core.notifications.view.ObservedHolidayActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/ConnectTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".core.notifications.view.SpecifiedDatesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/ConnectTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".LoginPreferencesActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SingleFragmentActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SetCallSettingsActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".FullscreenImageActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".HealthCheckActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".LicenseCheckActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".OneActiveCallActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ConnectNewCallActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".TrampolineRestrictingActivity" />
+        <activity
+            android:name="sdk.pendo.io.activities.PendoGateActivity"
+            android:exported="true"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="pendo-7dadf931" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_notification_xbert" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/nextivaPrimaryBlue" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="channel_name" />
+        <meta-data
+            android:name="fontProviderRequests"
+            android:value="Noto Color Emoji Compat" /> <!-- Firebase Messaging -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <receiver
+            android:name=".receivers.IncomingCallNotificationBroadcastReceiver"
+            android:exported="false">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <!--
+                If failed incoming calls continues test this
+                <category android:name="android.intent.category.HOME" />
+                -->
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receivers.PhoneCallStateBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".xmpp.NextivaXMPPConnectionService" />
+        <service
+            android:name=".sip.SipOnCallService"
+            android:directBootAware="true"
+            android:enabled="true"
+            android:foregroundServiceType="phoneCall|microphone|camera" />
+
+        <service
+            android:name=".sip.SipOnIncomingCallService"
+            android:directBootAware="true"
+            android:enabled="true"
+            android:foregroundServiceType="phoneCall" />
+
+        <service
+            android:name=".fcm.NextivaFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name="com.nextiva.pjsip.pjsip_lib.sipservice.SipService"
+            android:directBootAware="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".sip.pjsip.PJSipEventReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            tools:node="remove" />
+
+    </application> <!-- Dangerous Permissions - The following permissions are Dangerous and should be requested at runtime for Marshmallow+ -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+
+            <category android:name="android.intent.category.BROWSABLE" />
+
+            <data android:scheme="https" />
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT" />
+
+            <data android:mimeType="image/*" />
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+
+            <data android:mimeType="*/*" />
+        </intent>
+    </queries>
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.full"
+        android:required="false" /> <!-- Deprecated in Android 13+ -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RAISED_THREAD_PRIORITY" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- Request legacy Bluetooth permissions on older devices. -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_PHONE_CALL" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA" /> <!-- Regular Permissions - The following permissions are not Dangerous and do not need to be requested at runtime -->
+    <!-- Permissions needed for badger count showing on launch icon. -->
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS" /> <!-- for Samsung -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" /> <!-- for htc -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" /> <!-- for sony -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" /> <!-- for apex -->
+    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for solid -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" /> <!-- for huawei -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for ZUK -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" /> <!-- for OPPO -->
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" />
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for apex badge -->
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for EvMe -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <!--
+ Some Chromebooks don't support touch. Although not essential,
+          it's a good idea to explicitly include this declaration.
+    -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_APP_BADGE" />
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- REQUEST_IGNORE_BATTERY_OPTIMIZATIONS should only be included if your app doesn't use push notifications for incoming calls -->
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" />
+
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+</manifest>

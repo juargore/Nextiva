@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017 Nextiva, Inc. to Present.
+  ~ All rights reserved.
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/new_chat_list_menu_menu">
+    <item
+        android:id="@+id/new_chat_action_start_chat"
+        android:icon="@drawable/ic_keyboard_arrow_right"
+        android:orderInCategory="100"
+        android:title="@string/new_chat_start_chat"
+        android:contentDescription="@string/new_chat_action_start_chat_content_description"
+        app:showAsAction="always|collapseActionView" />
+</menu>

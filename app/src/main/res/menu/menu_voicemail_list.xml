@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/voicemail_menu_layout"
+    tools:context="com.nextiva.nextivaapp.android.MainActivity">
+    <item
+        android:id="@+id/voicemail_list_menu_item_mark_all_as_played"
+        android:orderInCategory="100"
+        android:title="@string/voicemail_list_menu_mark_all_as_played"
+        android:contentDescription="@string/voicemail_list_menu_item_mark_all_as_played_content_description"
+        app:showAsAction="never" />
+</menu>

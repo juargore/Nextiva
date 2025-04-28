@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chat_menu_menu_layout"
+    tools:context="com.nextiva.nextivaapp.android.MainActivity">
+
+    <item
+        android:id="@+id/chat_list_action_search"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="98"
+        android:visible="false"
+        android:title="@string/actions_sms_list_search_messages"
+        android:contentDescription="@string/sms_list_action_search_content_description"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+    <item
+        android:id="@+id/chats_list_menu_item_mark_all_read"
+        android:orderInCategory="100"
+        android:title="@string/chats_list_menu_mark_all_read"
+        android:contentDescription="@string/chats_list_menu_item_mark_all_read_content_description"
+        app:showAsAction="never" />
+</menu>

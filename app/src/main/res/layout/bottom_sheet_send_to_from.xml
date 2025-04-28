@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/general_padding_xsmall"
+        android:paddingBottom="@dimen/general_padding_large">
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet_send_from_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/general_padding_large"
+            android:paddingTop="@dimen/general_padding_medium"
+            android:paddingEnd="@dimen/general_padding_large"
+            android:paddingBottom="@dimen/general_padding_medium">
+
+            <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+                android:id="@+id/bottom_sheet_send_from_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/connectGrey09"
+                android:textSize="@dimen/material_text_subhead"
+                app:icon_string="@string/fa_comment_dots" />
+            <TextView
+                android:id="@+id/bottom_sheet_send_from_text"
+                style="@style/DS_Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/general_padding_medium"
+                android:paddingEnd="@dimen/general_padding_xsmall"
+                android:text="@string/chat_conversation_send_from"
+                android:textColor="@color/connectGrey09" />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bottom_sheet_send_from_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/bottom_sheet_send_from_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/general_padding_large"
+            android:paddingTop="@dimen/general_padding_medium"
+            android:paddingEnd="@dimen/general_padding_large"
+            android:paddingBottom="@dimen/general_padding_medium">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+                android:layout_marginEnd="@dimen/general_horizontal_margin_medium"
+                android:layout_weight="1"
+                android:background="@color/connectGrey03" />
+
+            <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/connectGrey09"
+                android:textSize="@dimen/material_text_subhead"
+                app:icon_string="@string/fa_arrow_down" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+                android:layout_marginEnd="@dimen/general_horizontal_margin_medium"
+                android:layout_weight="1"
+                android:background="@color/connectGrey03" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet_send_to_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/general_padding_large"
+            android:paddingTop="@dimen/general_padding_medium"
+            android:paddingEnd="@dimen/general_padding_large"
+            android:paddingBottom="@dimen/general_padding_medium">
+
+            <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+                android:id="@+id/bottom_sheet_send_to_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/connectGrey09"
+                android:textSize="@dimen/material_text_subhead"
+                app:icon_string="@string/fa_comment_dots" />
+
+            <TextView
+                android:id="@+id/bottom_sheet_send_to_text"
+                style="@style/DS_Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/general_padding_medium"
+                android:paddingEnd="@dimen/general_padding_xsmall"
+                android:text="@string/chat_conversation_send_to"
+                android:textColor="@color/connectGrey09" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bottom_sheet_send_to_multiple_contacts"
+            style="@style/DS_Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/general_padding_large"
+            android:paddingTop="@dimen/general_padding_medium"
+            android:paddingEnd="@dimen/general_padding_large"
+            android:paddingBottom="@dimen/general_padding_medium"
+            android:text="@string/chat_conversation_multiple_contacts_selected"
+            android:textColor="@color/connectGrey10"
+            android:visibility="gone" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/bottom_sheet_send_to_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/bottom_sheet_send_to_done"
+            style="@style/CreateConnectContactButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/general_vertical_margin_medium"
+            android:background="@color/connectPrimaryBlue"
+            android:text="@string/set_do_not_disturb_bottom_sheet_set_action_done"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

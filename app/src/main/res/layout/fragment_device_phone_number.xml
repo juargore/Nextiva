@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017 Nextiva, Inc. to Present.
+  ~ All rights reserved.
+  -->
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/device_phone_number_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:contentDescription="@string/fragment_device_phone_number_scroll_view_content_description">
+    <LinearLayout
+        android:id="@+id/device_phone_number_fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingEnd="@dimen/general_horizontal_margin_medium"
+        android:paddingStart="@dimen/general_horizontal_margin_medium">
+
+        <TextView
+            android:id="@+id/device_phone_number_text_view"
+            style="@style/Subhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/general_vertical_margin_small"
+            android:text="@string/device_phone_number_text_view"
+            android:textAlignment="center" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/device_phone_number_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/general_vertical_margin_small"
+            android:hint="@string/device_phone_number_phone_number_edit_text_hint"
+            app:theme="@style/TextInputPrimaryColor"
+            app:counterEnabled="true"
+            app:counterMaxLength="@integer/general_phone_number_max_length">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/device_phone_number_phone_number_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:inputType="phone"
+                android:maxLength="@integer/general_phone_number_max_length"
+                android:contentDescription="@string/device_phone_number_phone_number_edit_text_content_description"
+                android:drawableEnd="@drawable/ic_cancel"
+                android:drawableTint="@color/nextivaOrange"
+                android:background="@color/transparent">
+
+                <requestFocus />
+            </androidx.appcompat.widget.AppCompatEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/request_enable_log_explanation_text_view"
+            android:text="@string/request_enable_log_explanation_text"
+            android:layout_marginTop="@dimen/general_vertical_margin_small" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/request_enable_log_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/request_enable_log_check_box_text"
+            android:textOn="@string/request_enable_log_check_box_text"
+            android:textOff="@string/request_enable_log_check_box_text"
+            android:checked="true"
+            style="@style/NextivaCheckboxStyle"
+            android:contentDescription="@string/request_enable_log_check_box_text"
+            android:layout_marginBottom="@dimen/general_vertical_margin_small" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/device_phone_number_continue_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/device_phone_number_continue_button"
+            android:contentDescription="@string/device_phone_number_continue_button_content_description"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</ScrollView>

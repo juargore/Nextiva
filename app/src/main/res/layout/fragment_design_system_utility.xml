@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.DesignSystemUtilityFragment">
+
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:singleSelection="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Colors"
+            style="?attr/materialButtonOutlinedStyle" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fonts"
+            style="?attr/materialButtonOutlinedStyle" />
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Components"
+            style="?attr/materialButtonOutlinedStyle" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/design_system_utility_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toggleButton"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ScrollView
+        android:id="@+id/components_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toggleButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/toggleButton" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/general_padding_medium"
+                android:text="ChipSelectorView" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hairline_small"
+                android:background="@color/darkerGray" />
+            <com.nextiva.nextivaapp.android.features.rooms.view.components.ChipSelectorView
+                android:id="@+id/chip_selector_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/general_padding_medium"
+                android:layout_marginStart="@dimen/general_padding_medium"
+                android:layout_marginEnd="@dimen/general_padding_medium"/>
+            <Button
+                android:id="@+id/addChipButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/general_padding_medium"
+                android:layout_marginBottom="@dimen/general_padding_medium"
+                android:text="Add Chip"
+                style="?attr/materialButtonOutlinedStyle" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hairline_small"
+                android:background="@color/darkerGray" />
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/rooms_linear_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/general_padding_small"
+                android:paddingHorizontal="@dimen/general_padding_medium"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/material_text_title"
+                    android:text="Rooms" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textSize="@dimen/material_text_title"
+                    android:text=">" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hairline_small"
+                android:layout_marginBottom="@dimen/general_padding_medium"
+                android:background="@color/darkerGray" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ConnectTextInputView" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hairline_small"
+                android:background="@color/darkerGray" />
+            <com.nextiva.nextivaapp.android.view.ConnectTextInputView
+                android:id="@+id/create_business_contact_first_name_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/general_padding_medium"
+                app:text_input_hint="@string/connect_create_contact_first_name_hint"
+                app:text_input_title="@string/connect_create_contact_first_name_title" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ConnectFilterView" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hairline_small"
+                android:background="@color/darkerGray" />
+            <com.nextiva.nextivaapp.android.view.ConnectFilterView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/general_padding_medium"
+                app:defaultText="@string/contacts_list_filter_all" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Divider" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hairline_small"
+                android:background="@color/darkerGray" />
+            <View
+                android:id="@+id/create_business_contact_divider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/general_view_small"
+                android:layout_marginTop="@dimen/general_vertical_margin_medium"
+                android:background="@color/grey01" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Primary Button" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hairline_small"
+                android:background="@color/darkerGray" />
+            <TextView
+                android:id="@+id/create_business_contact_save_button"
+                style="@style/CreateConnectContactButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/general_vertical_margin_medium"
+                android:backgroundTint="@color/nextivaPrimaryBlue"
+                android:text="@string/general_save"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Secondary Button" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hairline_small"
+                android:background="@color/darkerGray" />
+            <TextView
+                android:id="@+id/create_business_contact_cancel_button"
+                style="@style/CreateConnectContactButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/general_vertical_margin_large"
+                android:layout_marginTop="@dimen/general_vertical_margin_small"
+                android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+                android:layout_marginEnd="@dimen/general_horizontal_margin_medium"
+                android:backgroundTint="@color/white"
+                android:text="@string/general_cancel"
+                android:textColor="@color/nextivaPrimaryBlue" />
+
+                        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Connect Contact Detail Footer" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hairline_small"
+                android:background="@color/darkerGray" />
+            <include layout="@layout/list_item_connect_contact_detail_footer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Connect Contact Detail Header" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hairline_small"
+                android:background="@color/darkerGray" />
+            <include layout="@layout/list_item_connect_contact_detail_header" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Connect Contact Detail Show More" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hairline_small"
+                android:background="@color/darkerGray" />
+            <include layout="@layout/list_item_connect_contact_detail_show_more" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Connect Contact Header" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hairline_small"
+                android:background="@color/darkerGray" />
+            <include layout="@layout/list_item_connect_contact_header" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

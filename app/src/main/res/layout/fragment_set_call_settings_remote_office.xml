@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017 Nextiva, Inc. to Present.
+  ~ All rights reserved.
+  -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/set_call_settings_remote_office_fragment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/general_horizontal_margin_medium"
+    android:paddingEnd="@dimen/general_horizontal_margin_medium">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/set_call_settings_remote_office_content_description_text_view"
+            style="@style/Subhead.DkGrey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/general_vertical_margin_large"
+            android:layout_marginBottom="@dimen/general_vertical_margin_large"
+            android:text="@string/set_call_settings_remote_office_description" />
+
+        <View
+            android:id="@+id/set_call_settings_remote_office_content_divider"
+            style="@style/DividerLineColor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hairline_small" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/set_call_settings_remote_office_phone_number_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/general_vertical_margin_medium"
+            android:hint="@string/set_call_settings_phone_number_hint"
+            app:counterEnabled="true"
+            app:counterMaxLength="@integer/general_phone_number_max_length"
+            app:theme="@style/TextInputPrimaryColor">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/set_call_settings_remote_office_phone_number_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:contentDescription="@string/set_call_settings_remote_office_phone_number_edit_text_content_description"
+                android:drawableRight="@drawable/ic_cancel"
+                android:drawableTint="@color/nextivaOrange"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:maxLength="@integer/general_phone_number_max_length" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/set_call_settings_remote_office_enabled_check_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/set_call_settings_remote_office_enabled_check_box_content_description"
+            android:text="@string/set_call_settings_enable" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Toolbar -->
+    <string name="back_button_accessibility_id">Back</string>
+    <string name="save_button_accessibility_id">Save</string>
+    <string name="navigation_menu_button_accessibility_id">Main Navigation</string>
+
+    <!-- Dialogs -->
+    <string name="dialog_button_content_description" translatable="false">%1$s</string>
+    <string name="dialog_item_list_content_description">Item %1$d</string>
+    <string name="dialog_edit_text_content_description">Input</string>
+
+    <!-- Endpoints Dialog -->
+    <string name="dialog_hostname_edit_text_content_description">Hostname</string>
+    <string name="dialog_api_url_edit_text_content_description">API URL</string>
+    <string name="dialog_broadsoft_api_url_edit_text_content_description">Broadsoft API URL</string>
+    <string name="dialog_reset_to_defaults_content_description">Reset to Defaults</string>
+    <string name="dialog_okta_endpoint_uri_edit_text_content_description">Okta Endpoint URI</string>
+    <string name="dialog_okta_client_id_edit_text_content_description">Okta Client ID</string>
+    <string name="dialog_platform_api_url_edit_text_content_description">Platform Api Url</string>
+    <string name="dialog_message_api_url_edit_text_content_description">message Api Url</string>
+    <string name="dialog_auth_proxy_public_host_edit_text_content_description">Auth Proxy Public Host</string>
+    <string name="dialog_auth_proxy_rest_api_edit_text_content_description">Auth Proxy Rest Api</string>
+    <string name="dialog_auth_tenant_rest_api_edit_text_content_description">Auth Tenant Rest Api</string>
+    <string name="dialog_general_rest_api_edit_text_content_description">General Rest Api</string>
+
+    <!-- Credentials Dialog -->
+    <string name="dialog_username_edit_text_content_description">Username</string>
+    <string name="dialog_password_edit_text_content_description">Password</string>
+
+    <!-- About Activity -->
+    <string name="about_view_pager_description">About Screen</string>
+
+    <!-- Add Contact Activity -->
+    <string name="add_contact_scroll_view_content_description">Add Contact Screen</string>
+    <string name="add_contact_display_name_edit_text_content_description">Display Name</string>
+    <string name="add_contact_personal_phone_edit_text_content_description">Personal Phone Number</string>
+    <string name="add_contact_conference_number_edit_text_content_description">Conference Phone Number</string>
+    <string name="add_contact_conference_id_edit_text_content_description">Conference ID</string>
+    <string name="add_contact_security_pin_edit_text_content_description">Security Pin</string>
+    <string name="add_contact_im_address_edit_text_content_description">IM Address</string>
+    <string name="add_contact_first_name_edit_text_content_description">First Name Input</string>
+    <string name="add_contact_last_name_edit_text_content_description">Last Name Input</string>
+    <string name="add_contact_company_name_edit_text_content_description">Company Name Input</string>
+    <string name="add_contact_job_title_edit_text_content_description">Job Title Input</string>
+    <string name="add_contact_department_edit_text_content_description">Department Input</string>
+    <string name="add_contact_country_edit_text_content_description">Country Input</string>
+    <string name="add_contact_street_1_edit_text_content_description">Street 1 Input</string>
+    <string name="add_contact_street_2_edit_text_content_description">Street 2 Input</string>
+    <string name="add_contact_city_edit_text_content_description">City</string>
+    <string name="add_contact_zip_edit_text_content_description">Zip</string>
+    <string name="add_contact_state_edit_text_content_description">State</string>
+    <string name="add_contact_other_zip_edit_text_content_description">Other Zip Input</string>
+    <string name="add_contact_social_profile_edit_text_content_description">Social</string>
+    <string name="add_contact_fax_number_edit_text_content_description">Fax Number Input</string>
+    <string name="add_contact_website_edit_text_content_description">Website Input</string>
+    <string name="add_contact_description_edit_text_content_description">Description Input</string>
+
+    <!-- Call Details Activity -->
+    <string name="call_details_call_text_view_content_description">Call</string>
+
+    <!-- Contact Details Activity -->
+    <string name="contact_detail_chat_text_view_content_description">Chat</string>
+    <string name="contact_detail_call_text_view_content_description">Call</string>
+
+    <!-- Login Activity -->
+    <string name="login_username_edit_text_content_description">Username</string>
+    <string name="login_password_edit_text_content_description">Password</string>
+    <string name="login_sign_in_button_content_description">Sign In</string>
+    <string name="login_remember_password_switch_content_description">Remember Password</string>
+    <string name="login_preferences_image_button_content_description">Preferences</string>
+
+    <!-- Main Activity -->
+    <string name="main_fab_content_description">Floating Action Button</string>
+
+    <!-- License Check Activity -->
+    <string name="license_check_nextiva_one_base_license_content_description">NextivaOne Base License</string>
+    <string name="license_check_video_guest_participants_license_content_description">Video Guest Participants</string>
+    <string name="license_check_video_license_content_description">Video</string>
+    <string name="license_check_phone_number_license_result_content_description">Phone Number Result</string>
+    <string name="license_check_sms_enabled_license_result_content_description">SMS Enabled Result</string>
+
+    <!-- Health Check Activity -->
+    <string name="health_check_run_check_content_description">Run Check</string>
+    <string name="health_check_voice_push_registration_content_description">Voice Push Notification Registration</string>
+    <string name="health_check_chat_push_registration_content_description">Chat Push Notification Registration</string>
+    <string name="health_check_platform_push_registration_content_description">Platform Push Notification Registration</string>
+    <string name="health_check_sip_registration_content_description">SIP Registration</string>
+    <string name="health_check_sip_deregistration_content_description">Sip Deregistration</string>
+    <string name="health_check_xmpp_connection_content_description">XMPP Connection</string>
+    <string name="health_check_sms_api_health_content_description">SMS API Health</string>
+    <string name="health_check_sms_license_health_content_description">SMS License</string>
+    <string name="health_check_team_sms_license_health_content_description">Team SMS License</string>
+    <string name="health_check_voicemail_license_health_content_description">Voicemail Transcription License</string>
+    <string name="health_check_connect_license_health_content_description">Connect License</string>
+    <string name="health_check_voice_push_registration_time_elapsed_content_description">Voice Push Notification Registration Time Elapsed</string>
+    <string name="health_check_chat_push_registration_time_elapsed_content_description">Chat Push Notification Registration Time Elapsed</string>
+    <string name="health_check_platform_push_registration_time_elapsed_content_description">Platform Push Notification Registration Time Elapsed</string>
+    <string name="health_check_sip_registration_time_elapsed_content_description">SIP Registration Time Elapsed</string>
+    <string name="health_check_sip_deregistration_time_elapsed_content_description">Sip Deregistration Time Elapsed</string>
+    <string name="health_check_xmpp_connection_time_elapsed_content_description">XMPP Connection Time Elapsed</string>
+    <string name="health_check_sms_api_health_time_elapsed_content_description">SMS API Health Time Elapsed</string>
+    <string name="health_check_voice_push_registration_result_content_description">Voice Push Notification Registration Result</string>
+    <string name="health_check_chat_push_registration_result_content_description">Chat Push Notification Registration Result</string>
+    <string name="health_check_platform_push_registration__result_content_description">Platform Push Notification Registration Result</string>
+    <string name="health_check_sip_registration_result_content_description">SIP Registration Result</string>
+    <string name="health_check_sip_deregistration_result_content_description">Sip Deregistration Result</string>
+    <string name="health_check_xmpp_connection_result_content_description">XMPP Connection Result</string>
+    <string name="health_check_sms_api_health_result_content_description">SMS API Health Result</string>
+    <string name="health_check_sms_license_result_content_description">SMS License Result</string>
+    <string name="health_check_team_sms_license_result_content_description">Team SMS License Result</string>
+    <string name="health_check_sms_license_number_content_description">SMS License Number</string>
+    <string name="health_check_phone_number_license_content_description">Phone Number License</string>
+    <string name="health_check_phone_number_license__result_content_description">Phone Number License Result</string>
+    <string name="health_check_voicemail_transcription_license_result_content_description">Voicemail Transcription License Result</string>
+    <string name="health_check_connect_license_result_content_description">Connect License Result</string>
+
+
+    <!-- Dialer Dialog Fragment Keypad -->
+    <string name="dialog_dialer_keypad_input_text_view_content_description">Phone Number</string>
+
+    <!-- About License Fragment -->
+    <string name="about_license_send_email_button_content_description">Send License By Email</string>
+
+    <!-- Chat Conversation Fragment -->
+    <string name="chat_conversation_contact_name_text_view_content_description">Chat Conversation Participants</string>
+    <string name="chat_conversation_message_edit_text_content_description">Message Input</string>
+    <string name="chat_conversation_send_image_view_content_description">Send Message</string>
+    <string name="chat_conversation_attachment_image_view_content_description">Add Attachment</string>
+    <string name="chat_conversation_select_phone_view_content_description">Select Phone Number</string>
+    <string name="chat_conversation_select_sending_phone_view_content_description">Select Sending Phone Number</string>
+
+    <!-- Dashboard Fragment -->
+    <string name="dashboard_view_pager_content_description">Dashboard</string>
+    <string name="dashboard_fab_content_description">Dashboard Floating Action Button</string>
+    <string name="dashboard_contacts_list_tab_content_description">Contacts List Tab</string>
+    <string name="dashboard_dialer_tab_content_description">Dialer Tab</string>
+    <string name="dashboard_chats_list_tab_content_description">Chats List Tab</string>
+    <string name="dashboard_call_history_tab_content_description">Call History Tab</string>
+    <string name="dashboard_voicemail_tab_content_description">Voicemail Tab</string>
+
+    <!-- Device Phone Number Fragment -->
+    <string name="device_phone_number_phone_number_edit_text_content_description">Phone Number</string>
+    <string name="device_phone_number_continue_button_content_description">Continue</string>
+
+    <!-- Dialer Fragment -->
+    <string name="dialer_phone_number_edit_text_content_description">Phone Number</string>
+    <string name="dialer_keypad_edit_text_description">Enter numbers</string>
+    <string name="dialer_video_call_image_view_content_description">Video Call</string>
+    <string name="dialer_voice_call_floating_action_button_content_description">Place Call</string>
+    <string name="dialer_backspace_image_view_content_description">Backspace</string>
+    <string name="dialer_voicemail_image_view_content_description">Voicemail</string>
+    <string name="dialer_popup_image_view_copy_content_description">Copy</string>
+    <string name="dialer_popup_image_view_paste_content_description">Paste</string>
+    <string name="dialer_popup_image_view_add_contacts_content_description">Add to contacts</string>
+    <string name="dialer_popup_image_view_add_existing_contact_content_description">Add to existing contact</string>
+
+    <!-- Voicemail List Fragment -->
+    <string name="voicemail_list_menu_item_mark_all_as_played_content_description">Mark All As Played</string>
+
+    <!-- License Acceptance Fragment -->
+    <string name="license_acceptance_decline_button_content_description">Decline</string>
+    <string name="license_acceptance_accept_button_content_description">Accept</string>
+
+    <!-- My Status Fragment -->
+    <string name="my_status_automatic_radio_button_content_description">Automatic</string>
+    <string name="my_status_mobile_radio_button_content_description">Mobile</string>
+    <string name="my_status_away_radio_button_content_description">Away</string>
+    <string name="my_status_busy_radio_button_content_description">Busy</string>
+    <string name="my_status_edit_text_content_description">My Status</string>
+
+    <!-- New Call Fragment -->
+    <string name="new_call_view_pager_content_description">New Call</string>
+
+    <!-- Call Settings Block Caller Id Fragment -->
+    <string name="set_call_settings_block_caller_id_enabled_check_box_content_description">Enable</string>
+
+    <!-- Call Settings Call Forwarding Always Fragment -->
+    <string name="set_call_settings_call_forward_always_phone_number_edit_text_content_description">Phone Number</string>
+    <string name="set_call_settings_call_forward_always_enabled_check_box_content_description">Enable</string>
+    <string name="set_call_settings_call_forward_always_ring_splash_check_box_content_description">Ring Splash</string>
+
+    <!-- Call Settings Call Forwarding When Busy Fragment -->
+    <string name="set_call_settings_call_forward_when_busy_phone_number_edit_text_content_description">Phone Number</string>
+    <string name="set_call_settings_call_forward_when_busy_enabled_check_box_content_description">Enable</string>
+
+    <!-- Call Settings Call Forwarding When Unanswered Fragment -->
+    <string name="set_call_settings_call_forward_when_unanswered_phone_number_edit_text_content_description">Phone Number</string>
+    <string name="set_call_settings_call_forward_when_unanswered_enabled_check_box_content_description">Enable</string>
+    <string name="set_call_settings_call_forward_when_unanswered_number_of_rings_spinner_content_description">Number Of Rings</string>
+
+    <!-- Call Settings Call Forwarding When Unreachable Fragment -->
+    <string name="set_call_settings_call_forward_when_unreachable_phone_number_edit_text_content_description">Phone Number</string>
+    <string name="set_call_settings_call_forward_when_unreachable_enabled_check_box_content_description">Enable</string>
+
+    <!-- Call Settings Dialing Service Fragment -->
+    <string name="set_call_settings_dialing_service_voip_radio_button_content_description">Voip</string>
+    <string name="set_call_settings_dialing_service_call_back_radio_button_content_description">Call Back</string>
+    <string name="set_call_settings_dialing_service_call_through_radio_button_content_description">Call Through</string>
+    <string name="set_call_settings_dialing_service_this_phone_radio_button_content_description">This Phone</string>
+    <string name="set_call_settings_dialing_service_always_ask_radio_button_content_description">Always Ask</string>
+
+    <!-- Call Settings Do Not Disturb Fragment -->
+    <string name="set_call_settings_do_not_disturb_ring_splash_check_box_content_description">Ring Splash</string>
+    <string name="set_call_settings_do_not_disturb_enabled_check_box_content_description">Enable</string>
+
+    <!-- Call Settings Nextiva Anywhere Fragment -->
+    <string name="set_call_settings_nextiva_anywhere_alert_all_locations_check_box_content_description">Alert All Locations</string>
+    <string name="set_call_settings_nextiva_anywhere_locations_image_button_content_description">Add Location</string>
+
+    <!-- Call Settings Nextiva Anywhere Location Fragment -->
+    <string name="set_call_settings_nextiva_anywhere_location_scroll_view_content_description">Scroll View</string>
+    <string name="set_call_settings_nextiva_anywhere_location_phone_number_edit_text_content_description">Phone Number</string>
+    <string name="set_call_settings_nextiva_anywhere_location_description_edit_text_content_description">Description</string>
+    <string name="set_call_settings_nextiva_anywhere_location_enable_this_location_check_box_content_description">Enable</string>
+    <string name="set_call_settings_nextiva_anywhere_location_call_control_check_box_content_description">Call Control</string>
+    <string name="set_call_settings_nextiva_anywhere_location_prevent_diverting_calls_check_box_content_description">Prevent Diverting Calls</string>
+    <string name="set_call_settings_nextiva_anywhere_location_answer_confirmation_check_box_content_description">Answer Confirmation Required</string>
+
+    <!-- Call Settings Remote Office Fragment -->
+    <string name="set_call_settings_remote_office_phone_number_edit_text_content_description">Phone Number</string>
+    <string name="set_call_settings_remote_office_enabled_check_box_content_description">Enable</string>
+
+    <!-- Call Settings Simultaneous Ring Fragment -->
+    <string name="set_call_settings_simultaneous_ring_enabled_check_box_content_description">Enable</string>
+    <string name="set_call_settings_simultaneous_ring_dont_ring_while_on_call_check_box_content_description">Dont Ring While On A Call</string>
+    <string name="set_call_settings_simultaneous_ring_add_location_image_button_content_description">Add Location</string>
+
+    <!-- Call Settings Simultaneous Ring -->
+    <string name="set_call_settings_simultaneous_ring_location_phone_number_edit_text_content_description">Phone Number</string>
+    <string name="set_call_settings_simultaneous_ring_location_answer_confirmation_required_check_box_content_description">Answer Confirmation Required</string>
+
+    <!-- Call Settings This Phone Number Fragment -->
+    <string name="set_call_settings_this_phone_number_phone_number_edit_text_content_description">Phone Number</string>
+
+    <!-- Active Call Fragment -->
+    <string name="active_call_button_active_content_description">Active</string>
+    <string name="active_call_button_enabled_content_description">Enabled</string>
+    <string name="active_call_button_disabled_content_description">Disabled</string>
+    <string name="active_call_mute_button_content_description">Mute</string>
+    <string name="active_call_pause_button_content_description">Pause</string>
+    <string name="active_call_speaker_button_content_description">Speaker</string>
+    <string name="active_call_keypad_button_content_description">Keypad</string>
+    <string name="active_call_video_button_content_description">Video</string>
+    <string name="active_call_add_participants_button_content_description">Add Participants</string>
+    <string name="active_call_new_call_button_content_description">New Call</string>
+    <string name="active_call_swap_call_button_content_description">Swap Call</string>
+    <string name="active_call_end_call_button_content_description">End Call</string>
+    <string name="active_call_more_button_content_description">More</string>
+    <string name="active_call_end_transfer_button_content_description">End Transfer</string>
+    <string name="active_call_complete_transfer_button_content_description">Complete Transfer</string>
+    <string name="active_call_swap_camera_button_content_description">Swap Camera</string>
+    <string name="active_call_merge_call_button_content_description">Merge Call</string>
+    <string name="active_call_hold_button_content_description">Hold</string>
+    <string name="active_call_call_timer_content_description">Call Timer</string>
+    <string name="active_call_remote_video_content_description">Remote Video</string>
+    <string name="active_call_local_video_button_content_description">Local Video</string>
+    <string name="active_call_image_switcher_content_description">%1$s Image Switcher</string>
+    <string name="active_call_first_image_view_content_description">%1$s First Image</string>
+    <string name="active_call_second_image_view_content_description">%1$s Second Image</string>
+    <string name="active_call_text_switcher_content_description">%1$s Text Switcher</string>
+    <string name="active_call_first_text_view_content_description">%1$s First Text View</string>
+    <string name="active_call_second_text_view_content_description">%1$s Second Text View</string>
+
+
+    <!-- Incoming Call Fragment -->
+    <string name="incoming_call_caller_avatar_view_content_description">Callers Avatar</string>
+    <string name="incoming_call_name_text_view_content_description">Caller Name</string>
+    <string name="incoming_call_number_text_view_content_description">Callers Number</string>
+    <string name="incoming_call_answer_video_call_button_content_description">Answer Video Call</string>
+    <string name="incoming_call_answer_voice_call_button_content_description">Answer Call</string>
+    <string name="incoming_call_decline_button_content_description">Decline Call</string>
+
+    <!-- Contacts List Fragment -->
+    <string name="contacts_list_add_contact_fab_content_description">Add Contact</string>
+    <string name="contacts_list_group_content_description">%1$s Group</string>
+
+    <!-- Caller Information View -->
+    <string name="caller_information_caller_name_text_view_content_description">Name</string>
+    <string name="caller_information_caller_avatar_view_content_description">Avatar</string>
+    <string name="caller_information_caller_number_text_view_content_description">Number</string>
+    <string name="caller_information_status_text_view_content_description">Status</string>
+    <string name="caller_information_number_of_participants_text_view_content_description">Number of Participants</string>
+
+    <!-- Contact Header View -->
+    <string name="contact_header_avatar_view_content_description">User Avatar</string>
+    <string name="contact_header_name_text_view_content_description">Users Name</string>
+    <string name="contact_header_status_text_view_content_description">Users Status</string>
+
+    <!-- Dialpad View -->
+    <string name="dialer_pad_1_key_content_description">1 Key</string>
+    <string name="dialer_pad_2_key_content_description">2 Key</string>
+    <string name="dialer_pad_3_key_content_description">3 Key</string>
+    <string name="dialer_pad_4_key_content_description">4 Key</string>
+    <string name="dialer_pad_5_key_content_description">5 Key</string>
+    <string name="dialer_pad_6_key_content_description">6 Key</string>
+    <string name="dialer_pad_7_key_content_description">7 Key</string>
+    <string name="dialer_pad_8_key_content_description">8 Key</string>
+    <string name="dialer_pad_9_key_content_description">9 Key</string>
+    <string name="dialer_pad_star_key_content_description">Star Key</string>
+    <string name="dialer_pad_0_key_content_description">0 Key</string>
+    <string name="dialer_pad_pound_key_content_description">Pound Key</string>
+
+    <!-- Presence View -->
+    <string name="presence_left_text_view_content_description">Users Presence</string>
+    <string name="presence_right_text_view_content_description">Users Presence</string>
+    <string name="presence_image_view_content_description">Presence Image</string>
+    <string name="presence_list_item_text_content_description">Presence Text</string>
+
+    <!-- Text Input Layout View -->
+    <string name="text_input_dialog_edit_text_content_description">Input</string>
+
+    <!-- Navigation Menu -->
+    <string name="main_nav_call_settings_content_description">Call Settings</string>
+    <string name="main_nav_preferences_content_description">Preferences</string>
+    <string name="main_nav_notifications_content_description">Notifications</string>
+    <string name="main_nav_about_content_description">About</string>
+    <string name="main_nav_help_content_description">Help</string>
+    <string name="main_nav_sign_out_content_description">Sign Out</string>
+
+    <!-- Active Call Menu -->
+    <string name="transfer_content_description">Transfer</string>
+    <string name="conference_content_description">Conference</string>
+    <string name="transferToMobile_content_description">Tranfer To Mobile</string>
+
+    <!-- Add Contact Menu -->
+    <string name="add_contact_save_content_description">Save</string>
+
+    <!-- Call Details Menu -->
+    <string name="call_details_delete_content_description">Delete</string>
+
+    <!-- Call History List Menu -->
+    <string name="call_history_list_action_search_content_description">Search Contacts</string>
+    <string name="call_history_list_action_delete_call_history_content_description">Delete Call History</string>
+    <string name="call_history_list_action_tablayout_filter">Call Tab Filter</string>
+    <string name="call_history_list_action_tab_item_all">Recent Calls Tab</string>
+    <string name="call_history_list_action_tab_item_missed">Recent Missed Calls Tab</string>
+    <string name="call_history_list_action_tab_item_voicemail">Recent Voicemails Tab</string>
+
+    <!-- Chat Menu -->
+    <string name="chats_list_menu_item_mark_all_read_content_description">Mark All Messages Read</string>
+    <string name="chats_list_floating_action_button_content_description">Start New Chat</string>
+
+    <!-- Chat Conversation Menu -->
+    <string name="chat_conversation_contact_action_call_content_description">Voice Call</string>
+    <string name="chat_conversation_contact_action_video_content_description">Video Call</string>
+    <string name="chat_conversation_contact_action_add_participants_content_description">Add Participants</string>
+    <string name="chat_conversation_contact_action_view_profile_content_description">View Profile</string>
+    <string name="chats_details_menu_item_leave_chat_content_description">Leave Chat</string>
+    <string name="chats_details_menu_item_view_participants_content_description">View Participants</string>
+
+    <!-- Contact Details Menu -->
+    <string name="contact_details_edit_content_description">Edit</string>
+    <string name="contact_details_delete_content_description">Delete</string>
+
+    <!-- Contact Details Menu -->
+    <string name="contacts_list_action_search_content_description">Search Contacts</string>
+    <string name="sms_list_action_search_content_description">Search Sms</string>
+    <string name="contacts_list_action_filter_contacts_list_content_description">Filter Contacts List</string>
+    <string name="contacts_list_filter_contacts_list_all_roster_contacts_content_description">All Roster Contacts</string>
+    <string name="contacts_list_filter_contacts_list_online_roster_contacts_content_description">Online Contacts</string>
+    <string name="contacts_list_filter_contacts_list_local_contacts_content_description">Local Contacts</string>
+    <string name="contacts_list_filter_contacts_list_directory_contacts_content_description">Directory Contacts</string>
+
+    <!-- Dialer Menu -->
+    <string name="dialer_pull_call_content_description">Pull Call</string>
+
+    <!-- New Chats List Menu -->
+    <string name="new_chat_list_action_search_content_description">Search Contacts</string>
+    <string name="new_chat_action_start_chat_content_description">Start Chat</string>
+
+    <!-- Active Call Menu -->
+    <string name="set_call_settings_save_content_description">Save</string>
+    <string name="set_call_settings_delete_content_description">Delete</string>
+    <string name="set_call_settings_help_content_description">Help</string>
+
+    <!-- Contact List Item -->
+    <string name="contact_list_item_content_description">%1$s List Item</string>
+    <string name="contact_list_item_name_content_description" translatable="false">%1$s</string>
+    <string name="contact_list_item_status_content_description">%1$s Status</string>
+    <string name="contact_list_item_avatar_content_description">%1$s Avatar</string>
+
+    <!-- Call History List Item -->
+    <string name="call_history_list_item_content_description">%1$s Call %2$s %3$s at %4$s</string>
+    <string name="call_history_list_item_name_content_description">%1$s Name</string>
+    <string name="call_history_list_item_number_content_description">%1$s Number</string>
+    <string name="call_history_list_item_avatar_content_description">%1$s Avatar</string>
+    <string name="call_history_list_item_datetime_content_description">%1$s Date</string>
+    <string name="call_history_list_item_call_type_icon_content_description">%1$s Call Icon</string>
+    <string name="call_history_list_item_call_button_content_description" translatable="false">%1$s</string>
+
+    <!-- Chat Conversation List Item -->
+    <string name="chat_conversation_list_item_content_description">Chat Conversation with %1$s</string>
+    <string name="chat_conversation_list_item_group_chat_content_description">Group Chat Conversation</string>
+    <string name="chat_conversation_list_item_name_content_description">%1$s Chat Conversation Name</string>
+    <string name="chat_conversation_list_item_last_message_content_description">Chat Conversation with %1$s Latest Message</string>
+    <string name="chat_conversation_list_item_avatar_content_description">%1$s Chat Conversation Avatar</string>
+    <string name="chat_conversation_list_item_datetime_content_description">%1$s Chat Conversation Date</string>
+
+    <!-- SMS Conversation List Item -->
+    <string name="SMS_conversation_list_item_content_description">SMS Conversation with %1$s</string>
+    <string name="SMS_conversation_list_item_group_chat_content_description">Group SMS Conversation</string>
+    <string name="SMS_conversation_list_item_name_content_description">%1$s SMS Conversation Name</string>
+    <string name="SMS_conversation_list_item_last_message_content_description">SMS Conversation with %1$s Latest Message</string>
+    <string name="SMS_conversation_list_item_avatar_content_description">%1$s SMS Conversation Avatar</string>
+    <string name="SMS_conversation_list_item_datetime_content_description">%1$s SMS Conversation Date</string>
+
+    <!-- Voicemail List Item -->
+    <string name="voicemail_list_item_content_description">%1$s Voicemail from %2$s</string>
+    <string name="voicemail_list_item_name_content_description">%1$s Voicemail From</string>
+    <string name="voicemail_list_item_time_content_description">%1$s Voicemail Date</string>
+    <string name="voicemail_list_item_number_content_description">%1$s Voicemail Number</string>
+    <string name="voicemail_list_item_avatar_content_description">%1$s Voicemail Avatar</string>
+    <string name="voicemail_list_item_play_button_content_description">%1$s Voicemail Play Button</string>
+    <string name="voicemail_list_item_seek_bar_content_description">%1$s Voicemail Bar</string>
+    <string name="voicemail_list_item_duration_content_description">%1$s Voicemail Duration</string>
+    <string name="voicemail_list_item_speaker_button_content_description">%1$s Voicemail Speaker Button %2$s</string>
+    <string name="voicemail_list_item_call_button_content_description">%1$s Voicemail Call Button</string>
+    <string name="voicemail_list_item_read_button_content_description">%1$s Voicemail Mark %2$s</string>
+    <string name="voicemail_list_item_contact_button_content_description">%1$s Voicemail Contact Button</string>
+    <string name="voicemail_list_item_delete_button_content_description">%1$s Voicemail Delete Button</string>
+    <string name="voicemail_list_item_sms_button_content_description">%1$s Voicemail Sms Button</string>
+
+    <!-- SmsMessage List Item -->
+    <string name="message_list_item_content_description">%1$s Message from %2$s</string>
+    <string name="message_list_item_name_content_description">%1$s Message From</string>
+    <string name="message_list_item_time_content_description">%1$s Message Date</string>
+    <string name="message_list_item_number_content_description">%1$s Message Number</string>
+    <string name="message_list_item_avatar_content_description">%1$s Message Avatar</string>
+    <string name="message_list_item_message_you">You</string>
+    <string name="message_list_item_more_than_ninety_nine">99+</string>
+
+    <!-- Chat Message List Items -->
+    <string name="chat_message_list_item_sent_content_description">Chat Message Sent</string>
+    <string name="chat_message_list_item_received_content_description">Chat Message Received</string>
+    <string name="chat_message_list_item_message_content_description">Chat Message Text</string>
+
+    <!-- Contact/Call Detail List items -->
+    <string name="detail_list_item_content_description">%1$s Detail List Item</string>
+    <string name="detail_list_item_subtitle_content_description">Contacts %1$s</string>
+    <string name="detail_list_item_voice_call_button_content_description">%1$s Voice Call</string>
+    <string name="detail_list_item_video_call_button_content_description">%1$s Video Call</string>
+    <string name="detail_list_item_button_content_description">%1$s Button</string>
+
+    <!-- App Preferences -->
+    <string name="preferences_check_box_preference_enable_logging_content_description">Enable Logging</string>
+    <string name="preferences_check_box_preference_file_logging_content_description">Enable File Logging</string>
+    <string name="preferences_check_box_preference_sip_logging_content_description">Enable Sip Logging</string>
+    <string name="preferences_check_box_preference_xmpp_logging_content_description">Enable Xmpp Logging</string>
+    <string name="preferences_check_box_preference_display_audio_video_statistics_content_description">Display Audio Video Statistics</string>
+    <string name="preferences_check_box_preference_enable_old_active_call_layout_content_description">Enable Old Active Call Layout</string>
+    <string name="preferences_check_box_preference_display_SIP_states_content_description">SIP State</string>
+    <string name="preferences_check_box_preference_display_SIP_error_content_description">SIP Error</string>
+    <string name="preferences_check_box_preference_echo_cancellation_content_description">Echo Cancellation</string>
+    <string name="preferences_check_box_preference_show_dialog_content_description">Show Confirmation Dialog on Delete</string>
+    <string name="preferences_check_box_preference_enable_swipe_actions">Enable swipe actions</string>
+
+    <!-- Menu Items -->
+    <string name="menu_item_content_description">%1$s Menu Item</string>
+
+    <!-- Connect Contact List -->
+    <string name="connect_contact_header_list_item_content_description">%1$s Group</string>
+    <string name="connect_contact_header_list_item_title_content_description">%1$s Title</string>
+    <string name="connect_contact_header_list_item_count_content_description">%1$s Group has %2$s items</string>
+    <string name="connect_contact_list_item_content_description">%1$s List Item</string>
+    <string name="connect_contact_list_item_name_content_description">%1$s</string>
+    <string name="connect_contact_list_item_avatar_content_description">%1$s Avatar</string>
+    <string name="connect_contact_list_item_shared_icon_content_description">%1$s Shared Icon</string>
+    <string name="connect_contact_list_item_favorite_icon_content_description">%1$s Favorite Icon %2$s</string>
+    <string name="connect_contact_list_action_local_contacts_content_description">View Local Contacts</string>
+
+    <!-- Connect Home -->
+    <string name="connect_home_action_search_content_description">Search Home</string>
+    <string name="connect_home_list_item_count_content_description">%1$s %2$s unread</string>
+    <string name="connect_home_list_item_header_content_description">%1$s header</string>
+
+    <!-- Connect Main -->
+    <string name="connect_main_floating_action_button_content_description">Main Floating Action Button</string>
+    <string name="connect_main_home_navigation_content_description">Home Navigation Item</string>
+    <string name="connect_main_contacts_navigation_content_description">Contacts Navigation Item</string>
+    <string name="connect_main_toolbar_avatar_content_description">User Avatar</string>
+    <string name="connect_main_make_a_call_content_description">Make a call</string>
+    <string name="connect_main_send_a_text_message_content_description">Send a text message</string>
+    <string name="connect_main_chat_with_teammates_content_description">Chat with teammates</string>
+    <string name="connect_main_start_a_meeting_content_description">Start a meeting now</string>
+
+    <!-- Connect Contact Details -->
+    <string name="connect_contact_details_call_quick_action_content_description">Call</string>
+    <string name="connect_contact_details_sms_quick_action_content_description">SMS</string>
+    <string name="connect_contact_details_video_quick_action_content_description">Video</string>
+    <string name="connect_contact_details_chat_quick_action_content_description">Chat</string>
+    <string name="connect_contact_details_team_chip_content_description">%1$s Chip</string>
+    <string name="connect_contact_details_chip_group_content_description">Teams</string>
+    <string name="connect_contact_details_created_by_content_description">Created By %1$s</string>
+    <string name="connect_contact_details_last_modified_by_content_description">Last Modified By %1$s</string>
+
+    <!-- Allow Contact Access Bottom Sheet -->
+    <string name="allow_contact_access_cancel_icon_content_description">Cancel</string>
+    <string name="allow_contact_access_bottom_sheet_allow_content_description">Allow</string>
+    <string name="allow_contact_access_bottom_sheet_maybe_later_content_description">Maybe Later</string>
+
+    <!-- Bottom Sheet Import Local Contacts Ask -->
+    <string name="bottom_sheet_import_local_contacts_maybe_later_content_description">Maybe Later</string>
+    <string name="bottom_sheet_import_local_contacts_import_all_content_description">Import All</string>
+    <string name="bottom_sheet_import_local_contacts_select_content_description">Select</string>
+    <string name="bottom_sheet_import_local_contacts_cancel_content_description">Cancel</string>
+
+
+    <!-- Create Business Contact -->
+    <string name="create_business_contact_save_button_content_description">Save</string>
+    <string name="create_business_contact_cancel_button_content_description">Cancel</string>
+    <string name="create_business_contact_shared_switch_content_description">Shared Switch</string>
+
+    <!-- Connect Group Add Item View -->
+    <string name="connect_group_add_item_add_icon_content_description">%1$s icon</string>
+
+    <!-- Connect Add Item View -->
+    <string name="connect_add_item_remove_icon_content_description">Remove %1$s</string>
+    <string name="connect_add_item_type_selector_content_description">%1$s type</string>
+    <string name="connect_add_item_text_input_content_description">%1$s input</string>
+
+    <!-- Bottom Sheet Dialog -->
+    <string name="bottom_sheet_dialog_cancel_icon_content_description">Cancel icon</string>
+
+    <!-- Connect Meeting -->
+    <string name="connect_meeting_flip_camera_button_content_description">Flip camera</string>
+    <string name="connect_meeting_volume_button_content_description">Volume</string>
+    <string name="connect_meeting_microphone_button_content_description">Microphone</string>
+    <string name="connect_meeting_video_button_content_description">Video</string>
+    <string name="connect_meeting_avatar_view_content_description">User Avatar</string>
+    <string name="connect_meeting_join_with_phone_content_description">Join with phone</string>
+    <string name="connect_meeting_start_content_description">Start meeting</string>
+    <string name="connect_meeting_cancel_content_description">Cancel</string>
+
+    <string name="connect_meeting_info_button_content_description">Meeting Information</string>
+
+    <!-- Meeting Info View -->
+    <string name="meeting_info_join_link_content_description">Join Link</string>
+    <string name="meeting_info_dial_in_label_text_view">Dial in by phone</string>
+
+
+    <!-- Meeting List Item -->
+    <string name="meeting_list_item_title_content_description">%1$s Meeting Title</string>
+    <string name="meeting_list_item_time_content_description">%1$s Meeting Date</string>
+    <string name="meeting_list_item_number_content_description">%1$s Meeting Number</string>
+    <string name="meeting_list_item_avatar_content_description">%1$s Meeting Avatar</string>
+    <string name="meeting_list_item_schedule_content_description">%1$s Meeting Schedule</string>
+    <string name="meeting_list_item_join_button_description">%1$s Meeting Join Button</string>
+    <string name="meeting_list_action_scheduled_meetings_content_description">View Scheduled Meetings</string>
+
+    <!-- Assign Co Host Item -->
+    <string name="assign_cohost_item_avatar_content_desciption">%1$s Assign Co Host Avatar</string>
+    <string name="assign_cohost_item_name_content_desciption">%1$s Assign Co Host Name</string>
+    <string name="assign_cohost_item_assign_icon_content_desciption">%1$s Assign Co Host Icon</string>
+
+    <!-- Create Schedule -->
+    <string name="create_schedule_menu_delete_content_description">Delete Schedule</string>
+    <string name="create_schedule_same_hours_start_time_accessibility_id">Start time</string>
+    <string name="create_schedule_same_hours_end_time_accessibility_id">End time</string>
+    <string name="create_schedule_same_hours_break_start_time_accessibility_id">Break %1$s start time</string>
+    <string name="create_schedule_same_hours_break_end_time_accessibility_id">Break %1$s end time</string>
+    <string name="create_schedule_custom_hours_add_break_accessibility_id">%1$s add break</string>
+    <string name="create_schedule_custom_hours_remove_break_accessibility_id">%1$s remove break %2$s</string>
+    <string name="create_schedule_custom_hours_start_time_accessibility_id">%1$s Start time</string>
+    <string name="create_schedule_custom_hours_end_time_accessibility_id">%1$s End time</string>
+    <string name="create_schedule_custom_hours_break_start_time_accessibility_id">%1$s Break %2$s start time</string>
+    <string name="create_schedule_custom_hours_break_end_time_accessibility_id">%1$s Break %2$s end time</string>
+    <string name="create_schedule_observed_holidays_select_all_accessibility_id">Select all</string>
+    <string name="create_schedule_observed_holidays_holiday_names_accessibility_id">%1$s</string>
+    <string name="create_schedule_holidays_specific_custom_date_check_marks_accessibility_id">%1$s checkmark</string>
+    <string name="create_schedule_holidays_check_marks_accessibility_id">%1$s checkmark %2$s</string>
+    <string name="create_schedule_specified_dates_accessibility_id">Select Date</string>
+    <string name="create_schedule_specified_dates_page_events_accessibility_id">%1$s</string>
+    <string name="create_schedule_custom_dates_page_events_accessibility_id">%1$s</string>
+    <string name="create_schedule_specified_custom_dates_start_time_accessibility_id">Start time</string>
+    <string name="create_schedule_specified_custom_dates_end_time_accessibility_id">End time</string>
+    <string name="create_schedule_specified_custom_dates_occurrence_accessibility_id">%1$s Occurrences</string>
+    <string name="create_schedule_specified_custom_dates_checked_true">True</string>
+    <string name="create_schedule_specified_custom_dates_checked_false">False</string>
+    <string name="create_schedule_custom_specific_holiday_button_add">%1$s ADD</string>
+
+
+    <!-- Schedules -->
+    <string name="notification_schedule_name_chip_close_icon_accessibility_id">Schedule name chip x icon</string>
+    <string name="notifications_schedules_pull_down_icon_accessibility_id">Pull down icon</string>
+    <string name="notifications_schedule_close_icon_accessibility_id">Close icon</string>
+    <string name="notifications_schedules_image_accessibility_id">Image</string>
+    <string name="notifications_sub_header_view_accessibility_id">Allow notification</string>
+    <string name="notifications_selected_schedule_accessibility_id">Selected Schedule</string>
+    <string name="notification_schedule_name_chip_accessibility_id">Schedule name chip</string>
+    <string name="notification_schedule_change_selected_schedule_accessibility_id">Change selected schedule</string>
+    <string name="notification_schedule_edit_selected_schedule_accessibility_id">Edit selected schedule</string>
+    <string name="notifications_schedule_create_schedule_accessibility_id">Create a new schedule</string>
+    <string name="notifications_schedules_title_accessibility_id">Schedules</string>
+    <string name="notifications_schedules_sub_text_accessibility_id">Schedules sub text</string>
+    <string name ="notifications_schedules_sub_header_accessibility_id">Set a schedule for when you want to allow notifications. We will automatically set you on do not disturb outside of those hours.</string>
+    <string name="notifications_schedules_schedule_name_accessibility_id">Schedule_name</string>
+    <string name="notifications_schedules_sub_header_personal_schedules_accessibility_id">Personal Schedules</string>
+    <string name="notifications_schedules_schedule_days_accessibility_id">%1$s days</string>
+    <string name="notifications_schedules_schedule_hours_accessibility_id">%1$s hours</string>
+    <string name="notifications_schedules_no_schedules_text_accessibility_id">No schedules text</string>
+    <string name="notifications_schedules_no_schedules_sub_text_accessibility_id">No schedules sub text</string>
+    <string name="notifications_schedules_checkmark_accessibility_id">%1$s Checkmark</string>
+    <string name="notifications_schedules_checkmark_selected_accessibility_id">%1$s selected</string>
+
+</resources>

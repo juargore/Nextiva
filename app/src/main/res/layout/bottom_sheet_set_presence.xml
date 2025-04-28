@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet_set_presence_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/general_padding_xsmall"
+            android:paddingBottom="@dimen/general_padding_medium"
+            android:src="@drawable/ic_bottom_sheet_pull_down" />
+
+        <include layout="@layout/view_toolbar_close_button"
+            android:id="@+id/cancel_icon_include"
+            android:layout_width="@dimen/toolbar_button_size"
+            android:layout_height="@dimen/toolbar_button_size"
+            android:layout_gravity="end"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/general_horizontal_margin_large"
+            android:text="@string/set_presence_bottom_sheet_set_your_status"
+            android:textColor="@color/connectGrey10"
+            android:textSize="@dimen/material_text_subhead" />
+
+        <com.nextiva.nextivaapp.android.view.ImeKeyEventEditText
+            android:id="@+id/bottom_sheet_set_presence_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/general_horizontal_margin_large"
+            android:layout_marginTop="@dimen/general_vertical_margin_large"
+            android:layout_marginEnd="@dimen/general_horizontal_margin_large"
+            android:background="@drawable/connect_text_input_background"
+            android:focusable="true"
+            android:hint="@string/set_presence_bottom_sheet_whats_is_your_status"
+            android:inputType="textNoSuggestions|textMultiLine"
+            android:paddingStart="@dimen/general_padding_medium"
+            android:paddingTop="@dimen/general_padding_xmedium"
+            android:paddingEnd="@dimen/general_padding_medium"
+            android:paddingBottom="@dimen/general_padding_xmedium"
+            android:textColor="@color/connectSecondaryDarkBlue"
+            android:textColorHint="@color/connectGrey08"
+            android:textCursorDrawable="@drawable/edittext_cursor_blue" />
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet_set_presence_automatic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+            android:layout_marginTop="@dimen/general_vertical_margin_medium"
+            android:layout_marginBottom="@dimen/general_vertical_margin_medium"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+                android:id="@+id/bottom_sheet_set_presence_automatic_icon"
+                android:layout_width="@dimen/general_view_large"
+                android:layout_height="@dimen/general_view_large"
+                android:layout_marginEnd="@dimen/general_horizontal_margin_small"
+                android:gravity="center"
+                android:text="@string/fa_sync"
+                android:textColor="@color/connectGrey08" />
+
+            <TextView
+                android:id="@+id/bottom_sheet_set_presence_automatic_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/general_status_automatic"
+                android:textColor="@color/connectSecondaryDarkBlue"
+                android:textSize="@dimen/material_text_subhead" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/connectGrey03" />
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet_set_presence_available"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+            android:layout_marginTop="@dimen/general_vertical_margin_medium"
+            android:layout_marginBottom="@dimen/general_vertical_margin_medium"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+                android:id="@+id/bottom_sheet_set_presence_available_icon"
+                android:layout_width="@dimen/general_view_large"
+                android:layout_height="@dimen/general_view_large"
+                android:layout_marginEnd="@dimen/general_horizontal_margin_small"
+                android:gravity="center"
+                android:text="@string/fa_check_circle"
+                android:textColor="@color/connectPrimaryGreen"
+                android:textSize="@dimen/connect_presence_icon"
+                app:solid_icon="true" />
+
+            <TextView
+                android:id="@+id/bottom_sheet_set_presence_available_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/general_status_available"
+                android:textColor="@color/connectSecondaryDarkBlue"
+                android:textSize="@dimen/material_text_subhead" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet_set_presence_busy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+            android:layout_marginTop="@dimen/general_vertical_margin_xmedium"
+            android:layout_marginBottom="@dimen/general_vertical_margin_xmedium"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+                android:id="@+id/bottom_sheet_set_presence_busy_icon"
+                android:layout_width="@dimen/general_view_large"
+                android:layout_height="@dimen/general_view_large"
+                android:layout_marginEnd="@dimen/general_horizontal_margin_small"
+                android:gravity="center"
+                android:text="@string/fa_circle"
+                android:textColor="@color/connectPrimaryRed"
+                android:textSize="@dimen/connect_presence_icon"
+                app:solid_icon="true" />
+
+            <TextView
+                android:id="@+id/bottom_sheet_set_presence_busy_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/general_status_busy"
+                android:textColor="@color/connectSecondaryDarkBlue"
+                android:textSize="@dimen/material_text_subhead" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet_set_presence_do_not_disturb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+            android:layout_marginTop="@dimen/general_vertical_margin_xmedium"
+            android:layout_marginBottom="@dimen/general_vertical_margin_xmedium"
+            android:layout_marginEnd="@dimen/general_horizontal_margin_large"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+                android:id="@+id/bottom_sheet_set_presence_do_not_disturb_icon"
+                android:layout_width="@dimen/general_view_large"
+                android:layout_height="@dimen/general_view_large"
+                android:layout_marginEnd="@dimen/general_horizontal_margin_small"
+                android:gravity="center"
+                android:text="@string/fa_do_not_disturb"
+                android:textColor="@color/connectPrimaryRed"
+                android:textSize="@dimen/connect_presence_icon"
+                app:solid_icon="true" />
+
+            <TextView
+                android:id="@+id/bottom_sheet_set_presence_do_not_disturb_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/general_status_do_not_disturb"
+                android:layout_weight="2"
+                android:textColor="@color/connectSecondaryDarkBlue"
+                android:textSize="@dimen/material_text_subhead" />
+
+            <TextView
+                android:id="@+id/bottom_sheet_set_presence_dnd_expiry_time_text"
+                android:layout_width="wrap_content"
+                android:textColor="@color/connectGrey10"
+                android:gravity="end"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:visibility="gone"
+                android:textSize="@dimen/material_text_body1"
+                tools:text="Until Dec 8, 9:30 pm"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet_set_presence_away"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+            android:layout_marginTop="@dimen/general_vertical_margin_xmedium"
+            android:layout_marginBottom="@dimen/general_vertical_margin_xmedium"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+                android:id="@+id/bottom_sheet_set_presence_away_icon"
+                android:layout_width="@dimen/general_view_large"
+                android:layout_height="@dimen/general_view_large"
+                android:layout_marginEnd="@dimen/general_horizontal_margin_small"
+                android:gravity="center"
+                android:text="@string/fa_clock"
+                android:textColor="@color/connectPrimaryYellow"
+                android:textSize="@dimen/connect_presence_icon"
+                app:solid_icon="true" />
+
+            <TextView
+                android:id="@+id/bottom_sheet_set_presence_away_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/general_status_away"
+                android:textColor="@color/connectSecondaryDarkBlue"
+                android:textSize="@dimen/material_text_subhead" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet_set_presence_offline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+            android:layout_marginTop="@dimen/general_vertical_margin_xmedium"
+            android:layout_marginBottom="@dimen/general_vertical_margin_xmedium"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+                android:id="@+id/bottom_sheet_set_presence_offline_icon"
+                android:layout_width="@dimen/general_view_large"
+                android:layout_height="@dimen/general_view_large"
+                android:layout_marginEnd="@dimen/general_horizontal_margin_small"
+                android:gravity="center"
+                android:text="@string/fa_circle"
+                android:textColor="@color/avatarConnectOfflinePresenceStroke"
+                android:textSize="@dimen/connect_presence_icon"
+                app:solid_icon="false" />
+
+            <TextView
+                android:id="@+id/bottom_sheet_set_presence_offline_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/general_status_offline"
+                android:textColor="@color/connectSecondaryDarkBlue"
+                android:textSize="@dimen/material_text_subhead" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

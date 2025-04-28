@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/general_vertical_margin_xsmall"
+    android:paddingEnd="@dimen/general_horizontal_margin_small"
+    android:paddingStart="@dimen/general_horizontal_margin_small"
+    android:paddingTop="@dimen/general_vertical_margin_xsmall"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:id="@+id/ll_assign_cohost_item">
+
+    <com.nextiva.nextivaapp.android.view.AvatarView
+        android:id="@+id/av_list_item_assign_cohost"
+        android:layout_width="@dimen/avatar_connect_size"
+        android:layout_height="@dimen/avatar_connect_size"
+        android:layout_marginStart="@dimen/general_horizontal_margin_medium"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/atv_list_item_attende"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="@dimen/material_text_body1"
+        android:textColor="@color/connectSecondaryDarkBlue"
+        android:layout_marginStart="@dimen/general_horizontal_margin_small"
+        android:layout_marginEnd="@dimen/general_horizontal_margin_small"
+        android:layout_gravity="center_vertical"/>
+
+    <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+        android:id="@+id/ftv_list_item_assign_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/general_padding_small"
+        android:textColor="@color/connectWhite"
+        android:textSize="@dimen/material_text_subhead"
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="@color/connectGrey03"
+        android:layout_marginEnd="@dimen/general_horizontal_margin_small"
+        app:icon_string="@string/fa_check"
+        android:layout_gravity="center_vertical" />
+
+</LinearLayout>

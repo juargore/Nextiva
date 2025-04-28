@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/rounded_background_stroke"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:paddingStart="@dimen/general_padding_medium"
+    android:paddingTop="@dimen/general_vertical_margin_xxsmall"
+    android:paddingEnd="@dimen/general_padding_medium"
+    android:paddingBottom="@dimen/general_vertical_margin_xxsmall"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/connect_filter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/general_horizontal_margin_small"
+        android:textColor="@color/connectSecondaryDarkBlue"
+        tools:text="All"
+        android:textSize="@dimen/material_text_body1" />
+
+    <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/connectGrey09"
+        app:icon_string="@string/fa_caret_down_solid"
+        app:solid_icon="true" />
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/audioAttachmentConstraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone"
+    tools:visibility="visible">
+
+
+    <ImageView
+        android:id="@+id/audio_attachment_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="150dp"
+        android:maxHeight="150dp"
+        android:src="@drawable/ic_supported_audio"
+        android:textAlignment="textStart"
+        android:textSize="15sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/audio_attachment_play_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/audio_file_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/general_view_xsmall"
+        android:ellipsize="middle"
+        android:ems="7"
+        android:singleLine="true"
+        android:text="The_filename.wap"
+        android:textColor="@color/connectGrey03"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/audio_attachment_image_view"
+        app:layout_constraintStart_toEndOf="@id/audio_attachment_image_view"
+        app:layout_constraintTop_toTopOf="@id/audio_attachment_image_view" />
+
+    <ImageButton
+        android:id="@+id/audio_attachment_play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/general_view_small"
+        android:layout_marginBottom="@dimen/general_vertical_margin_medium"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_play"
+        app:layout_constraintEnd_toStartOf="@id/audioAttachmentProgressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/audio_attachment_image_view"
+        app:tint="@color/connectWhite">
+
+    </ImageButton>
+
+    <ProgressBar
+        android:id="@+id/audioAttachmentProgressBar"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="5dp"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleLarge"
+        app:layout_constraintTop_toTopOf="@+id/audio_attachment_play_button"
+        app:layout_constraintBottom_toBottomOf="@+id/audio_attachment_play_button"
+        app:layout_constraintStart_toEndOf="@+id/audio_attachment_play_button"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/custom_progress_rotation" />
+
+    <ImageButton
+        android:id="@+id/audio_attachment_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:src="@drawable/ic_attachment_close"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SeekBar
+        android:id="@+id/audio_attachment_seekBar"
+        style="@style/AudioSeekBarStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@id/audio_attachment_play_button"
+        app:layout_constraintEnd_toStartOf="@id/audio_attachment_duration_time_text"
+        app:layout_constraintHeight_default="spread"
+        app:layout_constraintStart_toEndOf="@id/audioAttachmentProgressBar"
+        app:layout_constraintTop_toTopOf="@id/audio_attachment_play_button"
+        app:layout_constraintWidth_default="spread" />
+
+    <TextView
+        android:id="@+id/audio_attachment_duration_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/general_vertical_margin_small"
+        android:gravity="center_vertical"
+        android:textColor="@color/connectGrey03"
+        app:layout_constraintBottom_toBottomOf="@id/audio_attachment_play_button"
+        app:layout_constraintEnd_toStartOf="@id/audio_attachment_speaker_button"
+        app:layout_constraintHeight_default="spread"
+        app:layout_constraintStart_toEndOf="@id/audio_attachment_seekBar"
+        app:layout_constraintTop_toTopOf="@id/audio_attachment_play_button"
+        tools:text="0:00" />
+
+    <ImageButton
+        android:id="@+id/audio_attachment_speaker_button"
+        style="@style/ButtonTint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_speaker"
+        app:layout_constraintBottom_toBottomOf="@id/audio_attachment_play_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/audio_attachment_duration_time_text"
+        app:layout_constraintTop_toTopOf="@id/audio_attachment_play_button"
+        app:tint="@color/connectGrey09" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

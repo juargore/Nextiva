@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017 Nextiva, Inc. to Present.
+  ~ All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/add_contact_activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/add_contact_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/add_contact_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/add_contact_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:contentDescription="@string/add_contact_scroll_view_content_description">
+
+        <LinearLayout
+            android:id="@+id/add_contact_scroll_view_linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+            android:layout_marginEnd="@dimen/general_horizontal_margin_medium"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/general_vertical_margin_large">
+
+            <LinearLayout
+                android:id="@+id/add_contact_display_name_master_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/add_contact_display_name_icon_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_vertical_margin_medium"
+                    android:layout_marginEnd="@dimen/general_horizontal_margin_small"
+                    android:src="@drawable/ic_person_outline"
+                    style="@style/AddEditIconTint" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/add_contact_display_name_text_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/general_vertical_margin_large"
+                    android:hint="@string/add_contact_display_name_hint">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_contact_display_name_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="text|textCapWords"
+                        android:drawableRight="@drawable/ic_cancel"
+                        android:drawableTint="@color/nextivaOrange"
+                        android:contentDescription="@string/add_contact_display_name_edit_text_content_description"
+                        android:background="@color/transparent" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/add_contact_personal_phone_master_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_vertical_margin_medium"
+                    android:layout_marginEnd="@dimen/general_horizontal_margin_small"
+                    android:src="@drawable/ic_phone"
+                    style="@style/AddEditIconTint" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/add_contact_personal_phone_text_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/add_contact_personal_phone_hint"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="@integer/general_phone_number_max_length">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_contact_personal_phone_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLength="@integer/general_phone_number_max_length"
+                        android:drawableRight="@drawable/ic_cancel"
+                        android:drawableTint="@color/nextivaOrange"
+                        android:contentDescription="@string/add_contact_personal_phone_edit_text_content_description"
+                        android:background="@color/transparent" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/add_contact_conference_number_master_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/add_contact_conference_number_image_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_vertical_margin_medium"
+                    android:layout_marginEnd="@dimen/general_horizontal_margin_small"
+                    android:src="@drawable/ic_phone"
+                    style="@style/AddEditIconTint" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/add_contact_conference_number_text_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/add_contact_conference_number_image_view"
+                    android:hint="@string/add_contact_conference_number_hint"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="@integer/general_phone_number_max_length">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_contact_conference_number_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:maxLength="@integer/general_phone_number_max_length"
+                        android:drawableRight="@drawable/ic_cancel"
+                        android:drawableTint="@color/nextivaOrange"
+                        android:contentDescription="@string/add_contact_conference_number_edit_text_content_description"
+                        android:background="@color/transparent" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/add_contact_conference_id_text_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add_contact_conference_number_text_input_layout"
+                    android:layout_alignStart="@id/add_contact_conference_number_text_input_layout"
+                    android:hint="@string/add_contact_conference_id_hint"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="@integer/general_conference_id_max_length">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_contact_conference_id_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="@integer/general_conference_id_max_length"
+                        android:drawableRight="@drawable/ic_cancel"
+                        android:drawableTint="@color/nextivaOrange"
+                        android:contentDescription="@string/add_contact_conference_id_edit_text_content_description"
+                        android:background="@color/transparent" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/add_contact_security_pin_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add_contact_conference_id_text_input_layout"
+                    android:layout_alignStart="@id/add_contact_conference_number_text_input_layout"
+                    android:hint="@string/add_contact_security_pin_hint"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="@integer/general_pin_max_length">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_contact_security_pin_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:maxLength="@integer/general_pin_max_length"
+                        android:drawableRight="@drawable/ic_cancel"
+                        android:drawableTint="@color/nextivaOrange"
+                        android:contentDescription="@string/add_contact_security_pin_edit_text_content_description"
+                        android:background="@color/transparent" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/add_contact_im_address_master_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_vertical_margin_medium"
+                    android:layout_marginEnd="@dimen/general_horizontal_margin_small"
+                    android:src="@drawable/ic_chat"
+                    style="@style/AddEditIconTint" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/add_contact_im_address_text_input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/add_contact_im_address_hint">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_contact_im_address_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="textEmailAddress"
+                        android:drawableRight="@drawable/ic_cancel"
+                        android:drawableTint="@color/nextivaOrange"
+                        android:contentDescription="@string/add_contact_im_address_edit_text_content_description"
+                        android:background="@color/transparent" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

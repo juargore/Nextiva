@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/connectWhite"
+    android:fitsSystemWindows="true"
+    android:id="@+id/cl_cohost_assigment_result">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/connectGrey01"
+            android:paddingTop="@dimen/general_padding_xsmall"
+            android:src="@drawable/ic_bottom_sheet_pull_down" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/connectGrey01"
+            android:padding="@dimen/general_padding_medium">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="@string/bottom_sheet_phone_for_audio_title"
+                android:textColor="@color/connectSecondaryDarkBlue"
+                android:textSize="@dimen/material_text_title1"
+                android:textStyle="bold"
+                app:fontFamily="@font/lato_heavy" />
+
+            <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+                android:id="@+id/ftv_phone_for_audio_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/connectGrey09"
+                android:textSize="@dimen/material_text_title"
+                app:icon_string="@string/fa_times" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/bottom_sheet_phone_for_audio_message_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/general_vertical_margin_xmedium"
+            android:padding="@dimen/general_padding_xmedium"
+            android:text="@string/bottom_sheet_phone_for_audio_join_message"
+            android:textColor="@color/connectGrey10" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/general_padding_xmedium"
+            android:paddingTop="@dimen/general_padding_xmedium"
+            android:paddingEnd="@dimen/general_padding_xmedium"
+            android:text="@string/bottom_sheet_phone_for_audio_phone_message"
+            android:textColor="@color/colorDialerText"
+            android:textStyle="bold"
+            app:fontFamily="@font/lato_heavy" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_phone_for_audio_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/general_padding_xmedium"
+            android:paddingEnd="@dimen/general_padding_xmedium"
+            android:text="+1 (382) 432-9430"
+            android:textColor="@color/colorDialerText" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/general_padding_xmedium"
+            android:paddingTop="@dimen/general_padding_xmedium"
+            android:paddingEnd="@dimen/general_padding_xmedium"
+            android:text="@string/bottom_sheet_phone_for_audio_meeting_message"
+            android:textColor="@color/colorDialerText"
+            android:textStyle="bold"
+            app:fontFamily="@font/lato_heavy" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_phone_for_audio_meeting_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/general_vertical_margin_xmedium"
+            android:paddingStart="@dimen/general_padding_xmedium"
+            android:paddingEnd="@dimen/general_padding_xmedium"
+            android:text="4605 23 3292"
+            android:textColor="@color/colorDialerText" />
+
+        <LinearLayout
+            android:id="@+id/cl_phone_for_audio_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/general_padding_xmedium"
+            android:layout_marginTop="@dimen/general_padding_xmedium"
+            android:layout_marginEnd="@dimen/general_padding_xmedium"
+            android:layout_marginBottom="@dimen/general_padding_xxxlarge"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/connectPrimaryLightRed">
+
+            <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+                android:id="@+id/ftv_phone_for_audio_information_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/general_padding_medium"
+                android:paddingTop="@dimen/general_padding_xmedium"
+                android:textColor="@color/connectSecondaryRed"
+                android:textSize="@dimen/material_text_headline"
+                app:icon_string="@string/fa_info_circle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_phone_for_audio_information_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="@dimen/general_padding_small"
+                android:paddingTop="@dimen/general_padding_xmedium"
+                android:paddingEnd="@dimen/general_padding_small"
+                android:paddingBottom="@dimen/general_padding_xmedium"
+                android:textColor="@color/connectSecondaryRed"
+                android:textSize="@dimen/material_text_body1"
+                tools:text="@string/bottom_sheet_phone_for_audio_alert_only_host" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_one_touch_dial"
+            style="@style/NextivaButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="@dimen/general_padding_medium"
+            android:layout_marginTop="@dimen/general_padding_medium"
+            android:layout_marginBottom="@dimen/general_padding_medium"
+            android:background="@drawable/rounded_primary_button"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/bottom_sheet_phone_for_audio_button"
+            android:textAllCaps="false"
+            android:textColor="@color/connectWhite"
+            android:fontWeight="800"
+            android:textStyle="bold"
+            tools:targetApi="p" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

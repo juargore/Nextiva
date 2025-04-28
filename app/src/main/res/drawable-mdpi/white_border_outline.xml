@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2022. Nextiva, inc. to Present.
+  ~ All rights reserved
+  -->
+
+<Vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="338dp"
+    android:height="40dp"
+    android:viewportWidth="338"
+    android:viewportHeight="40">
+
+    <Group>
+        <clip-path
+            android:pathData="M4 0H334C336.209 0 338 1.79086 338 4V36C338 38.2091 336.209 40 334 40H4C1.79086 40 0 38.2091 0 36V4C0 1.79086 1.79086 0 4 0Z"
+            />
+
+        <path
+            android:pathData="M4 0H334C336.209 0 338 1.79086 338 4V36C338 38.2091 336.209 40 334 40H4C1.79086 40 0 38.2091 0 36V4C0 1.79086 1.79086 0 4 0Z"
+            android:strokeWidth="4"
+            android:strokeColor="#FFFFFF"
+            />
+
+    </Group>
+
+</Vector>

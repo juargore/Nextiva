@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/list_item_navigation_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hairline_small"
+        style="@style/DividerLineColor"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/navigation_drawer_spacing"
+        android:layout_marginBottom="@dimen/navigation_drawer_spacing"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/general_padding_large"
+        android:paddingEnd="0dp">
+
+        <ImageView
+            android:id="@+id/list_item_navigation_icon"
+            android:layout_width="@dimen/navigation_drawer_icon"
+            android:layout_height="@dimen/navigation_drawer_icon"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/btn_star_big_on"
+            style="@style/AddEditIconTint"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/list_item_navigation_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/general_horizontal_margin_large"
+            android:gravity="center_vertical"
+            style="@style/GroupHeaderTextColor"
+            android:textSize="@dimen/navigation_drawer_list_text"/>
+    </LinearLayout>
+</LinearLayout>

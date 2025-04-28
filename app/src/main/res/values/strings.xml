@@ -1,0 +1,2051 @@
+<resources>
+    <string name="app_name" translatable="false">Nextiva Mobile</string>
+
+    <string name="placeholder_api_url" translatable="false">https://www.nextiva.com</string>
+
+    <string name="app_environment" translatable="false">@string/environment_prod</string>
+    <string name="environment_dev" translatable="false">dev</string>
+    <string name="environment_labs" translatable="false">labs</string>
+    <string name="environment_nightly" translatable="false">nightly</string>
+    <string name="environment_qa" translatable="false">qa</string>
+    <string name="environment_alpha" translatable="false">alpha</string>
+    <string name="environment_rc" translatable="false">rc</string>
+    <string name="environment_prod" translatable="false">prod</string>
+    <string name="environment_prodBeta" translatable="false">prodBeta</string>
+
+    <string name="general_yes">Yes</string>
+    <string name="general_no">No</string>
+    <string name="general_cancel" translatable="false">@android:string/cancel</string>
+    <string name="general_ok" translatable="false">@android:string/ok</string>
+    <string name="general_okay">Okay</string>
+    <string name="general_on">On</string>
+    <string name="general_off">Off</string>
+    <string name="general_delete">Delete</string>
+    <string name="general_help">Help</string>
+    <string name="general_revert">Revert</string>
+    <string name="general_save">Save</string>
+    <string name="general_add">Add</string>
+    <string name="general_loading">Loading…</string>
+    <string name="general_today">Today</string>
+    <string name="general_status_automatic">Automatic</string>
+    <string name="general_status_available">Available</string>
+    <string name="general_status_mobile">Mobile</string>
+    <string name="general_status_away">Away</string>
+    <string name="general_status_busy">Busy</string>
+    <string name="general_status_do_not_disturb">Do not disturb</string>
+    <string name="general_status_call">Call</string>
+    <string name="general_status_offline">Offline</string>
+    <string name="general_status_pending">Pending</string>
+    <string name="general_im_address_type">IM Address</string>
+    <string name="general_contact">Contact</string>
+    <string name="general_unavailable">Unavailable</string>
+    <string name="general_copied_to_clipboard">Copied to Clipboard</string>
+    <string name="general_copied_to_clipboard_label">%1$s for %2$s</string>
+    <string name="general_chat_message_copied_to_clipboard_label">Chat Message with %1$s</string>
+    <string name="general_multiple_locations">Multiple Locations</string>
+    <string name="general_settings">Settings</string>
+    <string name="general_tab_max_limit">99+</string>
+    <string name="general_discard">Discard</string>
+    <string name="general_enabled">Enabled</string>
+    <string name="general_disabled">Disabled</string>
+    <string name="general_start">Start</string>
+    <string name="general_select">Select</string>
+    <string name="general_maybe_later">Maybe later</string>
+    <string name="general_import_all">Import all</string>
+    <string name="general_try_again">Try again</string>
+    <string name="general_import">Import</string>
+    <string name="general_unknown">(unknown)</string>
+    <string name="general_headset">Headset</string>
+    <string name="general_draft">Draft</string>
+    <string name="general_created_by">Created by:</string>
+    <string name="general_last_modified_by">Last modified by:</string>
+    <string name="general_name_with_self_indicator">%1$s (You)</string>
+    <string name="general_copy">Copy</string>
+    <string name="general_change">Change</string>
+    <string name="general_close_list">Close list</string>
+
+    <!--Date and Time formats -->
+    <string name="date_format_short_time_12_hour">h:mm a</string>
+    <string name="date_format_short_month_day_year">M/d/yy</string>
+    <string name="date_format_short_day_of_week_month_day_time">E, MMMM d, h:mm a</string>
+    <string name="date_format_short_day_of_month_day_time">MMM d, h:mm a</string>
+    <string name="date_format_short_day_of_month_day_year_time">MM/dd/yyyy, h:mm a</string>
+    <string name="date_format_short_day_of_week_month_day">EEEE, MMMM d</string>
+    <string name="date_format_full_day_of_week_hour_min_12_hour">EEEE h:mm a</string>
+    <string name="date_format_today_time_12_hour">\'Today\' h:mm a</string>
+    <string name="date_format_yesterday">Yesterday</string>
+    <string name="date_format_today">Today</string>
+    <string name="date_format_yesterday_time_12_hour">\'Yesterday\' h:mm a</string>
+    <string name="date_format_log_zip_filename">\'%1$s\' yyyy-MM-dd HH:mm:ss</string>
+    <string name="date_format_full_moth_day_year">MMM dd, yyyy</string>
+    <string name="date_format_full_day_of_week">EEEE</string>
+    <string name="date_format_month_day">MMM dd</string>
+    <string name="date_format_short_day_of_week_short_month_day">E, MMM d</string>
+    <string name="time_format_call_duration_seconds">\u0020sec</string>
+    <string name="time_format_call_duration_minutes">\u0020min</string>
+    <string name="time_format_call_duration_hours">\u0020hr</string>
+    <string name="time_format_call_duration_days">\u0020days</string>
+
+    <!-- Days of the week -->
+    <string name="general_MONDAY">MONDAY</string>
+    <string name="general_TUESDAY">TUESDAY</string>
+    <string name="general_WEDNESDAY">WEDNESDAY</string>
+    <string name="general_THURSDAY">THURSDAY</string>
+    <string name="general_FRIDAY">FRIDAY</string>
+    <string name="general_SATURDAY">SATURDAY</string>
+    <string name="general_SUNDAY">SUNDAY</string>
+
+    <string name="general_Monday">Monday</string>
+    <string name="general_Tuesday">Tuesday</string>
+    <string name="general_Wednesday">Wednesday</string>
+    <string name="general_Thursday">Thursday</string>
+    <string name="general_Friday">Friday</string>
+    <string name="general_Saturday">Saturday</string>
+    <string name="general_Sunday">Sunday</string>
+
+    <string name="general_Mon">Mon</string>
+    <string name="general_Tue">Tue</string>
+    <string name="general_Wed">Wed</string>
+    <string name="general_Thu">Thu</string>
+    <string name="general_Fri">Fri</string>
+    <string name="general_Sat">Sat</string>
+    <string name="general_Sun">Sun</string>
+
+    <!-- Month's -->
+    <string name="general_january">January</string>
+    <string name="general_february">February</string>
+    <string name="general_march">March</string>
+    <string name="general_april">April</string>
+    <string name="general_may">May</string>
+    <string name="general_june">June</string>
+    <string name="general_july">July</string>
+    <string name="general_august">August</string>
+    <string name="general_september">September</string>
+    <string name="general_october">October</string>
+    <string name="general_november">November</string>
+    <string name="general_december">December</string>
+
+    <!-- Month's -->
+    <string name="general_jan_short">Jan</string>
+    <string name="general_feb_short">February</string>
+    <string name="general_mar_short">Mar</string>
+    <string name="general_apr_short">Apr</string>
+    <string name="general_may_short">May</string>
+    <string name="general_jun_short">Jun</string>
+    <string name="general_july_short">July</string>
+    <string name="general_aug_short">Aug</string>
+    <string name="general_sept_short">Sept</string>
+    <string name="general_oct_short">Oct</string>
+    <string name="general_nov_short">Nov</string>
+    <string name="general_dec_short">Dec</string>
+
+    <!-- URL's -->
+    <string name="help_url" translatable="false">https://www.nextiva.com/support/</string>
+    <string name="about_url" translatable="false">https://www.nextiva.com</string>
+    <string name="xmpp_resource_format" translatable="false">bc-uc - %1$s (%2$s Android Mobile)</string>
+
+    <!--XMPP Resource Strings-->
+    <string name="call_dialing_service_voip">Internet Call (VoIP)</string>
+
+    <!--General Call Options-->
+    <string name="default_voicemail_name">Voice Portal</string>
+    <string name="call_select_phone_number_title">Select Phone Number</string>
+    <string name="call_select_dialing_service_title">Select Dialing Service</string>
+    <string name="call_dialing_service_call_back">Call Back</string>
+    <string name="call_dialing_service_call_through">Call Through</string>
+    <string name="call_dialing_service_this_phone">This Phone</string>
+    <string name="call_select_call_type_title">Select Call Type</string>
+    <string name="call_call_type_voice">Voice Call</string>
+    <string name="call_call_type_video">Video Call</string>
+    <string name="dialing_service_conflict_call_back_title">Call Back Setting Conflict</string>
+    <string name="dialing_service_conflict_call_back_message">This change will cause a conflict with your Dialing Service setting of Call Back. The Dialing Service will be set to Internet Call (VoIP). \n\nAre you sure you want to continue?</string>
+    <string name="dialing_service_conflict_call_through_title">Call Through Setting Conflict</string>
+    <string name="dialing_service_conflict_call_through_message">This change will cause a conflict with your Dialing Service setting of Call Through. The Dialing Service will be set to Internet Call (VoIP). \n\nAre you sure you want to continue?</string>
+    <string name="call_audio_speaker">Speaker</string>
+    <string name="call_audio_options">%s ></string>
+
+    <!--Dialing Service Conflicts-->
+    <string name="phone_type_home">Home Phone</string>
+    <string name="phone_type_work">Work Phone</string>
+    <string name="phone_type_personal">Personal Phone</string>
+    <string name="phone_type_mobile">Mobile Phone</string>
+
+    <!--Phone Number Types-->
+    <string name="phone_type_mobile_work">Work Mobile Phone</string>
+    <string name="phone_type_fax_home">Home Fax</string>
+    <string name="phone_type_fax_work">Work Fax</string>
+    <string name="phone_type_main">Main Phone</string>
+    <string name="phone_type_other">Other Phone</string>
+    <string name="phone_type_other_fax">Other Fax</string>
+    <string name="phone_type_pager">Pager</string>
+    <string name="phone_type_pager_work">Work Pager</string>
+    <string name="phone_type_work_extension">Work Extension</string>
+    <string name="phone_type_conference_number">Conference Number</string>
+    <string name="phone_type_custom">Custom Phone</string>
+    <string name="phone_type_general">Phone</string>
+    <string name="phone_type_microphone">Microphone</string>
+    <string name="phone_type_company_main">Company Main</string>
+    <string name="phone_type_assistant">Assistant</string>
+    <string name="phone_type_car">Car</string>
+    <string name="phone_type_radio">Radio</string>
+    <string name="phone_type_callback">Callback</string>
+    <string name="phone_type_isdn">ISDN</string>
+    <string name="phone_type_telex">Telex</string>
+    <string name="phone_type_tty_tdd">TTY TDD</string>
+    <string name="phone_type_mms">MMS</string>
+    <string name="connect_phone_type_home">Home</string>
+    <string name="connect_phone_type_work">Work</string>
+    <string name="connect_phone_type_mobile">Mobile</string>
+    <string name="connect_phone_type_main">Main</string>
+
+    <!--Connect Phone Number Types-->
+    <string name="connect_phone_type_other">Other</string>
+    <string name="connect_phone_type_fax">Fax</string>
+    <string name="connect_phone_type_work_extension">Work extension</string>
+    <string name="connect_phone_type_assistant">Assistant</string>
+    <string name="email_type_home">Home Email</string>
+    <string name="email_type_work">Email Address</string>
+    <string name="email_type_mobile">Mobile Email</string>
+
+    <!--Email Types-->
+    <string name="email_type_other">Other Email</string>
+    <string name="email_type_custom">Custom Email</string>
+    <string name="email_type_icloud">iCloud Email</string>
+    <string name="email_type_general">Email</string>
+    <string name="connect_email_type_home">Home</string>
+    <string name="connect_email_type_personal">Personal</string>
+    <string name="connect_email_type_work">Work</string>
+    <string name="connect_email_type_mobile">Mobile</string>
+    <string name="connect_email_type_other">Other</string>
+
+    <!--Connect Email Types-->
+    <string name="connect_email_type_custom">Custom</string>
+    <string name="connect_email_type_primary">Primary</string>
+    <string name="connect_email_type_secondary">Secondary</string>
+    <string name="contact_type_roster">Roster</string>
+    <string name="contact_type_local">Local</string>
+    <string name="contact_type_directory">Directory</string>
+    <string name="contact_type_favorite">Favorite Roster</string>
+
+    <!-- Contact Types -->
+    <string name="contact_type_online_favorite">Online Favorite</string>
+    <string name="contact_type_online">Online</string>
+    <string name="permission_required_title">Permission Required</string>
+    <string name="permission_error_message">We\'re sorry, something went wrong requesting permission.  Please try again.</string>
+    <string name="permission_call_denied_message">Phone is required to place phone calls.</string>
+    <string name="permission_call_rationale_message">In order to place phone calls using your phone, %1$s needs permission to the phone.\n\nTo continue, please grant permission on the following message.</string>
+
+
+    <!-- Bottomsheet General -->
+    <string name="bottomsheet_no_type_to_show">No %s to show</string>
+    <string name="bottomsheet_type_empty_subtitle">You don’t have any %s.</string>
+    <string name="bottomsheet_empty_subtitle">You don’t have any %s.</string>
+
+    <!--Permissions Strings-->
+    <string name="permission_contacts_denied_message">Contacts is required to show your local contacts.</string>
+    <string name="permission_contacts_rationale_message">In order to show your local contacts, %1$s needs permission to get your contacts from your phone.\n\nTo continue, please grant permission on the following message.</string>
+
+    <string name="permission_read_phone_state_denied_message">%1$s requires permission to use your device for making and managing phone calls.</string>
+    <string name="permission_read_phone_state_rationale_message">In order to use your device for VoIP, %1$s needs permission to make and manage phone calls.\n\nTo continue, please grant permission on the following message.</string>
+
+    <string name="permission_voice_call_record_audio_denied_message">Microphone is required to make voice calls.</string>
+    <string name="permission_voice_call_record_audio_rationale_message">In order to use your device for voice calls, %1$s needs permission to the microphone.\n\nTo continue, please grant permission on the following message.</string>
+
+    <string name="permission_video_call_camera_denied_message">Camera is required to make video calls.</string>
+    <string name="permission_video_call_camera_rationale_message">In order to use your device for video calls, %1$s needs permission to the camera.\n\nTo continue, please grant permission on the following message.</string>
+
+    <string name="permission_video_call_record_audio_denied_message">Microphone is required to make video calls.</string>
+    <string name="permission_video_call_record_audio_rationale_message">In order to use your device for video calls, %1$s needs permission to the microphone.\n\nTo continue, please grant permission on the following message.</string>
+
+    <string name="permission_video_call_camera_record_audio_denied_message">Camera and Microphone are required to make video calls.</string>
+    <string name="permission_video_call_camera_record_audio_rationale_message">In order to use your device for video calls, %1$s needs permission to the camera and microphone.\n\nTo continue, please grant permission on the following message.</string>
+    <string name="permission_video_call_camera_record_audio_contacts_denied_message">Camera and Microphone are required to make video calls and contacts is required to show your local contacts.</string>
+    <string name="permission_video_call_camera_record_audio_contacts_rationale_message">In order to use your device for video calls and to show your local contacts, %1$s needs permission to the camera and microphone.\n\nTo continue, please grant permission on the following message.</string>
+    <string name="permission_generic_record_audio_contacts_denied_message">Without these permissions: %1s some of your features may be limited or unable to be used. If you experience issues please consider enabling these features.</string>
+    <string name="permission_video_call_camera_contacts_denied_message">Camera is required to make video calls and contacts is required to show your local contacts.</string>
+
+    <string name="permission_video_call_camera_contacts_rationale_message">In order to use your device for video calls and to show your local contacts, %1$s needs permission to the camera and microphone.\n\nTo continue, please grant permission on the following message.</string>
+    <string name="permission_record_audio_contacts_denied_message">Microphone is required to make video calls and contacts is required to show your local contacts.</string>
+
+    <string name="permission_record_audio_contacts_rationale_message">In order to use your device for voice calls and to show your local contacts, %1$s needs permission to the camera and microphone.\n\nTo continue, please grant permission on the following message.</string>
+
+    <string name="permission_write_external_storage_denied_message">External Storage is required for file logging.</string>
+    <string name="permission_write_external_storage_denied_download_message">External Storage is required to download data.</string>
+    <string name="permission_write_external_storage_rationale_message">In order to store files to aid with logging, %1$s needs permission to save files to your phone.\n\nTo continue, please grant permission on the following message.</string>
+    <string name="permission_write_external_storage_rationale_message_download">In order to store files into device, %1$s needs permission to save files to your phone.\n\nTo continue, please grant permission on the following message.</string>
+
+    <string name="permission_avatar_camera_denied_message">Camera is required to update your avatar photo.</string>
+    <string name="permission_avatar_camera_rationale_message">In order to update your avatar, %1$s needs permission to the camera.\n\nTo continue, please grant permission on the following message.</string>
+
+    <string name="connect_permission_button">Request permission</string>
+    <string name="connect_permission_contacts_rationale_message">In order to see your local contacts, touch the button below to give permission for %1$s to get your contacts from your phone.</string>
+
+    <string name="permission_notifications_denied_message">Notifications are required to receive calls.</string>
+    <string name="permission_notifications_rationale_message">In order to use your device to receive calls, %1$s needs permission to send you notifications.\n\nTo continue, please grant permission on the following message.</string>
+
+    <string name="permission_notifications_type_camera">Camera</string>
+
+    <string name="permission_notifications_type_audio">Audio</string>
+
+    <string name="permission_notifications_type_contacts">Contacts</string>
+    <string name="permission_notifications_type_calls">Calls</string>
+
+    <string name="permission_notifications_type_phone_state">Phone State</string>
+    <string name="permission_notifications_type_bluetooth">Bluetooth</string>
+    <string name="permission_notifications_type_notifications">Notifications</string>
+    <string name="okta_manager_sign_in_prompt">Your session has expired. We’ll take you to sign in page.</string>
+    <string name="intent_util_no_app_found_title">No App Found</string>
+    <string name="intent_util_no_app_found_message">Unable to find an installed app to handle %1$s.</string>
+    <string name="intent_util_chooser_title_call">Call</string>
+
+    <!-- OktaManager -->
+    <string name="intent_util_chooser_title_email">Email</string>
+
+    <!--Intent Util Strings-->
+    <string name="intent_util_chooser_title_sms">SMS</string>
+    <string name="intent_util_chooser_title_add_local_contact">Add Local Contact</string>
+    <string name="intent_util_chooser_email_to">Email to %1$s</string>
+    <string name="intent_util_chooser_sms_to">SMS to %1$s</string>
+    <string name="intent_util_chooser_url">url to %1$s</string>
+    <string name="intent_util_chooser_title_url">URL</string>
+    <string name="actions_contact_list_search_contacts">Search Contacts</string>
+    <string name="actions_sms_list_search_messages">Search SMS</string>
+    <string name="actions_call_history_list_search_call_history">Search</string>
+    <string name="actions_contact_list_new_contact">New Contact</string>
+
+    <!-- Menu Actions -->
+    <string name="actions_new_contact_add_contact">Add Contact</string>
+    <string name="actions_new_contact_add_conference">Add Conference</string>
+    <string name="actions_new_contact_add_group">Add Group</string>
+    <string name="actions_call_history_list_delete_call_history">Delete Call History</string>
+    <string name="actions_call_details_delete">Delete</string>
+    <string name="actions_chat_list_new_chat">New Chat</string>
+    <string name="actions_voice_call">Voice Call %1$s</string>
+    <string name="actions_video_call">Video Call %1$s</string>
+    <string name="actions_add_participants">Add Participants</string>
+    <string name="actions_view_profile">View Profile</string>
+    <string name="actions_filter_contacts_list">Filter Contacts List</string>
+    <string name="actions_menu_chats_list">Menu</string>
+    <string name="actions_connect_home_search">Search Home</string>
+    <string name="license_agreement_title">License Agreement</string>
+    <string name="license_agreement_accept">Accept</string>
+    <string name="license_agreement_decline">Decline</string>
+    <string name="license_agreement_email_agreement">Email License Agreement</string>
+
+    <!-- License Agreement Screen -->
+    <string name="license_agreement_decline_dialog_text">%1$s cannot be used unless the terms of the end user license agreement are accepted.</string>
+    <string name="license_agreement_decline_dialog_positive_button_text">Review EULA</string>
+    <string name="license_agreement_decline_dialog_negative_button_text">Decline &amp; Exit</string>
+    <string name="license_agreement_accept_dialog_text">Accept the Terms and Conditions.</string>
+    <string name="license_agreement_accept_dialog_negative_button_text">@string/general_cancel</string>
+    <string name="license_agreement_accept_dialog_positive_button_text">Accept</string>
+    <string name="device_phone_number_toolbar">This Mobile Phone Number</string>
+    <string name="device_phone_number_phone_number_edit_text_hint">Phone Number</string>
+    <string name="device_phone_number_continue_button">Continue</string>
+    <string name="device_phone_number_text_view">This mobile phone number is needed for full support of calling features.</string>
+
+    <!-- My Phone number screen -->
+    <string name="request_enable_log_explanation_text">Would you like to enable logging? This will be stored locally and you can send it to us if you experience any issues. This can be controlled from the ‘Preferences’ screen.</string>
+    <string name="request_enable_log_check_box_text">Enable Logging</string>
+    <string name="fragment_device_phone_number_scroll_view_content_description" translatable="false">fragment_device_phone_number_scroll_view_content_description</string>
+    <string name="login_redirect">By clicking the below \"Sign in\" button, you will be redirected to our login page.</string>
+    <string name="login_sign_in">Sign In</string>
+    <string name="login_signing_in">Signing In…</string>
+    <string name="login_delayed_message">Sign in is taking longer than expected.</string>
+
+    <!-- Login Screen -->
+    <string name="login_no_access_device_found_dialog_title">License Error</string>
+    <string name="login_no_access_device_found_dialog_content">Invalid license. Please contact your company administrator for more assistance.</string>
+    <string name="login_general_error_dialog_title">Authentication Error</string>
+    <string name="login_general_error_dialog_content">An error has occurred while attempting to authenticate your account. This could be due to your account being locked. Please verify this account is not locked and try again.</string>
+    <string name="login_authorization_error_dialog_title">Authorization Error</string>
+    <string name="login_no_compatible_browser_found_dialog_content">No compatible browser found. Please download a compatible browser from the Play Store.</string>
+    <string name="login_failed_dialog_content">Failed to successfully login. Please try again.</string>
+    <string name="login_authorization_session_expired_title">Your session has expired.</string>
+    <string name="login_authorization_session_expired_title_dialog_content">@string/okta_manager_sign_in_prompt</string>
+    <string name="sending_sms_failed_user_not_logged_in_title">Cannot perform operation</string>
+    <string name="sending_sms_failed_user_not_logged_in_content">Please login to the app to make calls and send messages</string>
+    <string name="browser_not_detected_error">Application requires a browser to continue. Please install a browser or contact your device administrator.</string>
+    <string name="install_browser_dialog_suggestion_text">Install Chrome</string>
+    <string name="login_error_session_data_missing">\"An error has occurred Session data missing: %1$s\"</string>
+    <string name="access_device_username">AccessDeviceUsername</string>
+    <string name="access_device_password">AccessDevicePassword</string>
+    <string name="access_device_type_url">AccessDeviceTypeUrl</string>
+    <string name="failed_to_login_failed_to_retrieve_mobile_config">Failed to Login: Failed to retrieve Mobile Config</string>
+    <string name="login_error_toast_message_mobile_config">An error has occurred while collecting your mobile configuration.</string>
+    <string name="login_error_toast_message_products">An error has occurred while collecting your products.</string>
+    <string name="login_error_toast_message_feature_flags">An error has occurred while collecting your feature flags.</string>
+    <string name="login_error_toast_message_account_information">An error has occurred while collecting your account information.</string>
+    <string name="login_error_toast_message_access_device">An error has occurred while collecting your access device.</string>
+    <string name="login_error_toast_message_attempting_authenticate">An error has occurred while attempting to authenticate your account.</string>
+    <string name="preferences_toolbar_title">Preferences</string>
+    <string name="dialer_phone_number">Enter phone number</string>
+    <string name="dialer_keypad_hint"><font size="16">Enter numbers</font></string>
+    <string name="dialer_kaypad_close_txt">Close</string>
+    <string name="dialer_key_2_sub_title">ABC</string>
+    <string name="dialer_key_3_sub_title">DEF</string>
+
+
+    <!-- NextAuth Screen -->
+    <string name="next_auth_error_failed_to_login">Failed to Login: %1$s</string>
+    <string name="next_auth_error_failed_to_login_mobile_config_exception">Failed to Login, Mobile Config Exception: %1$s</string>
+    <string name="next_auth_error_failed_to_login_no_access_device_found">Failed to Login: NoAccessDeviceFoundException</string>
+    <string name="next_auth_error_failed_to_login_account_information_exception">Failed to Login, Account Information Exception: %1$s</string>
+    <string name="next_auth_error_failed_to_login_products_exception">Failed to Login, Products Exception: %1$s</string>
+    <string name="next_auth_error_failed_to_login_feature_access_codes_exception">Failed to Login, Feature Access Codes Exception: %1$s</string>
+    <string name="next_auth_error_failed_to_login_user_details_exception">Failed to Login, User Details Exception: %1$s</string>
+    <string name="next_auth_error_failed_to_login_presence_sent_exception">Failed to Login, Presence Sent Exception: %1$s</string>
+    <string name="next_auth_error_failed_to_login_contact_management_policy_exception">Failed to Login, Contact Management Policy Exception: %1$s</string>
+
+    <!-- Preferences Screen -->
+    <string name="dialer_key_4_sub_title">GHI</string>
+
+    <!-- Dialer Strings -->
+    <string name="dialer_key_5_sub_title">JKL</string>
+    <string name="dialer_key_6_sub_title">MNO</string>
+    <string name="dialer_key_7_sub_title">PQRS</string>
+    <string name="dialer_key_8_sub_title">TUV</string>
+    <string name="dialer_key_9_sub_title">WXYZ</string>
+    <string name="call_back_initiated">You will receive a call shortly.</string>
+    <string name="add_contact_enterprise_contact_title">Add Contact</string>
+    <string name="add_contact_conference_contact_title">Add Conference</string>
+    <string name="add_contact_display_name_hint">Display Name</string>
+    <string name="add_contact_im_address_hint">IM Address</string>
+
+    <!--Add Contact Screen-->
+    <string name="add_contact_personal_phone_hint">Personal</string>
+    <string name="add_contact_conference_number_hint">Conference</string>
+    <string name="add_contact_conference_id_hint">Conference ID</string>
+    <string name="add_contact_security_pin_hint">Security PIN</string>
+    <string name="add_contact_incomplete_title">Unable to Save</string>
+    <string name="add_contact_incomplete_add_enterprise_contact_message">Please input a Personal Phone, Conference Number, or IM Address to create a contact.</string>
+    <string name="add_contact_incomplete_edit_enterprise_contact_message">Please input a Personal Phone or Conference Number to edit the contact.</string>
+    <string name="add_contact_incomplete_add_conference_contact_message">Please input a Conference Number to create a conference contact.</string>
+    <string name="add_contact_incomplete_edit_conference_contact_message">Please input a Conference Number to edit the conference contact.</string>
+    <string name="add_contact_duplicate_im_address_message">%1$s already exists in contact list.</string>
+    <string name="add_contact_incorrect_format">Incorrect format</string>
+    <string name="add_contact_incorrect_im_address_format_message">Please input a correctly formatted IM Address to create a contact.</string>
+    <string name="edit_contact_enterprise_contact_title">Edit Contact</string>
+    <string name="edit_contact_conference_edit_title">Edit Conference</string>
+    <string name="voicemail_empty_state">No Voicemails Found</string>
+    <string name="voicemail_list_menu_mark_all_as_played">Mark All As Played</string>
+
+    <!--Edit Contact Screen-->
+    <string name="voicemail_list_delete_dialog_description">Delete Voicemail?</string>
+    <string name="voicemail_list_transcription_title">Transcription</string>
+
+    <!-- Voicemail List Screen -->
+    <string name="voicemail_list_show_more">Show more</string>
+    <string name="voicemail_list_show_less">Show less</string>
+    <string name="voicemail_list_rate_this_service">Rate this service</string>
+    <string name="voicemail_thanks_for_feedback">Thanks for your feedback</string>
+    <string name="call_history_list_empty_state">No Call Log Found</string>
+    <string name="call_history_list_call_context_menu_call_details">Call Details</string>
+    <string name="call_history_list_call_context_menu_delete">Delete</string>
+    <string name="call_history_list_delete_call_history_message">Delete Call History?</string>
+
+    <!--Call History List Screen-->
+    <string name="call_history_list_filter_all">All</string>
+    <string name="call_history_list_filter_missed">Missed</string>
+    <string name="call_history_list_to">To</string>
+    <string name="call_history_list_from">From</string>
+    <string name="call_history_list_callee">Callee</string>
+    <string name="call_history_list_caller">Caller</string>
+    <string name="chats_empty_state">No messages yet</string>
+    <string name="sms_empty_state">No messages yet</string>
+    <string name="chats_group_chat_title">Group Chat</string>
+    <string name="chats_room_title">Room</string>
+
+    <!--MessageToggleScreen-->
+    <string name="chats_found_room_title">%1$s\'s Room</string>
+    <string name="chats_contact_room_title">Room - %1$s</string>
+    <string name="chats_list_menu_mark_all_read">Mark All Read</string>
+    <string name="messages_tabs_content_description">Messages Tabs</string>
+    <string name="chat_tab_title">Chat</string>
+    <string name="sms_tab_title">SMS</string>
+    <string name="chat_new_conversation_search_hint">Type a Name, Phone Number</string>
+    <string name="chat_conversation_message_hint">Aa</string>
+    <string name="chat_conversation_group_chat_closed">Group Chat (Closed)</string>
+    <string name="chat_conversation_network_unavailable">Network Unavailable</string>
+
+    <!--Chat Conversation Screen-->
+    <string name="chat_conversation_app_participant_content_description">Add Participant</string>
+    <string name="chat_conversation_new_chat_hint">Type a Name or Email</string>
+    <string name="chat_state_is_composing">%1$s is composing&#8230;</string>
+    <string name="chat_details_menu_leave_chat">Leave Chat</string>
+    <string name="chat_details_menu_add_participants">Add Participants</string>
+    <string name="chat_details_participants">%1$s participants</string>
+    <string name="chat_details_view_participants">View participants</string>
+    <string name="chat_details_participants_dialog_title">"Chat Participants"</string>
+    <string name="chat_details_sms_participants_dialog_title">SMS Participants</string>
+    <string name="chat_details_message_failed">Unable to send.</string>
+    <string name="chat_details_shared_an_image">Shared an Image.</string>
+    <string name="chat_details_shared_an_audio_file">Shared an Audio file.</string>
+    <string name="chat_details_select_picture">Select Picture</string>
+    <string name="chat_details_select_audio">Select Audio</string>
+    <string name="chat_details_download_image">Save to Photos</string>
+    <string name="chat_details_download_file">Save to Files</string>
+    <string name="chat_details_image_saved">Image saved</string>
+    <string name="chat_details_file_saved">File saved</string>
+    <string name="chat_details_attachment_invalid">Attached link is invalid</string>
+    <string name="chat_details_attachment_too_large">"Please select a file less than 2MB"</string>
+    <string name="chat_conversation_sending_via">Sending via %1$s %2$s</string>
+    <string name="chat_conversation_send_from">Send From</string>
+    <string name="chat_conversation_send_to">Send To</string>
+    <string name="chat_conversation_multiple_contacts_selected">Multiple contacts selected</string>
+    <string name="chat_conversation_select_a_number">"Select a number to send a message."</string>
+    <string name="chat_conversation_max_participants_error">Group SMS responses are limited to %1$s participants.</string>
+    <string name="chat_conversation_campaign_validation_ribbon_admin">"Messaging is restricted within internal contacts. Register for business messaging to send external messages."</string>
+    <string name="chat_conversation_campaign_validation_ribbon_user">"Messaging is restricted within internal contacts. Please contact administrator to send external messages."</string>
+    <string name="chat_conversation_campaign_validation_footer_admin">"Register for business messaging to send external messages. You can continue messaging internally to your teammates."</string>
+    <string name="chat_conversation_campaign_validation_footer_user">"Please contact administrator to send external messages. You can continue messaging internally to your teammates."</string>
+    <string name="chat_conversation_campaign_validation_footer_admin_and_user">"Business messaging registration is not completed yet. You can continue messaging internally to your teammates."</string>
+    <string name="chat_conversation_campaign_validation_footer_unknown">"Unknown"</string>
+
+    <!-- Muc Invitation Dialog-->
+    <string name="muc_invitation_text">Accept group chat invite from %1$s?</string>
+    <string name="muc_accept_button">Accept</string>
+    <string name="muc_decline_button">Decline</string>
+    <string name="main_nav_call_settings">Call Settings</string>
+
+    <!-- Muc Invitation Dialog-->
+    <string name="main_nav_preferences">Preferences</string>
+    <string name="main_nav_notifications">Notifications</string>
+    <string name="main_nav_about">About</string>
+    <string name="main_nav_user_details">My details</string>
+
+    <!-- Main Nav Options-->
+    <string name="main_nav_help">Help</string>
+    <string name="main_nav_sign_out">Sign Out</string>
+    <string name="transition_toolbar" translatable="false">toolbar_trans</string>
+    <string name="transition_contact_header" translatable="false">avatar_trans</string>
+    <string name="app_preference_remember_password">Remember Password</string>
+    <string name="app_preference_troubleshooting">Troubleshooting</string>
+
+    <!-- Shared Element Transition Names -->
+    <string name="app_preference_enable_logging">Enable Logging</string>
+    <string name="app_preference_file_logging">File Logging</string>
+
+    <!--App Preference Screen -->
+    <string name="app_preference_xmpp_logging">XMPP Logging</string>
+    <string name="app_preference_sip_logging">SIP Logging</string>
+    <string name="app_preference_other_logging">Other Logging</string>
+    <string name="app_preference_crash_reporting">Crash Reporting</string>
+    <string name="app_preference_diagnostic_info">Diagnostic Info</string>
+    <string name="app_preference_diagnostic_info_summary">Display diagnostic info in calls</string>
+    <string name="app_preference_email_logs">Email Logs to Support</string>
+    <string name="app_preference_health_check">Health Check</string>
+    <string name="app_preference_license_check">License Check</string>
+    <string name="app_preference_feature_flags">Feature Flags</string>
+    <string name="app_preferences_sip_configuration">SIP</string>
+    <string name="app_preference_video_conference">Video Conference</string>
+    <string name="app_preference_font_awesome_utility">Font Awesome Utility</string>
+    <string name="app_preference_design_system_utility">Design System Utility</string>
+    <string name="app_preference_reset_local_contacts_dialog_shown">Connect Reset Local Contacts Dialog Shown</string>
+    <string name="app_preference_database_count_utility">Database Record Counts</string>
+    <string name="app_preference_email_logs_email_address" translatable="false">support@nextiva.com</string>
+    <string name="app_preference_email_logs_name">Support</string>
+    <string name="app_preference_email_logs_subject">[%1$s %2$s %3$s - %4$s] Device Logs</string>
+    <string name="app_preference_email_logs_body">Please provide any relevant information about the issue that was observed.  What were you doing, was there anything unusual about this situation etc.</string>
+    <string name="app_preference_clear_logs">Clear All Logs</string>
+    <string name="app_preference_clear_logs_dialog_message">Clear all logs?</string>
+    <string name="app_preference_clear_logs_dialog_positive_action">Clear Logs</string>
+    <string name="app_preference_no_log_file_dialog_title">No Logs</string>
+    <string name="app_preference_no_log_file_dialog_message">There are currently no logs to send to support.</string>
+    <string name="app_preference_logs_deleted">Logs deleted</string>
+    <string name="app_preferences_key_remember_password" translatable="false">remember_password</string>
+    <string name="app_preferences_key_troubleshooting" translatable="false">troubleshooting</string>
+    <string name="app_preferences_key_qa" translatable="false">qa</string>
+    <string name="app_preferences_key_enable_logging" translatable="false">enable_logging</string>
+    <string name="app_preferences_key_file_logging" translatable="false">file_logging</string>
+    <string name="app_preferences_key_xmpp_logging" translatable="false">xmpp_logging</string>
+    <string name="app_preferences_key_sip_logging" translatable="false">sip_logging</string>
+    <string name="app_preferences_key_other_logging" translatable="false">other_logging</string>
+    <string name="app_preferences_key_crash_reporting" translatable="false">crash_reporting</string>
+    <string name="app_preferences_key_diagnostic_info" translatable="false">diagnostic_info</string>
+    <string name="app_preferences_key_email_logs" translatable="false">email_logs</string>
+    <string name="app_preferences_key_clear_logs" translatable="false">clear_logs</string>
+    <string name="app_preferences_key_health_check" translatable="false">health_check</string>
+    <string name="app_preferences_key_license_check" translatable="false">License Check</string>
+    <string name="app_preferences_key_feature_flags" translatable="false">feature_flags</string>
+    <string name="app_preferences_key_sip_configuration" translatable="false">sip_configuration</string>
+    <string name="app_preferences_key_font_awesome_utility" translatable="false">font_awesome_utility</string>
+    <string name="app_preferences_key_design_system_utility" translatable="false">design_system_utility</string>
+    <string name="app_preferences_key_reset_local_contacts_dialog_shown" translatable="false">reset_local_contacts_dialog_shown</string>
+    <string name="app_preferences_key_database_count_utility" translatable="false">database_count_utility</string>
+    <string name="app_preference_qa">QA</string>
+    <string name="app_preference_expire_contact_cache">Expire Contact Cache</string>
+    <string name="app_preference_expire_contact_cache_message">Expire Contact Cache?</string>
+    <string name="app_preference_expire_contact_cache_positive_action">Expire Cache</string>
+
+    <string name="app_preference_contact_cache_expired">Contact Cache Expired</string>
+    <string name="app_preferences_key_expire_contact_cache" translatable="false">expire_contact_cache</string>
+    <string name="app_preferences_key_video_conference" translatable="false">video_screen</string>
+    <string name="app_preferences_crash_the_app">Crash App?</string>
+    <string name="app_preferences_key_crash_the_app" translatable="false">crash_app</string>
+    <string name="app_preferences_generate_logs">Generate Logs</string>
+    <string name="app_preferences_key_generate_logs" translatable="false">generate_logs</string>
+    <string name="app_preferences_display_audio_video_statistics">Display Audio/Video Statistics</string>
+    <string name="app_preferences_key_audio_video_stats" translatable="false">audio_video_stats</string>
+    <string name="app_preferences_key_new_active_call_layout" translatable="false">new_active_call_layout</string>
+    <string name="app_preferences_display_sip_state">SIP State</string>
+    <string name="app_preferences_display_sip_error">SIP Error</string>
+    <string name="app_preferences_key_sip_state" translatable="false">sip_state</string>
+    <string name="app_preferences_key_sip_error" translatable="false">sip_error</string>
+    <string name="app_preferences_device_policy">Device Policy</string>
+    <string name="app_preferences_key_device_policy" translatable="false">device_policy</string>
+    <string name="app_preferences_message_count_api">Message Count API</string>
+    <string name="app_preferences_key_message_count_api" translatable="false">message_count_api</string>
+    <string name="app_preferences_logout_token">Logout Token</string>
+    <string name="app_preferences_key_logout_token" translatable="false">logout_token</string>
+    <string name="app_preferences_clear_token">Clear Token</string>
+    <string name="app_preferences_key_clear_token" translatable="false">clear_token</string>
+    <string name="app_preferences_delete_sms">Delete Sms Messages</string>
+    <string name="app_preferences_key_delete_sms" translatable="false">delete_sms_messages</string>
+    <string name="app_preferences_enable_old_active_call_screen_layout">Enable old active call layout</string>
+
+    <string name="app_preference_appearance">Appearances</string>
+    <string name="app_preferences_key_night_mode" translatable="false">night_mode</string>
+    <string name="app_preference_night_mode">Dark Mode</string>
+    <string name="app_preference_night_mode_light">Light</string>
+
+
+    <string name="app_preference_night_mode_dark">Dark</string>
+    <string name="app_preference_night_mode_auto">Set by Battery Saver</string>
+    <string name="app_preference_night_mode_system_default">Use System Default</string>
+    <string name="app_preference_sip">Audio</string>
+    <string name="app_preference_key_echo_cancellation">echo_cancellation</string>
+    <string name="app_preference_echo_cancellation">Acoustic Echo Cancellation</string>
+    <string name="app_preferences_key_set_ringtone">set_ringtone</string>
+    <string name="app_preference_ringtone">Ringtone</string>
+    <string name="app_preferences_key_set_sms_tone">set_notifications_tone</string>
+    <string name="app_preference_sms">SMS</string>
+
+    <string name="app_preference_user_preferences">User Preferences</string>
+    <string name="app_preference_key_show_confirm_dialog_to_delete">show_confirm_dialog_to_delete</string>
+    <string name="app_preference_show_confirm_dialog_to_delete">Show confirm dialog on delete</string>
+    <string name="app_preference_key_enable_swipe_actions">enable_swipe_actions_sms</string>
+    <string name="app_preference_enable_swipe_actions">Enable swipe actions</string>
+
+    <string name="app_preference_generate_logs_dialog_title">Generate Logs</string>
+    <string name="app_preference_generate_logs_dialog_log_text">How many logs should we generate? Be warned this can crash the app if your memory is filled.</string>
+    <string name="app_preference_generate_logs_dialog_log_logged_text">This is a Generated Log for Testing.</string>
+    <string name="app_preference_generate_logs_dialog_positive_button_text">Spam my logs \ud83d\udc80</string>
+    <string name="app_preference_generate_logs_numbers_only_toast">Hey that\'s not a valid number. Try again.</string>
+    <string name="app_preference_generate_logs_warning_toast">Are you trying to DDOS yourself? Good Luck! \ud83d\udc4d</string>
+
+    <!--App Preferences Device Policy -->
+    <string name="app_preference_device_policy_call_decline">Call Decline</string>
+
+    <!--App Preferences Message Count -->
+    <string name="app_preference_message_count_voice">Voice Count: %s</string>
+    <string name="app_preference_message_count_voicemail">Voicemail Count: %s</string>
+    <string name="app_preference_message_count_sms">SMS Count: %s</string>
+    <string name="app_preference_message_count_chat">Chat Count: %s</string>
+    <string name="app_preference_message_count_email">Email Count: %s</string>
+    <string name="app_preference_message_count_survey">Survey Count: %s</string>
+    <string name="app_preference_message_count_meeting">Meeting Count: %s</string>
+
+    <!--Notification Preferences Screen-->
+    <string name="notification_preferences_allow">Allow notification</string>
+
+    <string name="notification_preferences_description">Set a schedule for when you want to allow notifications. We will automatically set you on do not disturb outside of those hours.</string>
+    <string name="notification_preferences_all_day">All day every day</string>
+    <string name="notification_preferences_select">Select schedule</string>
+
+    <!--Notification Preferences Screen-->
+    <string name="notification_preferences_create">Create a new schedule</string>
+    <string name="notification_schedules_title">Schedules</string>
+    <string name="notification_schedules_subtitle">Select or create a schedule for when you want to allow notifications.</string>
+    <string name="notification_schedules_personal">Personal schedules</string>
+    <string name="notification_schedules_days_label">Days:</string>
+
+    <!--Notification Schedules Screen-->
+    <string name="notification_schedules_hours_label">Hours:</string>
+    <string name="notification_schedules_location_subtitle">These schedules are created by an administrator and available to all users within your location.</string>
+    <string name="notification_schedules_location">Location schedules</string>
+    <string name="notification_schedules_add_button">Create a new schedule</string>
+    <string name="notification_schedules_empty_title">No schedules to show</string>
+    <string name="notification_schedules_empty_subtitle">You don’t have any schedules.</string>
+    <string name="notification_schedules_selected_schedules">Selected Schedule</string>
+    <string name="notification_schedules_change_selected">Change selected schedule</string>
+    <string name="notification_schedules_edit_selected">Edit selected schedule</string>
+    <string name="notification_schedules_weekly_display">Mon-Fri</string>
+    <string name="notification_schedules_everyday">Everyday</string>
+    <string name="notification_schedules_all_day">All Day</string>
+
+    <!-- Notification Observed Holiday Screen -->
+    <string name="notification_schedules_observed_holiday_toolbar_title">Observed holidays</string>
+    <string name="notification_schedules_observed_holiday_description">Select the holidays you\'d like to exclude from the schedule.</string>
+    <string name="notification_schedules_observed_holiday_select_all">Select all</string>
+    <string name="notification_schedules_observed_holiday_add">Add</string>
+
+    <!-- Create Schedule Screen -->
+    <string name="notification_schedules_create_toolbar_title">Create a schedule</string>
+    <string name="notification_schedules_edit_toolbar_title">Edit a schedule</string>
+    <string name="notification_schedules_delete_title">Delete schedule</string>
+    <string name="notification_schedules_delete_message">Are you sure you want to delete this schedule?</string>
+    <string name="notification_schedules_delete_confirm">Yes, delete</string>
+
+    <!-- Specified Dates Screen -->
+    <string name="specified_dates_title">Specified dates</string>
+    <string name="specified_dates_message">Enter date you\'d like to exclude from the schedule.</string>
+    <string name="specified_dates_text_title">Date*</string>
+    <string name="specified_dates_text_hint">Select date</string>
+    <string name="specified_dates_all_day_event">This is an all day event</string>
+    <string name="specified_dates_repeat">This event repeats forever</string>
+    <string name="specified_dates_end_after">END AFTER</string>
+    <string name="specified_dates_occurrences">Occurrence(s)</string>
+
+    <!--Login Preferences Screen-->
+    <string name="login_preferences_toolbar">Preferences</string>
+    <string name="login_preference_troubleshooting">Troubleshooting</string>
+    <string name="login_preference_this_phone_number">This Mobile Phone Number</string>
+    <string name="login_preference_about">About</string>
+
+
+    <!--Login Preferences Screen-->
+    <string name="login_preference_help">Help</string>
+    <string name="login_preference_endpoints">Endpoints</string>
+    <string name="login_preferences_credentials">Broadworks Credentials</string>
+    <string name="login_preferences_key_troubleshooting">troubleshooting</string>
+    <string name="login_preferences_key_this_phone_number" translatable="false">this_phone_number</string>
+    <string name="login_preferences_key_about">about</string>
+    <string name="login_preferences_key_help">help</string>
+    <string name="login_preferences_key_endpoints">endpoint</string>
+    <string name="login_preferences_key_credentials">credentials</string>
+    <string name="endpoints_hostname">Hostname</string>
+    <string name="endpoints_api_url">API URL</string>
+    <string name="endpoints_broadsoft_api_url">Broadsoft API URL</string>
+
+    <!-- Endpoints Dialog -->
+    <string name="endpoints_okta_discovery_uri">Okta Discovery URI</string>
+    <string name="endpoints_okta_client_id">Okta Client ID</string>
+    <string name="endpoints_platform_api_url">Platform URL</string>
+    <string name="endpoints_messages_api_url">SMS Base URL</string>
+    <string name="endpoints_auth_proxy_public_host">Auth proxy public host</string>
+    <string name="endpoints_auth_proxy_rest_api">Auth Proxy Rest Api</string>
+    <string name="endpoints_auth_tenant_rest_api">Tenant Selector Rest Api</string>
+    <string name="endpoints_general_rest_api">General Rest Api</string>
+    <string name="endpoints_load_dev_settings">Load Dev Settings</string>
+    <string name="endpoints_load_rc_settings">Load RC Settings</string>
+    <string name="endpoints_neutral_text">Reset to Defaults</string>
+    <string name="endpoints_changes_toast_text">Kill and restart app to apply changes.</string>
+    <string name="credentials_username">Username</string>
+    <string name="credentials_password">Password</string>
+    <string name="credentials_neutral_text">Reset to Defaults</string>
+    <string name="call_settings_toolbar">Call Settings</string>
+
+    <!-- Credentials Dialog -->
+    <string name="call_settings_mobility_section_header">Mobility</string>
+    <string name="call_settings_forwarding_section_header">Forwarding</string>
+    <string name="call_settings_routing_section_header">Routing</string>
+
+    <!--Call Settings List Screen-->
+    <string name="call_settings_call_identification_section_header">Call Identification</string>
+    <string name="call_settings_call_options_section_header">Call Options</string>
+    <string name="call_settings_this_phone_number_title">This Mobile Phone Number</string>
+    <string name="call_settings_this_phone_number_configure">Configure This Mobile Phone Number</string>
+    <string name="call_settings_do_not_disturb_title">Do Not Disturb</string>
+    <string name="call_settings_call_forwarding_forward_always_title">Always</string>
+    <string name="call_settings_call_forwarding_forward_when_busy_title">When Busy</string>
+    <string name="call_settings_call_forwarding_forward_when_unanswered_title">When Unanswered</string>
+    <string name="call_settings_call_forwarding_forward_when_unreachable_title">When Unreachable</string>
+    <string name="call_settings_remote_office_title">Remote Office</string>
+    <string name="call_settings_block_caller_id_title">Block My Caller ID</string>
+    <string name="call_settings_nextiva_anywhere_title">Nextiva Anywhere</string>
+    <string name="call_settings_simultaneous_ring_title">Simultaneous Ring</string>
+    <string name="call_settings_dialing_service_title">Dialing Service</string>
+    <string name="call_settings_dialing_service_configure">Configure Dialing Service</string>
+    <string name="call_settings_unknown_call_setting_toast">Unknown Call Setting</string>
+    <string name="call_settings_services">Service</string>
+    <string name="call_settings_call_center">Call Center</string>
+    <string name="call_settings_call_centers">Call Centers</string>
+    <string name="call_settings_call_center_status">Status - %s</string>
+
+    <!-- Call Center -->
+    <string name="call_settings_call_center_sign_in">Sign-In</string>
+    <string name="call_settings_call_center_available">Available</string>
+    <string name="call_settings_call_center_unavailable">Unavailable</string>
+    <string name="call_settings_call_center_wrap_up">Wrap-Up</string>
+    <string name="call_settings_call_center_sign_out">Sign-Out</string>
+    <string name="set_call_settings_call_center_status_empty_state">No Call Centers Found</string>
+    <string name="set_call_settings_call_center_status_agent_status">Agent Status</string>
+    <string name="set_call_settings_call_center_status_unavailable_code">Unavailable Code</string>
+    <string name="set_call_settings_call_center_status_message_signed_in">You will be signed in, but are not yet ready to receive calls.</string>
+    <string name="set_call_settings_call_center_status_message_available">You will be ready to receive calls.</string>
+    <string name="set_call_settings_call_center_status_message_unavailable">You will not be available to receive calls.</string>
+    <string name="set_call_settings_call_center_status_message_wrapping_up">You will be wrapping up and not available to receive calls.</string>
+    <string name="set_call_settings_call_center_status_message_signed_out">You will be signed out and will not receive calls.</string>
+    <string name="call_center_number_with_extension">Number %s, Ext %s</string>
+    <string name="call_center_number">Number %s</string>
+    <string name="call_center_extension">Ext %s</string>
+    <string name="call_center_join">Join</string>
+    <string name="call_center_unavailable_status">None</string>
+    <string name="set_call_settings_enable">Enable</string>
+    <string name="set_call_settings_ring_splash">Ring Splash</string>
+    <string name="set_call_settings_phone_number_hint">Phone Number</string>
+    <string name="set_call_settings_dialing_service_toolbar">Dialing Service</string>
+
+
+    <!--Set Call Settings Screens-->
+    <string name="set_call_settings_dialing_service_help_text"></string>
+    <string name="set_call_settings_dialing_service_always_ask">Always Ask</string>
+    <string name="set_call_settings_this_phone_number_toolbar">This Mobile Phone Number</string>
+
+    <!--Dialing Service Call Setting Screen-->
+    <string name="set_call_settings_this_phone_number_help_text"></string>
+    <string name="set_call_settings_do_not_disturb_toolbar">Do Not Disturb</string>
+    <string name="set_call_settings_do_not_disturb_description">Allows you to send calls directly to voice mail without ringing your phone. In addition, you can make your primary phone emit a short ring burst to inform them when the call is being sent to voice mail by using the Ring Reminder. This is important when forgetting the service is turned on and you are at your phone waiting to receive calls.</string>
+
+    <!--This Phone Number Call Setting Screen-->
+    <string name="set_call_settings_do_not_disturb_help_text">When do not disturb is enabled, incoming calls will be immediately forwarded to your busy voicemail greeting. To route calls to a busy signal instead, you must disallow voicemail for "busy calls" in your voicemail settings.</string>
+    <string name="set_call_settings_call_forwarding_forward_always_toolbar">Call Forward Always</string>
+
+    <!--Do Not Disturb Call Setting Screen-->
+    <string name="set_call_settings_call_forwarding_forward_always_description">Automatically forward all your calls to a different phone number. When the system detects that you are receiving an incoming call, it sends that call to another phone that you have pre-selected.</string>
+    <string name="set_call_settings_call_forwarding_forward_always_help_text">Forward all of your calls to a different phone number.</string>
+    <string name="set_call_settings_call_forwarding_forward_when_busy_toolbar">Call Forward When Busy</string>
+
+    <!--Call Forwarding Always Call Setting Screen-->
+    <string name="set_call_settings_call_forwarding_forward_when_busy_description">Automatically forward all of your incoming calls to a different phone number, when your phone is busy or in Do Not Disturb.</string>
+    <string name="set_call_settings_call_forwarding_forward_when_busy_help_text">Forward all of your incoming calls to a different phone number when you\'re busy. You can be considered busy when you are on do not disturb, or if you get a second call with call waiting disabled.</string>
+    <string name="set_call_settings_call_forwarding_forward_when_unanswered_toolbar">Call Forward When Unanswered</string>
+
+    <!--Call Forwarding When Busy Call Setting Screen-->
+    <string name="set_call_settings_call_forwarding_forward_when_unanswered_description">Automatically forward all your incoming calls to a different phone number if not answered within a specified number of rings.</string>
+    <string name="set_call_settings_call_forwarding_forward_when_unanswered_no_rings">None</string>
+    <string name="set_call_settings_call_forwarding_forward_when_unreachable_toolbar">Call Forward When Unreachable</string>
+
+    <!--Call Forwarding When Unanswered Call Setting Screen-->
+    <string name="set_call_settings_call_forwarding_forward_when_unreachable_description">Automatically forward an incoming call to another number when your phone is not accessible by Nextiva (deregistered). If your telephone gets physically disconnected, or the telephone system does not have your information entered correctly, the call won\'t be lost; it will get forwarded to a different number that you specify.</string>
+    <string name="set_call_settings_call_forwarding_forward_when_unreachable_help_text">If you lose connectivity to Nextiva (for example, due to a power or internet outage for this user), you can have all calls automatically forward to an alternate phone number.</string>
+    <string name="set_call_settings_call_forwarding_forward_when_unanswered_spinner_label">Number of Rings</string>
+
+    <!--Call Forwarding When Unreachable Call Setting Screen-->
+    <string name="set_call_settings_remote_office_toolbar">Remote Office</string>
+    <string name="set_call_settings_remote_office_description">Think of Remote Office as two-way call forwarding; not only can you receive calls as if you were in the office, but you can make calls as well. All the calls you make will display your office caller ID to the people who receive your calls.</string>
+    <string name="set_call_settings_remote_office_help_text">Remote Office allows you to substitute a different phone number, such as a mobile number, home or hotel phone number, as you office phone number. To make calls from your Remote Office location, you must use some sort of call control tool such as a dialer or call manager.</string>
+    <string name="set_call_settings_block_caller_id_toolbar">Block My Caller ID</string>
+
+    <!--Remote Office Call Setting Screen-->
+    <string name="set_call_settings_block_caller_id_description">Block your display name from being shown to the person calling you.</string>
+    <string name="set_call_settings_nextiva_anywhere_toolbar" translatable="false">Nextiva Anywhere</string>
+    <string name="set_call_settings_nextiva_anywhere_description">Nextiva Anywhere is a means to connect your mobile phone and your desk phone. For example, you can call colleagues from your mobile phone using your four-digit extension, move calls seamlessly from a desk phone to a mobile phone when an important call needs to travel with you, and move a call from a mobile phone to a conference phone so others can listen in.</string>
+
+    <!--Block My Caller ID Call Setting Screen-->
+    <string name="set_call_settings_nextiva_anywhere_help_text">Nextiva Anywhere can do things standard call forwarding cannot. For instance, you can make calls showing your business line, take calls from call groups or call queues, record calls, and track call information all from your external phone (i.e. your cell phone).</string>
+    <string name="set_call_settings_nextiva_anywhere_alert_all_locations">Alert All Locations</string>
+
+    <string name="set_call_settings_shared_call_appearance">Shared Call Appearance</string>
+    <string name="set_call_settings_allow_termination_toolbar_text">Allow Termination</string>
+    <string name="set_call_settings_allow_termination_text">Allow Termination to this Location</string>
+
+    <!--Nextiva Anywhere Call Setting Screen-->
+    <string name="set_call_settings_nextiva_anywhere_locations_header">Locations</string>
+    <string name="set_call_settings_nextiva_anywhere_phone_number">Phone Number</string>
+    <string name="set_call_settings_nextiva_anywhere_empty_state">No Locations Found</string>
+    <string name="set_call_settings_nextiva_anywhere_location_toolbar" translatable="false">Nextiva Anywhere</string>
+    <string name="set_call_settings_nextiva_anywhere_add_location_toolbar">Add Location</string>
+    <string name="set_call_settings_nextiva_anywhere_edit_location_toolbar">Edit Location</string>
+    <string name="set_call_settings_nextiva_anywhere_location_phone_number">Phone Number</string>
+
+    <!--Nextiva Anywhere Location Call Setting Screen-->
+    <string name="set_call_settings_nextiva_anywhere_location_description">Description</string>
+    <string name="set_call_settings_nextiva_anywhere_location_enable_this_location">Enable This Location</string>
+    <string name="set_call_settings_nextiva_anywhere_location_call_control">Call Control</string>
+    <string name="set_call_settings_nextiva_anywhere_location_prevent_diverting_calls">Prevent Diverting Calls</string>
+    <string name="set_call_settings_nextiva_anywhere_location_answer_confirmation">Answer Confirmation</string>
+    <string name="set_call_settings_nextiva_anywhere_location_delete_location_content">Delete Location?</string>
+    <string name="set_call_settings_simultaneous_ring_toolbar">Simultaneous Ring</string>
+    <string name="set_call_settings_simultaneous_ring_add_location_toolbar">Add Location</string>
+    <string name="set_call_settings_simultaneous_ring_edit_location_toolbar">Edit Location</string>
+    <string name="set_call_settings_simultaneous_ring_description">List up to 10 phone numbers or SIP URI addresses you would like to ring in addition to your primary phone when you receive a call. This feature is helpful when you are not at your phone but would like your mobile phone to ring when you get a call.</string>
+
+    <!--Simultaneous Ring Screen-->
+    <string name="set_call_settings_simultaneous_ring_help_text">Ring multiple phones or extensions simultaneously when someone calls your number.</string>
+    <string name="set_call_settings_simultaneous_ring_enable">Enable</string>
+    <string name="set_call_settings_simultaneous_ring_dont_ring_while_on_call">Don\'t Ring While on a Call</string>
+    <string name="set_call_settings_simultaneous_ring_locations_header">Locations</string>
+    <string name="set_call_settings_simultaneous_ring_location_title">Phone Number</string>
+    <string name="set_call_settings_simultaneous_ring_answer_confirmation">Answer Confirmation</string>
+    <string name="set_call_settings_simultaneous_ring_answer_confirmation_required">Answer confirmation required</string>
+    <string name="set_call_settings_simultaneous_ring_answer_confirmation_not_required">Answer confirmation not required</string>
+    <string name="set_call_settings_simultaneous_ring_empty_state">No Locations Found</string>
+    <string name="set_call_settings_simultaneous_ring_add_new_entry_title">Add New Entry</string>
+    <string name="set_call_settings_simultaneous_ring_edit_entry_title">Edit Entry</string>
+    <string name="set_call_settings_simultaneous_ring_location_delete_location_content">Delete Location?</string>
+    <string name="my_status_toolbar">My Status</string>
+    <string name="my_status_whats_on_mind">What\'s on your mind?</string>
+    <string name="my_status_set_availability">Set My Availability</string>
+    <string name="my_status_my_details">My Details</string>
+
+    <!--My Status Screen-->
+    <string name="my_status_personal_message">Personal Message</string>
+    <string name="my_status_change_profile_photo">Change Profile Photo</string>
+    <string name="my_status_use_camera">Use Camera</string>
+    <string name="my_status_choose_existing_photo">Choose Existing Photo</string>
+    <string name="my_status_new_profile_photo">New Profile Photo</string>
+    <string name="my_status_new_profile_photo_from_camera">New Profile Photo From Camera</string>
+    <string name="my_status_new_profile_photo_from_gallery">New Profile Photo From Gallery</string>
+    <string name="my_status_clear_profile_photo">Clear Profile Photo</string>
+    <string name="my_status_avatar_updated">Avatar Updated</string>
+    <string name="my_status_my_room">My Room</string>
+    <string name="health_check_title">Health Check</string>
+    <string name="health_check_voice_push_registration">Voice Push Notification Registration</string>
+    <string name="health_check_chat_push_registration">Chat Push Notification Registration</string>
+    <string name="health_check_platform_push_registration">NextivaOne Push Notifications</string>
+
+    <!-- Health Check Screen -->
+    <string name="health_check_sip_registration">SIP Registration</string>
+    <string name="health_check_sip_deregistration">Sip Deregistration</string>
+    <string name="health_check_xmpp_connection">XMPP Connection</string>
+    <string name="health_check_sms_api_health">SMS API Health</string>
+    <string name="health_check_vm_api_health">VM Transcription API Health</string>
+    <string name="health_check_sms_license">SMS/MMS License</string>
+    <string name="health_check_team_sms_license">Team SMS License</string>
+    <string name="health_check_voicemail_transcription_license">Voice Mail Transcription License</string>
+    <string name="health_check_sms_version_two">SMS V2</string>
+    <string name="health_check_contacts">NextivaOne Contacts</string>
+    <string name="health_check_presence">NextivaOne Presence</string>
+    <string name="health_check_phone_number_orchestration">Phone Number Orchestration</string>
+    <string name="health_check_logging_service">Logging Service</string>
+    <string name="health_check_meetings">NextivaOne Meetings</string>
+    <string name="health_check_chat_rooms">NextivaOne Chat/Rooms</string>
+    <string name="health_check_attachments">Attachments</string>
+    <string name="health_check_run_check">Run Check</string>
+    <string name="health_check_pass">Pass</string>
+    <string name="health_check_fail">Fail</string>
+    <string name="health_check_na">N/A</string>
+    <string name="license_check_title">License Check</string>
+    <string name="license_check_nextiva_one_base_license">NextivaOne Base License</string>
+    <string name="license_check_video_guest_participants_license">Video Guest Participants</string>
+    <string name="license_check_video_license">Video</string>
+
+    <!-- License Check Screen -->
+    <string name="license_check_phone_number">Phone Number:</string>
+    <string name="license_check_sms_enabled">SMS Enabled</string>
+    <string name="crop_image_activity_title">Avatar Picture</string>
+    <string name="crop_image_menu_rotate_right">Rotate</string>
+    <string name="crop_image_menu_crop">Crop</string>
+    <string name="contact_detail_call_button">Call</string>
+
+    <!--Crop Image Screen-->
+    <string name="contact_detail_chat_button">Chat</string>
+    <string name="contact_detail_profile">Profile</string>
+    <string name="contact_detail_work_phone_label">Work Phone</string>
+
+    <!-- Contact Detail Screen -->
+    <string name="contact_detail_work_extension_label">Work Extension</string>
+    <string name="contact_detail_work_email_label">Email Address</string>
+    <string name="contact_detail_add_to_contacts_label">Add to Contacts</string>
+    <string name="contact_detail_remove_from_contacts_label">Remove from Contacts</string>
+    <string name="contact_detail_add_to_local_contacts_label">Add to Local Contacts</string>
+    <string name="contact_detail_send_personal_sms_label">Send SMS</string>
+    <string name="contact_detail_last_name_label">Last Name</string>
+    <string name="contact_detail_first_name_label">First Name</string>
+    <string name="contact_detail_email_address_label">E-mail Address</string>
+    <string name="contact_detail_work_email_type">Work</string>
+    <string name="contact_detail_add_to_favorites">Add to Favorites</string>
+    <string name="contact_detail_remove_from_favorites">Remove from Favorites</string>
+    <string name="contact_detail_add_to_group">Add to Group</string>
+    <string name="contact_detail_remove_from_group">Remove from Group</string>
+    <string name="contact_detail_company_label">Company</string>
+    <string name="contact_detail_phone_number_label">Phone Number</string>
+    <string name="contact_detail_conference_id_label">Conference ID</string>
+    <string name="contact_detail_security_pin_label">Security PIN</string>
+    <string name="contact_detail_menu_edit">Edit</string>
+    <string name="contact_detail_menu_delete">Delete</string>
+    <string name="contact_detail_delete_dialog_description">Delete Contact?</string>
+    <string name="contact_detail_add_local_contact_select_number_dialog_title">Select Phone Number</string>
+    <string name="contact_detail_add_local_contact_select_number_dialog_content">Only one phone number can be imported. Select which phone number you would like to be imported with this contact.</string>
+    <string name="contact_detail_contact_select_group">Select Group</string>
+    <string name="contact_detail_team_sms_not_supported">This team does not support SMS capabilities. Please reach out to your Administrator to enable this feature.</string>
+    <string name="call_details_toolbar">Call Details</string>
+    <string name="call_details_call_button">Call</string>
+    <string name="call_details_call_type_placed_title">Outgoing Call</string>
+    <string name="call_details_call_type_received_title">Incoming Call</string>
+
+    <!-- Call Details Screen -->
+    <string name="call_details_call_type_missed_title">Missed Call</string>
+    <string name="call_detail_phone_title">Phone</string>
+    <string name="call_detail_add_to_contacts_title">Add to Contacts</string>
+    <string name="call_detail_add_to_local_contacts_title">Add to Local Contacts</string>
+    <string name="call_detail_view_in_local_contacts_title">View in Local Contacts</string>
+    <string name="call_detail_send_personal_sms_title">Send SMS</string>
+    <string name="call_detail_contact_already_exists_content">This contact has already been added to your roster.</string>
+    <string name="call_detail_contact_already_exists_title">Existing Contact</string>
+    <string name="contacts_list_search_contacts">Search</string>
+    <string name="contacts_list_empty_state">No Contacts Found</string>
+    <string name="contacts_list_filter_title_communicator_contacts">Communicator Contacts</string>
+    <string name="contacts_list_filter_all">All</string>
+
+    <!-- Contacts List Screen -->
+    <string name="contacts_list_filter_online">Online</string>
+    <string name="contacts_list_filter_title_contact_directories">Contact Directories</string>
+    <string name="contacts_list_filter_local_address_book">Local Address Book</string>
+    <string name="contacts_list_filter_directory">Directory</string>
+    <string name="contacts_list_permission_required_message">In order to see your local contacts, touch the button below to give permission for %1$s to get your contacts from your phone.</string>
+    <string name="contacts_list_permission_required_button">Request Permission</string>
+    <string name="contacts_list_filter_all_roster_contacts">My Contacts</string>
+    <string name="contacts_list_filter_online_roster_contacts">My Online Contacts</string>
+    <string name="contacts_list_filter_local_contacts">Local Address Book</string>
+    <string name="contacts_list_filter_directory_contacts">Directory</string>
+    <string name="contacts_list_section_header_favorites">Favorites (%d)</string>
+    <string name="contacts_list_section_headers_all_contacts">All Contacts (%d)</string>
+    <string name="contacts_list_section_headers_my_online_contacts">My Online Contacts (%d)</string>
+    <string name="contacts_list_section_headers_group" translatable="false">%s (%d)</string>
+    <string name="contacts_list_new_group_dialog">New Group</string>
+    <string name="contacts_list_new_group_dialog_hint">Group Name</string>
+
+    <!--Active Call Screen-->
+    <string name="active_call_keypad">Keypad</string>
+    <string name="active_call_video">Video</string>
+    <string name="active_call_new_call">New Call</string>
+    <string name="active_call_swap">Swap</string>
+    <string name="active_call_chat">Chat</string>
+    <string name="active_call_end_call">End Call</string>
+    <string name="active_call_more">More</string>
+    <string name="active_call_pause">Pause</string>
+    <string name="active_call_complete_transfer">Complete Transfer</string>
+    <string name="active_call_end_transfer">End Transfer</string>
+    <string name="active_call_transfer">Transfer</string>
+    <string name="active_call_transfer_to_mobile">Transfer to Mobile</string>
+    <string name="your_call_will_be_transferred_to">Your call will be transferred to:</string>
+    <string name="active_call_conference">Conference</string>
+    <string name="active_call_add_participant">Add participant</string>
+    <string name="active_call_merge_calls">Merge calls</string>
+    <string name="active_call_merge">Merge</string>
+    <string name="active_call_conference_callee_count" translatable="false">(%d)</string>
+    <string name="active_call_participants_count">%1$s Participants</string>
+    <string name="active_call_participants">Participants</string>
+    <string name="active_call_poor_connection">Poor Connection</string>
+    <string name="active_call_poor_connection_text">Call quality may be affected due to network issues. Try to find a stronger signal.</string>
+    <string name="transfer_to_mobile">Transfer to Mobile</string>
+    <string name="active_call_call_issue_dialog_title"></string>
+    <string name="active_call_call_issue_dialog_body">@string/active_call_poor_connection_text</string>
+    <string name="active_call_transfer_call_number_first">Call %s first</string>
+    <string name="active_call_transfer_transfer_to_number">Transfer to %s</string>
+    <string name="transfer_failed">Sorry your transfer has failed</string>
+    <string name="error_general_error_title">Error</string>
+    <string name="active_call_calling_text">Calling..</string>
+    <string name="active_call_add_call_button">Add call</string>
+    <string name="active_call_more_button">More</string>
+    <string name="active_call_mute">Mute</string>
+    <string name="active_call_hold">Hold</string>
+    <string name="active_call_resume">Resume</string>
+    <string name="active_call_speaker">Speaker</string>
+    <string name="active_call_caller_avatar_content_description">Caller avatar</string>
+    <string name="active_call_speaker_audio">Audio</string>
+    <string name="active_call_transfer_type_selection_question">How would you like to transfer this call?</string>
+    <plurals name="contact_name_plurals">
+        <item quantity="one">%1$s &amp; 1 other</item>
+        <item quantity="other">%1$s &amp; %2$d others</item>
+    </plurals>
+    <string name="active_call_poor_connection_banner_title">Poor Connection. </string>
+    <string name="active_call_lost_connection_banner_title">Connection Lost. </string>
+    <string name="active_call_poor_connection_banner_message">Please check your network.</string>
+    <string name="active_call_lost_connection_banner_message">Please check your network and try again.</string>
+
+    <!--Active Call Transfer List-->
+    <string name="error_general_error_message">We\'re sorry, an error occurred.  Please try again.</string>
+    <string name="error_no_contact_found_title">No Contact Found</string>
+    <string name="error_no_contact_found_message">No Contact found for this IM Address.</string>
+
+    <!-- Error Dialogs -->
+    <string name="error_unsaved_changes_title">Discard Changes?</string>
+    <string name="error_no_internet_title">No Internet Connection</string>
+    <string name="error_no_internet_settings_button">Settings</string>
+    <string name="error_no_internet_call_settings_message">There is currently no internet connection. Call settings are unable to be shown.</string>
+    <string name="error_no_internet_login_message">There is currently no internet connection. You will be unable to sign in.</string>
+    <string name="error_no_internet_chat_message">You must be connected to the internet to send a message.</string>
+    <string name="error_no_internet_voicemail">You must be connected to the internet to download a voicemail.</string>
+    <string name="error_no_internet_download_file">You must be connected to the internet to download this file.</string>
+    <string name="error_no_internet_play_audio">You must be connected to the internet to play this audio.</string>
+    <string name="error_no_internet_import_contact">You must be connected to the internet to import local contacts.</string>
+    <string name="error_message_failed_to_send">Message failed to send.</string>
+    <string name="error_no_phone_number_message">Contact must have a phone number.</string>
+    <string name="error_location_with_phone_number_exists_title">Duplicate Location Exists</string>
+    <string name="error_nextiva_anywhere_location_with_phone_number_exists_message">A location with this phone number already exists within your organization.</string>
+    <string name="error_simultaneous_ring_location_with_phone_number_exists_message">A location with this phone number already exists on this user.</string>
+    <string name="error_local_contact_with_name_exists_title">Duplicate Local Contact Exists</string>
+    <string name="error_local_contact_with_name_exists_message">A local contact with this name already exists on this phone.</string>
+    <string name="error_max_sms_rate_exceeded_title">You have exceeded the maximum number of messages you can send in an hour (500)</string>
+    <string name="error_max_sms_rate_exceeded_message">Please wait for a few minutes before you can try again</string>
+    <string name="chat_details_max_recipient_title">Cannot add more recipients</string>
+    <string name="chat_details_max_recipient_body">You have added the maximum number of recipients (%d)</string>
+    <string name="active_call_information_failed">Call information could not be retrieved</string>
+    <string name="progress_processing">Processing…</string>
+    <string name="progress_loading">Loading…</string>
+    <string name="progress_sending">Sending…</string>
+    <string name="progress_connecting">Connecting…</string>
+    <string name="progress_downloading">Downloading…</string>
+    <string name="progress_signing_out">Signing out…</string>
+    <string name="error_voicemail_not_found">Voicemail not found.</string>
+    <string name="error_share_image_logged_out_title">Login Failed</string>
+    <string name="error_share_image_logged_out_message">Please relogin from Nextiva app</string>
+
+    <!-- Progress Dialogs -->
+    <string name="progress_deleting">Deleting…</string>
+    <string name="progress_updating">Updating…</string>
+    <string name="progress_blocking">Blocking…</string>
+    <string name="progress_performing_call_back">Performing call-back…</string>
+    <string name="progress_performing_call_through">Performing call-through…</string>
+    <string name="license_terms_conditions_url" translatable="false">https://www.nextiva.com/legal.html?appView=true</string>
+    <string name="license_privacy_url" translatable="false">https://www.nextiva.com/privacy-policy.html?appView=true</string>
+    <string name="about_toolbar_title">About %1$s</string>
+    <string name="about_info_tab">Info</string>
+
+    <!--License-->
+    <string name="about_license_tab">Terms</string>
+    <string name="about_privacy_tab">Privacy</string>
+
+    <!--About Screen-->
+    <string name="about_legal_notices_tab">Licenses</string>
+    <string name="about_head_text" translatable="false">%1$s</string>
+    <string name="about_head_summary">Manage your business phone with the flexibility to go anywhere and stay connected with everyone.</string>
+    <string name="about_version_string">Version %1$s</string>
+    <string name="about_copyright_string">&#169;%1$s Nextiva, All Rights Reserved.</string>
+    <string name="about_info_dot_divider">•••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••••</string>
+    <string name="about_hello_blank_fragment">TODO</string>
+    <string name="about_send_by_email">Send by Email</string>
+    <string name="about_developer_mode">Developer mode has been activated.</string>
+    <string name="about_legal_notice">
+    &lt;div&gt;
+        &lt;p&gt;This software uses "&lt;b&gt;AndroidX&lt;/b&gt;" &lt;br&gt;("&lt;a href=\'https://developer.android.com/jetpack/androidx\'&gt;https://developer.android.com/jetpack/androidx/&lt;/a&gt;"), license: &lt;br&gt;&lt;a href=\'http://www.apache.org/licenses/LICENSE-2.0.txt\'&gt;http://www.apache.org/licenses/LICENSE-2.0.txt&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;This software uses "&lt;b&gt;Checker Framework&lt;/b&gt;" &lt;br&gt;("&lt;a href=\'http://checkerframework.org/\'&gt;http://checkerframework.org/&lt;/a&gt;"), license: &lt;br&gt;&lt;a href=\'https://github.com/reprogrammer/checker-framework/blob/master/LICENSE.txt\'&gt;https://github.com/reprogrammer/checker-framework/blob/master/LICENSE.txt&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;This software uses "&lt;b&gt;Crashlytics&lt;/b&gt;" &lt;br&gt;("&lt;a href=\'http://www.crashlytics.com\'&gt;http://www.crashlytics.com&lt;/a&gt;"), license: &lt;br&gt;&lt;a href=\'https://firebase.google.com/terms/crashlytics\'&gt;https://firebase.google.com/terms/crashlytics&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;This software uses "&lt;b&gt;Dagger&lt;/b&gt;" &lt;br&gt;("&lt;a href=\'https://dagger.dev\'&gt;https://dagger.dev&lt;/a&gt;"), license: &lt;br&gt;&lt;a href=\'http://www.apache.org/licenses/LICENSE-2.0.txt\'&gt;http://www.apache.org/licenses/LICENSE-2.0.txt&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;This software uses "&lt;b&gt;Dexter&lt;/b&gt;" &lt;br&gt;("&lt;a href=\'http://karumi.com\'&gt;http://karumi.com&lt;/a&gt;"), license: &lt;br&gt;&lt;a href=\'http://www.apache.org/licenses/LICENSE-2.0.txt\'&gt;http://www.apache.org/licenses/LICENSE-2.0.txt&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;This software uses "&lt;b&gt;Firebase&lt;/b&gt;" &lt;br&gt;("&lt;a href=\'https://firebase.google.com\'&gt;https://firebase.google.com&lt;/a&gt;"), license: &lt;br&gt;&lt;a href=\'https://developer.android.com/studio/terms.html\'&gt;https://developer.android.com/studio/terms.html&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;This software uses "&lt;b&gt;Glide&lt;/b&gt;" &lt;br&gt;("&lt;a href=\'https://bumptech.github.io/glide/\'&gt;https://bumptech.github.io/glide/&lt;/a&gt;"), license: &lt;br&gt;&lt;a href=\'http://www.apache.org/licenses/LICENSE-2.0.txt\'&gt;http://www.apache.org/licenses/LICENSE-2.0.txt&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;This software uses "&lt;b&gt;JavaX&lt;/b&gt;" &lt;br&gt;("&lt;a href=\'http://javax-inject.github.io/javax-inject/\'&gt;http://javax-inject.github.io/javax-inject/&lt;/a&gt;"), license: &lt;br&gt;&lt;a href=\'http://www.apache.org/licenses/LICENSE-2.0.txt\'&gt;http://www.apache.org/licenses/LICENSE-2.0.txt&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;This software uses "&lt;b&gt;Kotlin&lt;/b&gt;" &lt;br&gt;("&lt;a href=\'https://kotlinlang.org/\'&gt;https://kotlinlang.org/&lt;/a&gt;"), license: &lt;br&gt;&lt;a href=\'http://www.apache.org/licenses/LICENSE-2.0.txt\'&gt;http://www.apache.org/licenses/LICENSE-2.0.txt&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;This software uses "&lt;b&gt;Logback&lt;/b&gt;" &lt;br&gt;("&lt;a href=\'https://tony19.github.io/logback-android/index.html\'&gt;https://tony19.github.io/logback-android/index.html&lt;/a&gt;"), license: &lt;br&gt;&lt;a href=\'http://www.apache.org/licenses/LICENSE-2.0.txt\'&gt;http://www.apache.org/licenses/LICENSE-2.0.txt&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;This software uses "&lt;b&gt;Material Dialog&lt;/b&gt;" &lt;br&gt;("&lt;a href=\'https://af.codes\'&gt;https://af.codes&lt;/a&gt;"), license: &lt;br&gt;&lt;a href=\'http://www.apache.org/licenses/LICENSE-2.0.txt\'&gt;http://www.apache.org/licenses/LICENSE-2.0.txt&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;This software uses "&lt;b&gt;Material Menu&lt;/b&gt;" &lt;br&gt;("&lt;a href=\'https://github.com/balysv/material-menu\'&gt;https://github.com/balysv/material-menu&lt;/a&gt;"), license: &lt;br&gt;&lt;a href=\'https://developer.android.com/studio/terms.html\'&gt;https://developer.android.com/studio/terms.html&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;This software uses "&lt;b&gt;Material Progress Bar&lt;/b&gt;" &lt;br&gt;("&lt;a href=\'https://github.com/zhanghai/MaterialProgressBar\'&gt;https://github.com/zhanghai/MaterialProgressBar&lt;/a&gt;"), license: &lt;br&gt;&lt;a href=\'http://www.apache.org/licenses/LICENSE-2.0.txt\'&gt;http://www.apache.org/licenses/LICENSE-2.0.txt&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;This software uses "&lt;b&gt;OkHttp&lt;/b&gt;" &lt;br&gt;("&lt;a href=\'http://square.github.io/okhttp/\'&gt;http://square.github.io/okhttp/&lt;/a&gt;"), license: &lt;br&gt;&lt;a href=\'http://www.apache.org/licenses/LICENSE-2.0.txt\'&gt;http://www.apache.org/licenses/LICENSE-2.0.txt&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;This software uses "&lt;b&gt;RX Java 2&lt;/b&gt;" &lt;br&gt;("&lt;a href=\'http://reactivex.io\'&gt;http://reactivex.io&lt;/a&gt;"), license: &lt;br&gt;&lt;a href=\'https://developer.android.com/studio/terms.html\'&gt;https://developer.android.com/studio/terms.html&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;This software uses "&lt;b&gt;ShortcutBadger&lt;/b&gt;" &lt;br&gt;("&lt;a href=\'https://github.com/leolin310148/ShortcutBadger\'&gt;https://github.com/leolin310148/ShortcutBadger&lt;/a&gt;"), license: &lt;br&gt;&lt;a href=\'http://www.apache.org/licenses/LICENSE-2.0.txt\'&gt;http://www.apache.org/licenses/LICENSE-2.0.txt&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;This software uses "&lt;b&gt;Smack&lt;/b&gt;" &lt;br&gt;("&lt;a href=\'https://igniterealtime.org/projects/smack/\'&gt;https://igniterealtime.org/projects/smack/&lt;/a&gt;"), license: &lt;br&gt;&lt;a href=\'http://www.apache.org/licenses/LICENSE-2.0.txt\'&gt;http://www.apache.org/licenses/LICENSE-2.0.txt&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;This software uses "&lt;b&gt;ThreeTen&lt;/b&gt;" &lt;br&gt;("&lt;a href=\'https://github.com/JakeWharton/ThreeTenABP\'&gt;https://github.com/JakeWharton/ThreeTenABP&lt;/a&gt;"), license: &lt;br&gt;&lt;a href=\'http://www.apache.org/licenses/LICENSE-2.0.txt\'&gt;http://www.apache.org/licenses/LICENSE-2.0.txt&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;This software uses "&lt;b&gt;Emoji&lt;/b&gt;" &lt;br&gt;("&lt;a href=\'https://github.com/vanniktech/Emoji\'&gt;https://github.com/vanniktech/Emoji&lt;/a&gt;"), license: &lt;br&gt;&lt;a href=\'http://www.apache.org/licenses/LICENSE-2.0.txt\'&gt;http://www.apache.org/licenses/LICENSE-2.0.txt&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;This software uses "&lt;b&gt;AppAuth-Android&lt;/b&gt;" &lt;br&gt;("&lt;a href=\'https://github.com/openid/AppAuth-Android\'&gt;https://github.com/openid/AppAuth-Android&lt;/a&gt;"), license: &lt;br&gt;&lt;a href=\'http://www.apache.org/licenses/LICENSE-2.0.txt\'&gt;http://www.apache.org/licenses/LICENSE-2.0.txt&lt;/a&gt;&lt;/p&gt;
+    &lt;/div&gt;
+    </string>
+    <string name="new_chat_title">New Chat</string>
+    <string name="new_sms_title">New SMS</string>
+    <string name="new_group_chat_title">New Group</string>
+    <string name="new_chat_list_search_contacts">Search</string>
+
+    <!--New Chat Screen -->
+    <string name="new_chat_start_chat">Start Chat</string>
+    <string name="new_chat_to">To:</string>
+    <string name="new_chat_search_box_hint">Type a Name, Phone Number</string>
+    <string name="new_chat_edit_text_content_description">Type a Name or Phone Number Input</string>
+    <string name="new_chat_to_text_view_content_description">To</string>
+    <string name="new_chat_to_switch_keyboard_content_description">Switch Keyboard Button</string>
+    <string name="new_chat_invalid_number_dialog_title">Invalid SMS Number</string>
+    <string name="new_chat_invalid_number_dialog_body">The selected number is not valid to receive SMS messages.</string>
+    <string name="new_sms_valid_file_type">Please select a valid file type</string>
+    <string name="new_sms_contact_already_added">Contact already added</string>
+    <string name="sms_list_search_messages">Search</string>
+    <string name="file_size_fail_message">Please select a file less than 2MB</string>
+    <string name="attachment_options">Please select an option</string>
+    <string name="file_not_supported">Format not supported</string>
+
+    <!--SMS MESSAGE Screen -->
+    <string name="file_name">File Name</string>
+    <string name="notifications_ongoing_call">Ongoing</string>
+    <string name="notifications_channel_calls_name">Call</string>
+    <string name="notifications_channel_call_quality_name">Call Quality</string>
+    <string name="notifications_channel_calls_description">Information about ongoing calls.</string>
+
+    <!-- Notifications -->
+    <string name="notifications_channel_call_quality_description">Information about potential issues in your calls.</string>
+    <string name="notifications_channel_incoming_calls_name">Incoming Calls</string>
+    <string name="notifications_channel_incoming_calls_description">Required for receiving incoming calls.</string>
+    <string name="notifications_channel_chat_name">Messages</string>
+    <string name="notifications_channel_chat_description">Required for notifications about new messages.</string>
+    <string name="notifications_channel_voicemail_name">Voicemail</string>
+    <string name="notifications_channel_voicemail_description">Required for notifications about voicemail.</string>
+    <string name="notifications_channel_ring_splash_name">Ring Splash</string>
+    <string name="notifications_channel_ring_splash_description">Incoming call was redirected.</string>
+    <string name="notifications_channel_sms_name">SMS Channel</string>
+    <string name="notifications_channel_sms_description">Required for notifications about SMS.</string>
+    <string name="notifications_channel_presence_name">Presence Channel</string>
+    <string name="notifications_channel_presence_description">Required for notifications about Presence status changes.</string>
+    <string name="notifications_channel_sip_test_name">SIP Testing Channel</string>
+    <string name="notifications_channel_sip_test_description">Required for notifications about SIP Audio/Video Stats or SIP Connection State.</string>
+    <string name="notifications_channel_sip_error_name">SIP Errors Channel</string>
+    <string name="notifications_channel_sip_error_description">Required for notifications about Errors in SIP calls.</string>
+    <string name="notifications_channel_call_quality_silent_name">Call Quality Silent</string>
+    <string name="notifications_channel_ring_splash_silent_name">Ring Splash Silent</string>
+    <string name="notifications_channel_incoming_calls_silent_name">Incoming Calls Silent</string>
+    <string name="notifications_channel_chat_silent_name">Messages Silent</string>
+    <string name="notifications_channel_voicemail_silent_name">Voicemail Silent</string>
+    <string name="notifications_channel_sms_silent_name">SMS Channel Silent</string>
+    <string name="incoming_call_blocked_ongoing_local_call_title">Incoming Call</string>
+    <string name="incoming_call_blocked_ongoing_local_call_body">An incoming call could not be completed do to a local ongoing call.</string>
+    <string name="call_issue_notification_title">@string/active_call_call_issue_dialog_title</string>
+    <string name="call_issue_notification_body">@string/active_call_call_issue_dialog_body</string>
+    <string name="read_contact_permission_request_reason">To use your personal contacts we need your permission.</string>
+    <string name="read_contact_permission_error">Sorry we don\'t have permission to use your contacts.</string>
+    <string name="in_call_end_call_button">End Call Button</string>
+    <string name="in_call_hold_button">Hold Button</string>
+    <string name="notification_count_message">You have %d unread notifications.</string>
+
+
+    <!-- Permissions Request -->
+    <string name="in_call_mute_button">Mute Button</string>
+
+    <!-- Permissions Error -->
+    <string name="in_call_calling">Calling</string>
+
+    <!-- In Call -->
+    <string name="in_call_ongoing_call">Ongoing</string>
+    <string name="in_call_on_hold">ON HOLD</string>
+    <string name="in_call_swap_camera">Swap Camera</string>
+    <string name="in_call_image">image</string>
+    <string name="sip_registration_failed">Sip registration failed</string>
+    <string name="in_call_dialog_add_video_title">Upgrade to Video</string>
+    <string name="in_call_dialog_add_video_body">%1$s wants to upgrade the call to a video call.</string>
+    <string name="in_call_dialog_add_video_accept">Accept</string>
+    <string name="in_call_dialog_add_video_decline">Decline</string>
+    <string name="call_timer_format" translatable="false">%02d:%02d:%02d</string>
+    <string name="sip_pull_call_failed">No call available to pull</string>
+    <string name="in_call_call_failed">Call failed</string>
+    <string name="call_dialog_incoming_call">Incoming call</string>
+    <string name="call_dialog_title">Incoming Video Call</string>
+
+    <string name="call_dialog_message">Incoming Video Call from: </string>
+    <string name="call_dialog_accept_call">Accept</string>
+
+    <!-- Call Dialog -->
+    <string name="call_dialog_decline_call">Decline</string>
+    <string name="call_dialog_unavailable_display_name">Unavailable</string>
+    <string name="image">image</string>
+    <string name="incoming_call_notification_answer">Answer</string>
+    <string name="incoming_call_notification_answer_audio">Audio</string>
+    <string name="incoming_call_notification_answer_video">Video</string>
+    <string name="incoming_call_notification_decline">Decline</string>
+
+    <!--Incoming Call Notification -->
+    <string name="contact_list_edit_contact">Edit</string>
+    <string name="contact_list_delete_contact">Delete</string>
+    <string name="contact_list_subscribe">Subscribe</string>
+    <string name="contact_list_unsubscribe">Unsubscribe</string>
+
+    <!-- Edit Contact Dialog Options -->
+    <string name="contact_list_remove_group">Remove Group</string>
+    <string name="channel_name" translatable="false">channel_name</string>
+    <string name="channel_description" translatable="false">channel_description</string>
+    <string name="dialer_pull_call">Pull Call</string>
+    <string name="xmpp_error_not_connected_message">A connection to XMPP is not available.</string>
+
+    <!-- FCM -->
+    <string name="xmpp_error_interrupted_message">A connection to XMPP has been interrupted.</string>
+    <string name="xmpp_error_not_logged_in_message">An XMPP session could not be found.</string>
+
+    <!-- Dialer Menu -->
+    <string name="xmpp_error_no_response_message">Unable to get a response from the XMPP server.</string>
+
+    <!--- XMPP Dialogs -->
+    <string name="xmpp_error_string_prep_message">Error prepping string for XMPP.</string>
+    <string name="xmpp_error_exception_message">XMPP error exception.</string>
+    <string name="xmpp_error_bad_jid">Cannot connect because of a contact with the invalid IM Address of \'%1$s\'.</string>
+    <string name="xmpp_parsing_error">Connection failed because of an invalid IM Address.</string>
+    <string name="xmpp_subscription_request_message">%1$s wants to share availability information with you.</string>
+    <string name="push_notification_mwi_title">New Voicemail</string>
+    <string name="push_notification_mwi_body">You have %1$s pending voicemail messages</string>
+    <string name="push_notification_missed_call_title">Missed Call</string>
+    <string name="push_notification_missed_call_body">You have a new missed call from %1$s</string>
+
+    <!--- Push Notification Messages -->
+    <string name="push_notification_missed_call_anonymous">Anonymous</string>
+    <string name="log_message_start" translatable="false">Start</string>
+    <string name="log_message_start_with_message" translatable="false">Start %1$s</string>
+    <string name="log_message_success" translatable="false">Success</string>
+    <string name="log_message_success_with_message" translatable="false">Success %1$s</string>
+
+    <!--Logging Messages-->
+    <string name="log_message_logging_enabled" translatable="false">Logging enabled</string>
+    <string name="log_message_no_host_or_username" translatable="false">No host or username</string>
+    <string name="log_message_no_ums_udid" translatable="false">No UMS UDID</string>
+    <string name="log_message_ums_udid_setup" translatable="false">UMS UDID setup</string>
+    <string name="log_message_ums_client_setup" translatable="false">UMS client setup</string>
+    <string name="log_message_unable_to_get_contact" translatable="false">Unable to get contact from server</string>
+    <string name="log_message_initial_null_check" translatable="false">Initial null check</string>
+    <string name="log_message_analytic_event" translatable="false">Screen: %1$s Event: %2$s</string>
+    <string name="log_message_analytic_screen_view" translatable="false">Screen View: %1$s</string>
+    <string name="log_message_empty_roster" translatable="false">Empty roster</string>
+    <string name="log_message_force_refresh_or_expired_cache" translatable="false">Force refresh or expired cache</string>
+    <string name="log_message_return_cache" translatable="false">Return cache</string>
+    <string name="log_message_init" translatable="false">Init</string>
+    <string name="log_message_bad_jid" translatable="false">Bad JID</string>
+    <string name="log_message_add_flow" translatable="false">Add flow</string>
+    <string name="log_message_add_flow_error" translatable="false">Add flow: %1$s</string>
+    <string name="log_message_edit_flow" translatable="false">Edit flow</string>
+    <string name="log_message_edit_flow_error" translatable="false">Edit flow: %1$s</string>
+    <string name="log_message_failure_parsing_api_response" translatable="false">Unable to parse API response details: %1$s</string>
+    <string name="log_message_processing_started" translatable="false">Processing started: %1$s</string>
+    <string name="log_message_processing_call" translatable="false">Processing call with CallInfo: %1$s</string>
+    <string name="log_message_xmpp_connected" translatable="false">XMPP Connected</string>
+    <string name="log_message_xmpp_disconnected" translatable="false">XMPP Disconnected or Disconnecting</string>
+    <string name="log_message_xmpp_connection_null_or_disconnected" translatable="false">XMPP Connection is null or disconnected</string>
+    <string name="log_message_required_data_unavailable" translatable="false">Required Data Unavailable</string>
+    <string name="log_message_failure_sip_invite" translatable="false">Sip Invite Failure</string>
+    <string name="log_message_failure_sip_notification" translatable="false">Sip Notification Failure</string>
+    <string name="log_message_failure_sip_send_message" translatable="false">Sip Send Message Failure</string>
+    <string name="log_message_failure_find_idle_session" translatable="false">Call Session Find Idle Session Failure</string>
+    <string name="log_message_failure_sip_send_out_of_dialog_message" translatable="false">Sip Send Out Of Dialog Message Failure</string>
+    <string name="log_message_failure_sip_subscription" translatable="false">Sip Subscription Failure</string>
+    <string name="log_message_failure_sip_actv_transfer_failure" translatable="false">Sip ACTV Transfer Failure Failure</string>
+    <string name="log_message_failure_sip_registration_is_already_in_progress" translatable="false">Sip Registration is already in progress.</string>
+    <string name="log_message_failure_log_video" translatable="false">Log Video Failure</string>
+    <string name="log_message_failure_log_audio" translatable="false">Log Audio Failure</string>
+    <string name="log_message_failure_sip_second_incoming_call" translatable="false">Second Incoming Call Failure</string>
+    <string name="log_message_failure_sip_session_not_found" translatable="false">Session Not Found Failure</string>
+    <string name="log_message_failure_sip_registration" translatable="false">Sip Registration Failure</string>
+    <string name="log_message_failure_send_chat_null_info" translatable="false">UserDetails or PushNotificationRegistrationId is null</string>
+    <string name="log_message_failure_send_chat_server_error" translatable="false">Server Error</string>
+    <string name="log_message_failure_send_chat_info" translatable="false">Failed to send chat message. Message: %1$s, Sender: %2$s, Receiver: %3$s, Timestamp: %4$s.  Error: %5$s</string>
+    <string name="log_message_call_issue_jitter" translatable="false">Call Issue Jitter</string>
+    <string name="log_message_call_issue_lost_packet" translatable="false">Call Issue Lost Packet</string>
+    <string name="log_message_call_issue_notification_shown" translatable="false">Call Issue Notification Shown</string>
+    <string name="log_message_call_issue_notification_canceled" translatable="false">Notification canceled.</string>
+    <string name="log_message_call_issue_dialog_shown" translatable="false">Call Issue Dialog Shown.</string>
+    <string name="log_message_call_issue_dialog_removed" translatable="false">Call Issue Dialog Removed.</string>
+    <string name="log_message_call_issue_dialog_closed" translatable="false">Call Issue Dialog Closed.</string>
+    <string name="log_message_call_issue_dialog_transferred_to_mobile" translatable="false">Call Issue Dialog Transferred to Mobile.</string>
+    <string name="log_message_power_save_mode_changed" translatable="false">Power Save Mode changed during call: %s</string>
+    <string name="log_message_power_save_mode_affect_audio" translatable="false">Power saving mode may affect audio</string>
+    <string name="log_message_audio_affected_by_system_changes" translatable="false">Audio may be affected by system changes</string>
+    <string name="log_message_phone_state" translatable="false">PHONE STATE: %s</string>
+    <string name="log_message_permission_not_granted" translatable="false">Permission not granted during call: %s</string>
+    <string name="connection_state_internet">Internet</string>
+    <string name="connection_state_contacts">Contacts</string>
+    <string name="connection_state_chat">Chat</string>
+    <string name="connection_state_calls">Calls</string>
+
+
+    <!-- Connection State Banner -->
+    <string name="connection_state_comma" translatable="false">,\u0020</string>
+    <string name="connection_state_and">\u0020and</string>
+    <string name="connection_state_oxford_and">, and</string>
+    <string name="connection_state_unavailable">%1$s Unavailable</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_contacts_tab">Contacts</string>
+    <string name="title_chats_tab">Chats</string>
+    <string name="title_sms_tab">SMS</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_dialer_tab">Dialer</string>
+
+    <!-- Toolbar Tab Titles -->
+    <string name="title_history_tab">History</string>
+    <string name="title_voicemail_tab">Voicemail</string>
+    <string name="corrupted_file_playing_error">Unable to play file</string>
+    <string name="corrupted_file_download_error">Unable to download file</string>
+    <string name="feature_flag_visual_voice_functionality" translatable="false">Mobile.VisualVoicemail</string>
+    <string name="feature_flag_logging_functionality" translatable="false">Mobile.Logging</string>
+
+    <!-- SMS Conversation Screen -->
+    <string name="feature_flag_connect_functionality" translatable="false">Mobile.Connect</string>
+    <string name="feature_flag_sms_functionality" translatable="false">Mobile.SMS</string>
+
+    <!-- Feature Flags -->
+    <string name="feature_flag_team_chat_functionality" translatable="false">Mobile.TeamChat</string>
+    <string name="feature_flag_video_calls_functionality" translatable="false">Mobile.VideoCalls</string>
+    <string name="feature_flag_notification_functionality" translatable="false">Mobile.Personal.Schedules</string>
+    <string name="feature_flag_voicemail_count_functionality" translatable="false">Voice.SeparateVoicemailChannel</string>
+    <string name="feature_flag_custom_tone_functionality" translatable="false">Mobile.CustomTone</string>
+    <string name="feature_flag_voice_page_functionality" translatable="false">Mobile.Voice.LargePageSize</string>
+    <string name="feature_flag_communications_bulk_deletes" translatable="false">Mobile.Communications.BulkDeletes</string>
+    <string name="feature_flag_communications_bulk_updates" translatable="false">Mobile.Communications.BulkUpdates</string>
+    <string name="feature_flag_communications_bulk_actions_update" translatable="false">Mobile.Communications.BulkActionsUpdate</string>
+    <string name="feature_flag_sms_campaign" translatable="false">Sms.CampaignValidation</string>
+    <string name="feature_flag_block_number_for_calling" translatable="false">Mobile.BlockNumberForCalling</string>
+    <string name="feature_flags_toolbar">Feature Flags</string>
+    <string name="feature_flag_not_found">Not Found</string>
+    <string name="feature_flags_no_message">No feature flags are available.</string>
+    <string name="font_awesome_utility_toolbar">Font Awesome Utility</string>
+
+    <!-- Sip Configuration -->
+    <string name="sip_configuration_toolbar">Sip Configuration</string>
+
+    <!-- Feature Flag Screen -->
+    <string name="design_system_utility_toolbar">Design System Utility</string>
+    <string name="database_count_utility_toolbar">Database Record Counts</string>
+    <string name="connect_main_bottom_sheet_call">Make a call</string>
+
+    <!-- Font Awesome Utility Screen -->
+    <string name="connect_main_bottom_sheet_message">Send a message</string>
+
+    <!-- Design System Utility Screen -->
+    <string name="connect_main_bottom_sheet_chat">Chat with teammates</string>
+
+    <!-- Database Count Utility Screen -->
+    <string name="connect_main_bottom_sheet_meeting">Start a meeting now</string>
+
+    <!-- Connect Bottom Nav -->
+    <string name="connect_main_bottom_navigation_calls">Calls</string>
+    <string name="connect_main_bottom_navigation_messaging">Messaging</string>
+    <string name="connect_main_bottom_navigation_contacts">Contacts</string>
+    <string name="connect_main_bottom_navigation_settings">Settings</string>
+    <string name="connect_main_bottom_navigation_rooms">Rooms</string>
+    <string name="connect_main_bottom_navigation_chat">Chat</string>
+    <string name="connect_main_bottom_navigation_meetings">Meetings</string>
+    <string name="connect_main_bottom_navigation_voicemail">Voicemail</string>
+    <string name="connect_main_bottom_navigation_calendar">Calendar</string>
+    <string name="connect_main_bottom_navigation_more">More</string>
+    <string name="connect_main_bottom_navigation_item_title">Item</string>
+    <string name="connect_main_bottom_navigation_bottom_sheet_title">@string/connect_main_bottom_navigation_more</string>
+    <string name="connect_main_bottom_navigation_bottom_sheet_sub_title">Access all your apps and personalize your apps toolbar.</string>
+    <string name="connect_main_bottom_navigation_bottom_sheet_customize_toolbar_button_text">Customize toolbar</string>
+
+    <!-- Connect Main Screen -->
+    <string name="connect_contacts_toolbar_title">Contacts</string>
+    <string name="connect_contacts_group_header_favorites">Favorites</string>
+    <string name="connect_contacts_group_header_teammates">Teammates</string>
+    <string name="connect_contacts_group_header_business">Business</string>
+
+    <!-- Connect Contacts Screen -->
+    <string name="connect_contacts_group_header_all_contacts">All Contacts</string>
+    <string name="bottom_sheet_contact_menu_create_business">Create a business contact</string>
+    <string name="bottom_sheet_contact_menu_import_local">Import from my local contacts</string>
+    <string name="connect_contacts_group_header_count" translatable="false">(%d)</string>
+    <string name="connect_contacts_search_results_empty">Search results</string>
+    <string name="connect_contacts_search_results_count">%d search results found</string>
+    <string name="connect_contacts_search_no_results_title">No results found</string>
+    <string name="connect_contacts_search_no_results_message">Try searching by a different keyword</string>
+    <string name="connect_contacts_type_search_filter_all">All</string>
+    <string name="connect_contacts_type_search_filter_business">Business contact</string>
+    <string name="connect_contacts_type_search_filter_teammate">Teammate</string>
+    <string name="connect_rooms_toolbar_title">Rooms</string>
+    <string name="connect_room_toolbar_title">Room</string>
+    <string name="connect_rooms_group_header_favorites">Favorites</string>
+    <string name="connect_rooms_group_header_rooms">Rooms</string>
+    <string name="connect_contacts_recent_contacts">Recent contacts</string>
+
+    <!-- Connect Team Chat Screen -->
+    <string name="connect_team_chat_empty_list">You don\'t have any chat activity.</string>
+    <string name="connect_team_chat_start_texting">Start chatting</string>
+
+    <!-- Connect Rooms Screen -->
+    <string name="connect_rooms_group_header_business">Business</string>
+    <string name="connect_rooms_group_header_all_rooms">All Rooms</string>
+    <string name="bottom_sheet_room_menu_create_business">Create a business room</string>
+    <string name="bottom_sheet_room_menu_import_local">Import from my local rooms</string>
+    <string name="connect_rooms_group_header_count" translatable="false">(%d)</string>
+    <string name="connect_rooms_search_results_empty">Search results</string>
+    <string name="connect_rooms_search_results_count">%d search results found</string>
+    <string name="connect_rooms_search_no_results_title">No results found</string>
+    <string name="connect_rooms_search_no_results_message">Try searching by a different keyword</string>
+    <string name="connect_rooms_type_search_filter_all">All</string>
+    <string name="connect_rooms_type_search_filter_business">Business room</string>
+    <string name="connect_rooms_type_search_filter_teammate">Teammate</string>
+    <string name="room_conversation_menu_edit">Edit</string>
+    <string name="room_conversation_menu_delete">Delete</string>
+    <string name="room_conversation_menu_download">Download</string>
+    <string name="room_conversation_delete_message">Delete message</string>
+    <string name="room_conversation_are_you_sure">Are you sure you want to delete this message?</string>
+
+    <!-- Connect Rooms Conversation Screen -->
+    <string name="room_conversation_delete_toast">Message deleted.</string>
+    <string name="room_conversation_undo_toast">Undo</string>
+    <string name="room_conversation_edit_message">Edit message</string>
+    <string name="room_conversation_message_edited">edited</string>
+    <string name="room_conversation_message_delete_undone">Action undone.</string>
+    <string name="room_conversation_take_picture">Take a picture</string>
+    <string name="room_conversation_choose_photo">Choose photo or video</string>
+    <string name="room_conversation_attach_file">Attach a file</string>
+    <string name="room_conversation_file_size_error">Attachment exceeds 100MB limit</string>
+    <string name="room_conversation_file_type_error">File type not allowed</string>
+    <string name="room_conversation_file_count_error">You can only upload 10 files at a time</string>
+    <string name="room_conversation_unable_to_send">Unable to send.</string>
+    <string name="room_conversation_retry">Retry</string>
+    <string name="room_conversation_recent_texts">Recent chats</string>
+    <string name="connect_room_details_favorite_button">Add to Favorites</string>
+    <string name="connect_room_details_remove_button">Remove Favorite</string>
+    <string name="connect_room_details_mute_button">Mute notifications</string>
+    <string name="connect_room_details_unmute_button">Unmute notifications</string>
+
+    <!-- Connect Room Details Screen -->
+    <string name="connect_room_details_hide_button">Hide\nroom</string>
+    <string name="connect_room_details_show_button">Show\nroom</string>
+    <string name="connect_bottom_sheet_room_details_participants_in_room">%1$s members</string>
+    <string name="connect_bottom_sheet_chat_details_participants_in_room">%1$s people</string>
+    <string name="connect_bottom_sheet_room_details_participant_in_room">1 member</string>
+    <string name="connect_bottom_sheet_room_search_hint">Search</string>
+    <string name="connect_bottom_sheet_room_search_warning">Adding teammates will allow them to see all of this room’s history including files that have been shared in this room.</string>
+    <string name="connect_bottom_sheet_room_search_add">Add members</string>
+    <string name="connect_bottom_sheet_room_leave">Leave Room</string>
+    <string name="connect_contact_details_business_label">Business</string>
+    <string name="connect_contact_details_teammate_label">Teammate</string>
+    <string name="connect_contact_details_unsaved_label">Unsaved</string>
+    <string name="connect_contact_details_blocked_label">Blocked</string>
+    <string name="connect_contact_details_teams_label">Team</string>
+    <string name="connect_bottom_sheet_room_details_room_name">Room name</string>
+    <string name="connect_bottom_sheet_room_details_room_description">Room description</string>
+    <string name="connect_bottom_sheet_room_details_room_owner">Room owner</string>
+
+    <!-- Connect Contact Detail Screen -->
+    <string name="connect_contact_details_call_center_label">Call center</string>
+    <string name="connect_contact_details_call_flow_label">Call flow</string>
+    <string name="connect_contact_details_business_job">%1$s at %2$s</string>
+    <string name="connect_contact_details_last_contacted">Last contacted %1$s ago by %2$s</string>
+    <string name="connect_contact_section_header_contact_information">Contact Information</string>
+    <string name="connect_contact_section_header_additional_details">Additional Details</string>
+    <string name="connect_contact_details_copy_menu_item">Copy</string>
+    <string name="connect_contact_details_work_phone_format">%1$s Ext. %2$s</string>
+    <string name="connect_contact_details_show_more">Show more</string>
+    <string name="connect_contact_details_created_by">Created by:</string>
+    <string name="connect_contact_details_last_modified_by">Last modified by:</string>
+    <string name="connect_contact_details_last_modified_by_text">%1$s on %2$s</string>
+    <string name="connect_contact_details_company_title">Company</string>
+    <string name="connect_contact_details_job_title_title">Job Title</string>
+    <string name="connect_contact_details_department_title">Department</string>
+    <string name="connect_contact_details_birth_date_title">Birth date</string>
+    <string name="connect_contact_details_sign_up_date_title">Sign-up date</string>
+    <string name="connect_contact_details_next_contact_date_title">Next contact date</string>
+    <string name="connect_contact_details_cancel_date_title">Cancel date</string>
+    <string name="connect_contact_details_website_title">Website</string>
+    <string name="connect_contact_details_linkedin_title">LinkedIn</string>
+    <string name="connect_contact_details_facebook_title">Facebook</string>
+    <string name="connect_contact_details_twitter_title">Twitter</string>
+    <string name="connect_contact_details_instagram_title">Instagram</string>
+    <string name="connect_contact_details_telegram_title">Telegram</string>
+    <string name="connect_contact_details_other_title">Other</string>
+    <string name="connect_contact_details_work_address_title">Work</string>
+    <string name="connect_contact_details_home_address_title">Home</string>
+    <string name="connect_contact_details_other_address_title">Other</string>
+    <string name="connect_contact_details_description_title">Description</string>
+    <string name="connect_contact_details_team_title">Team</string>
+    <string name="connect_contact_details_location_title">Location</string>
+    <string name="connect_contact_details_location_time_title">Location time</string>
+    <string name="connect_contact_details_room_title">Room</string>
+    <string name="connect_contact_details_room_details">Room details</string>
+    <string name="connect_contact_details_my_room_details">My room details</string>
+    <string name="connect_contact_details_room_conversation">Go to room</string>
+    <string name="connect_contact_details_my_room_conversation">Go to my room</string>
+    <string name="connect_contact_details_join_room">Join room</string>
+    <string name="connect_contact_details_view_full_profile">View full profile</string>
+    <string name="connect_contact_details_unknown_contact">Unknown Contact</string>
+    <string name="connect_contacts_section_header_contact_information">Contact Information</string>
+    <string name="connect_contacts_details_work_phone_format">%1$s Ext. %2$s</string>
+    <string name="connect_contacts_details_show_more">Show more</string>
+    <string name="connect_create_contact_title">Create a business contact</string>
+    <string name="connect_edit_contact_title">Edit a business contact</string>
+    <string name="connect_create_contact_share">SHARE THE CONTACT</string>
+    <string name="connect_create_contact_first_name_title">FIRST NAME</string>
+    <string name="connect_contacts_details_options">Options</string>
+    <string name="connect_contacts_details_delete_title">Delete contact</string>
+    <string name="connect_contacts_details_delete_message">Are you sure you want to delete this contact?</string>
+    <string name="connect_contacts_details_deleted">Contact deleted successfully.</string>
+    <string name="connect_contacts_details_added">Contact added successfully.</string>
+    <string name="connect_contacts_details_edited">Contact edited successfully.</string>
+    <string name="connect_contacts_delete_error_title">Something went wrong</string>
+    <string name="connect_contacts_delete_error_message">Unable to delete contact</string>
+    <string name="connect_contacts_delete_error_retry">Retry</string>
+
+    <!-- Connect Create Contact Screen -->
+    <string name="connect_create_contact_first_name_hint">Enter first name</string>
+    <string name="connect_create_contact_last_name_title">LAST NAME</string>
+    <string name="connect_create_contact_last_name_hint">Enter last name</string>
+    <string name="connect_create_contact_company_name_title">COMPANY NAME</string>
+    <string name="connect_create_contact_company_name_hint">Enter company name</string>
+    <string name="connect_create_contact_job_title_title">JOB TITLE</string>
+    <string name="connect_create_contact_job_title_hint">Enter job title</string>
+    <string name="connect_create_contact_department_title">DEPARTMENT</string>
+    <string name="connect_create_contact_department_hint">Enter department</string>
+    <string name="connect_create_contact_fax_number_title">FAX NUMBER</string>
+    <string name="connect_create_contact_fax_number_hint">(000) 000–0000</string>
+    <string name="connect_create_contact_website_title">WEBSITE</string>
+    <string name="connect_create_contact_website_hint">www.yourwebsite.com</string>
+    <string name="connect_create_contact_description_title">DESCRIPTION</string>
+    <string name="connect_create_contact_description_hint">Acme, Inc.</string>
+    <string name="connect_create_contact_add_phone">Add phone</string>
+    <string name="connect_create_contact_add_email">Add email</string>
+    <string name="connect_create_contact_add_date">Add date</string>
+    <string name="connect_create_contact_add_social_profile">Add social profile</string>
+    <string name="connect_create_contact_add_address">Add address</string>
+    <string name="connect_create_contact_phone_hint">(000) 000–0000</string>
+    <string name="connect_create_contact_email_hint">Email</string>
+    <string name="connect_create_contact_date_hint">Select a date</string>
+    <string name="connect_create_contact_social_profile_hint">Profile URL</string>
+    <string name="connect_create_contact_address_country_hint">Country</string>
+    <string name="connect_create_contact_address_street_one_hint">Street 1</string>
+    <string name="connect_create_contact_address_street_two_hint">Apt, suit, or unit #</string>
+    <string name="connect_create_contact_address_city_hint">City</string>
+    <string name="connect_create_contact_address_state_hint">State</string>
+    <string name="connect_create_contact_address_zip_hint">Zip Code</string>
+    <string name="connect_create_contact_work_phone_type">Work</string>
+    <string name="connect_create_contact_mobile_phone_type">Mobile</string>
+    <string name="connect_create_contact_home_phone_type">Home</string>
+    <string name="connect_create_contact_other_phone_type">Other</string>
+    <string name="connect_create_contact_primary_email_type">Primary</string>
+    <string name="connect_create_contact_secondary_email_type">Secondary</string>
+    <string name="connect_create_contact_birthday_date_type">Birthday</string>
+    <string name="connect_create_contact_sign_up_date_type">Sign up</string>
+    <string name="connect_create_contact_next_contact_date_type">Next contact</string>
+    <string name="connect_create_contact_cancel_date_type">Cancel</string>
+    <string name="connect_create_contact_facebook_social_profile_type">Facebook</string>
+    <string name="connect_create_contact_linkedin_social_profile_type">LinkedIn</string>
+    <string name="connect_create_contact_instagram_social_profile_type">Instagram</string>
+    <string name="connect_create_contact_twitter_social_profile_type">Twitter</string>
+    <string name="connect_create_contact_telegram_social_profile_type">Telegram</string>
+    <string name="connect_create_contact_other_social_profile_type">Other</string>
+    <string name="connect_create_contact_work_address_type">Work</string>
+    <string name="connect_create_contact_home_address_type">Home</string>
+    <string name="connect_create_contact_other_address_type">Other</string>
+    <string name="connect_create_contact_discard_changes_dialog_title">Discard new contact</string>
+    <string name="connect_create_contact_discard_changes_dialog_message">Are you sure you want to discard this new contact?</string>
+    <string name="connect_create_contact_discard_changes_edit_dialog_title">Discard Changes</string>
+    <string name="connect_create_contact_discard_changes_edit_dialog_message">Are you sure you want to discard changes made on this contact?</string>
+    <string name="connect_create_contact_discard_changes_dialog_primary">Discard</string>
+    <string name="connect_create_contact_discard_changes_dialog_secondary">Continue</string>
+    <string name="connect_create_contact_email_error_message">Please enter a valid email address.</string>
+    <string name="connect_create_contact_duplicate_email_error_message">Identical email is already in the list.</string>
+    <string name="connect_create_contact_duplicate_phone_error_message">Identical number is already in the list.</string>
+    <string name="connect_create_contact_duplicate_social_error_message">Identical link is already in the list.</string>
+    <string name="connect_home_communications_title">Communications</string>
+    <string name="connect_home_call_channel_title">Calls</string>
+    <string name="connect_home_messages_channel_title">Messaging</string>
+    <string name="connect_home_team_chats_channel_title">Team chats</string>
+
+    <!-- Connect Home Screen -->
+    <string name="connect_home_meetings_channel_title">Meetings</string>
+    <string name="invalid_license_dialog_title">Invalid license</string>
+    <string name="invalid_team_sms_license_dialog_title">Message failed</string>
+    <string name="invalid_license_dialog_body">Messaging requires the SMS license.  Check with your company administrator to ensure that this license is added to your account.</string>
+    <string name="invalid_team_sms_license_dialog_body">Team SMS license is required to send a message on behalf of a team.</string>
+    <string name="invalid_provisioning_dialog_title">Provisioning failure</string>
+    <string name="invalid_provisioning_dialog_body">Messaging requires a phone number to be assigned to this account.  Check with your company administrator to ensure you have been provisioned a phone number.</string>
+
+
+    <string name="home_voicemail_title">Voicemail</string>
+    <string name="home_chat_title">Chat</string>
+    <string name="home_calendar_title">Calendar</string>
+
+    <!-- Error dialog screen -->
+    <string name="connect_sms_recent_texts">Recent messages</string>
+    <string name="connect_sms_recent_searches">Recent searches</string>
+    <string name="connect_sms_results_count">%1$d search results found</string>
+    <string name="connect_sms_result_count_one">1 search result found</string>
+    <string name="connect_sms_search">&#160;&#160;Search</string>
+
+    <!-- Dialer Screen -->
+    <string name="dialer_long_press_popup_txt_copy">Copy</string>
+    <string name="dialer_long_press_popup_txt_paste">Paste</string>
+    <string name="dialer_long_press_popup_txt_add_to_contacts">Add to contacts</string>
+    <string name="dialer_long_press_popup_txt_add_to_existing_contacts">Add to existing contact</string>
+
+    <!-- Connect SMS Screens -->
+    <string name="connect_sms_empty_list">You don\'t have any messaging activity.</string>
+    <string name="connect_sms_start_texting">Start messaging</string>
+    <string name="connect_sms_start">Start</string>
+    <string name="connect_sms_contact_already_added">Contact already added</string>
+    <string name="connect_sms_filter_all">All</string>
+    <string name="connect_sms_filter_teams">Teams</string>
+    <string name="Connect_sms_media_message">Media Message</string>
+    <string name="connect_sms_file_size_error">Attachment exceeds 1MB limit</string>
+    <string name="connect_sms_file_count_error">You can only upload 1 file at a time</string>
+    <string name="connect_sms_choose_photo">Choose photo</string>
+    <string name="allow_contact_access_bottom_sheet_allow">Allow</string>
+    <string name="allow_contact_access_bottom_sheet_maybe_later">Maybe later</string>
+    <string name="allow_contact_access_bottom_sheet_title">Allow Nextiva to access\nyour contacts</string>
+    <string name="allow_contact_access_bottom_sheet_message">These contacts will be only visible to you. Enjoy using your Nextiva Connect to call, video call and message your contacts.</string>
+
+    <!-- Allow Contact Access Bottom Sheet -->
+    <string name="connect_import_local_contacts_bottom_sheet_title">We noticed you have %d contacts in your phone.\nDo you want to import your business contacts?</string>
+    <string name="connect_import_local_contacts_bottom_sheet_single_title">We noticed you have %d contact in your phone.\nDo you want to import your business contact?</string>
+    <string name="connect_import_local_contacts_bottom_sheet_message">These contacts will be imported as business contacts and will be private and only visible to you.</string>
+    <string name="connect_import_local_contacts_bottom_sheet_single_message">This contact will be imported as a business contact and will be private and only visible to you.</string>
+
+    <!-- Import Local Contacts Bottom Sheet -->
+    <string name="connect_import_local_contacts_bottom_sheet_share_the_contact">Share the contact</string>
+    <string name="connect_import_local_contacts_bottom_sheet_import_contacts_as">Import contacts as</string>
+    <string name="connect_import_local_contacts_bottom_sheet_shared_message">Selected contacts from your Local address book will be synced to Nextiva. These contacts will be visible to your teammates, this action cannot be undone.</string>
+    <string name="connect_import_local_contacts_bottom_sheet_private_message">Selected contacts from your Local address book will be synced to Nextiva. These contacts will be private and only visible to you.</string>
+    <string name="connect_import_local_contacts_bottom_sheet_snackbar_message">Contacts imported successfully.</string>
+    <string name="connect_import_local_contacts_bottom_sheet_import_contacts">Import contacts</string>
+    <string name="connect_import_local_contacts_bottom_sheet_import_complete">Import complete.</string>
+    <string name="connect_import_local_contacts_bottom_sheet_import_duplicates">%1$d duplicate contacts updated.</string>
+    <string name="connect_import_local_contacts_bottom_sheet_import_no_duplicates">No duplicates found.</string>
+    <string name="connect_import_local_contacts_bottom_sheet_import_no_imports">No contacts were imported.</string>
+    <string name="connect_import_local_contacts_bottom_sheet_import_failed">%1$d failed contacts.</string>
+    <string name="connect_import_local_contacts_bottom_sheet_import_created">%1$d new contacts created.</string>
+    <string name="connect_import_local_contacts_bottom_sheet_import_total">Total %1$d contacts imported.</string>
+    <string name="connect_view_local_contacts_title">Local contacts</string>
+    <string name="connect_view_local_contacts_privacy_message">Your phone contacts list is private and only visible to you.</string>
+    <string name="connect_view_local_contacts_empty_state_title">No contacts</string>
+    <string name="connect_view_local_contacts_empty_state_message">0 contacts found.</string>
+
+    <!-- Duplicates Import Local Contacts Bottom Sheet -->
+    <string name="connect_import_local_contacts_duplicates_title">Duplicates</string>
+    <string name="connect_import_local_contacts_duplicates_label">How would you like to handle duplicates if we find any?</string>
+    <string name="connect_import_local_contacts_duplicates_skip_title">Skip duplicates</string>
+    <string name="connect_import_local_contacts_duplicates_skip_description">Don\'t import the duplicates to NextivaONE.</string>
+    <string name="connect_import_local_contacts_duplicates_replace_title">Replace</string>
+    <string name="connect_import_local_contacts_duplicates_replace_description">Replace existing NextivaONE duplicates with items imported.</string>
+    <string name="connect_import_local_contacts_duplicates_merge_title">Merge</string>
+    <string name="connect_import_local_contacts_duplicates_merge_description">Additional fields will be added to existing NextivaONE contacts.</string>
+    <string name="connect_import_local_contacts_duplicates_import_title">Import anyway</string>
+    <string name="connect_import_local_contacts_duplicates_import_coming_soon">Coming soon</string>
+    <string name="connect_import_local_contacts_duplicates_import_description">Duplicates will be created as new contacts. You can manually resolve them on desktop.</string>
+    <string name="connect_import_local_contacts_duplicates_next">Next</string>
+    <string name="connect_import_local_contacts_done">Done</string>
+
+
+    <!-- View Local Contacts Bottom Sheet -->
+    <string name="connect_view_local_contacts_select_all">Select all</string>
+    <string name="connect_view_local_contacts_deselect_all">Deselect all</string>
+    <string name="connect_view_local_contacts_import_contacts_none">Import contacts</string>
+    <string name="connect_view_local_contacts_import_contact">Import 1 contact</string>
+    <string name="connect_view_local_contacts_import_contacts">Import %d contacts</string>
+    <string name="connect_view_local_contacts_imported">Imported</string>
+    <string name="connect_view_local_contacts_you_have_unimported_message">You have %d un-imported contacts, import them and stay connected with everyone from anywhere.</string>
+    <string name="connect_calls_voicemail_filter">Voicemail</string>
+    <string name="connect_calls_empty_state_title">Start calling</string>
+    <string name="connect_calls_empty_state_message">You don’t have any Call activity.</string>
+    <string name="connect_calls_title">Calls</string>
+
+    <!-- Connect Calls Screen -->
+    <string name="connect_calls_recent_calls">Recent calls</string>
+    <string name="connect_calls_recent_missed">Recent missed calls</string>
+    <string name="connect_calls_recent_voicemail">Recent voicemails</string>
+    <string name="connect_calls_edit_button">Edit</string>
+    <string name="import_contact_loading_bottom_sheet_message_single">Import 1 contact to Nextiva</string>
+    <string name="import_contact_loading_bottom_sheet_message">Import %d contacts to Nextiva</string>
+    <string name="import_contact_loading_bottom_sheet_error_title">Oops! We didn’t see this coming.</string>
+    <string name="import_contact_loading_bottom_sheet_error_message">We’re sorry, there was an error while importing your contacts. Please try again...</string>
+
+    <!-- Import Contact Loading Bottom Sheet -->
+    <string name="connect_new_sms_title">New message</string>
+    <string name="connect_new_chat_search_box_hint">Type a Name or Phone Number</string>
+    <string name="connect_new_sms_add_more_contacts">Add more contacts</string>
+    <string name="connect_new_sms_send_to">Send to %1$s</string>
+    <string name="meeting_join_with_phone">Join using a phone for audio</string>
+
+    <!-- New SMS Bottom Sheet -->
+    <string name="meeting_instant_meeting">Instant Meeting</string>
+    <string name="meeting_start_now">Start now</string>
+    <string name="meeting_start">Start</string>
+
+    <!-- Connect Meeting Screens -->
+    <string name="meeting_join">Join</string>
+    <string name="meeting_Title">Meeting Title</string>
+    <string name="meeting_happening_now">Happening now</string>
+    <string name="meeting_participants_count_text">%1$d participants are in the meeting</string>
+    <string name="meeting_one_participant_count_text">%1$d participant is in the meeting</string>
+    <string name="meeting_no_participants_count_text">No one is in the meeting yet</string>
+    <string name="meeting_audio_source">Audio source: %1$s</string>
+    <string name="meeting_meetings_header">Upcoming meetings</string>
+    <string name="connect_meeting_list_no_results_empty_state_view_message_text">You don\'t have any meetings activity.</string>
+    <string name="connect_meeting_list_no_results_empty_state_view_title_text">No meetings to show</string>
+    <string name="scheduled_meetings_empty_state_view_message_text">You don\'t have any Scheduled meetings.</string>
+    <string name="scheduled_meetings_empty_state_view_title_text">No meetings to show</string>
+    <string name="meeting_scheduled_format">Scheduled %1$s - %2$s</string>
+    <string name="meeting_in_progress_format">In progress (%1$d people joined)</string>
+    <string name="meeting_ended_format">Ended %1$s</string>
+    <string name="meeting_all_day_format">All Day</string>
+    <string name="your_camera_is_off">Your camera is off</string>
+    <string name="actions_meeting_info">Meeting Information</string>
+    <string name="meeting_info_join_link">Join link:</string>
+    <string name="meeting_info_dial_in_by_phone">Dial in by phone:</string>
+    <string name="meeting_info_share_invitation">Share invitation</string>
+    <string name="meeting_info_join_using_a_phone_for_audio">Join using a phone for audio </string>
+    <string name="meeting_info_meeting_id">Meeting ID: %1$s</string>
+    <string name="meeting_info_US">US: %1$s</string>
+    <string name="meeting_info_US_Toll_Free">US Toll-Free: %1$s</string>
+    <string name="meeting_invite_invite_others_to_join_this_meeting">Invite others to join this meeting</string>
+    <string name="meeting_invite_text_view_hint_type_name_or_email_address">Type a name or email address</string>
+    <string name="meeting_link_successfully_copied_to_clipboard">Link successfully copied to clipboard</string>
+    <string name="meeting_wait_message">Please wait for the meeting to start…</string>
+    <string name="meeting_preview_start_date">%1$s · %2$s</string>
+    <string name="meeting_attendee_joined">%1$s has joined the meeting.</string>
+    <string name="meeting_attendee_left">%1$s has left the meeting.</string>
+    <string name="meeting_attendee_dropped">%1$s has dropped the meeting.</string>
+    <string name="meeting_instant_title">Start a meeting</string>
+    <string name="meeting_schedule_title">Join a meeting</string>
+    <string name="share_contact_bottom_sheet_title">Share contact</string>
+    <string name="share_contact_bottom_sheet_message">Sharing this contact will make messages, comments, and files related to this contact visible to others in your company. This action cannot be undone.</string>
+    <string name="share_contact_bottom_sheet_question">Are you sure you want to share this contact?</string>
+    <string name="share_contact_bottom_sheet_dont_show">Don\’t show me this again</string>
+    <string name="recorded_message_url" translatable="false">https://www.nextiva.com/privacy-policy.html</string>
+    <string name="recorded_message_link_text" translatable="false">Privacy policy</string>
+    <string name="meeting_is_being_recorded_message">This meeting is being recorded. By joining, you consent to the recording. Check out our Privacy policy.</string>
+    <string name="meeting_recording_stopped_message">Recording has stopped… we will let you know when file is ready.</string>
+    <string name="meeting_recording">Recording...</string>
+    <string name="meeting_recording_timer">Recording %1$s</string>
+
+    <!-- Share Contact Bottom Sheet -->
+    <string name="share_contact_bottom_sheet_confirm">Yes, share</string>
+    <string name="connect_call_details_add_to_contacts">Add to contacts</string>
+    <string name="connect_call_details_add_to_existing_contact">Add to existing contact</string>
+    <string name="connect_call_details_add_to_local_contacts">Add to local contacts</string>
+    <string name="connect_call_details_extended_time">%1$s - %2$s</string>
+    <string name="connect_call_details_block_number">Block number</string>
+    <string name="connect_call_details_unblock_number">Unblock number</string>
+    <string name="connect_call_details_block_number_title">Block phone number</string>
+    <string name="connect_call_details_unblock_number_title">Unblock phone number</string>
+    <string name="connect_call_details_block_number_message">You will not receive any additional phone calls from this number. Are you sure you want to block this phone number?</string>
+    <string name="connect_call_details_unblock_number_message">Are you sure you want to unblock this phone number?</string>
+    <string name="connect_call_details_block_number_description">Reject calls from specific numbers: %s</string>
+    <string name="connect_call_details_block_number_success">Number has been blocked.</string>
+    <string name="connect_call_details_unblock_number_success">Number has been unblocked.</string>
+    <string name="connect_call_details_block_number_failure">Blocking failed. Please try again later.</string>
+    <string name="connect_call_details_unblock_number_failure">Unblocking failed. Please try again later.</string>
+
+    <!-- Connect Call Details -->
+    <string name="connect_call_details_start_time">Start Time: %1$s</string>
+    <string name="connect_call_details_end_time">End Time: %1$s</string>
+    <string name="connect_call_details_duration_time">Call Duration: %1$s</string>
+    <string name="connect_contact_long_click_dialog_call">Make a call</string>
+    <string name="connect_contact_long_click_dialog_extension">Dial extension</string>
+    <string name="connect_contact_long_click_dialog_text">Send a message</string>
+    <string name="connect_contact_long_click_dialog_copy">Copy number</string>
+    <string name="connect_contact_long_click_block_number">Block number</string>
+    <string name="set_presence_bottom_sheet_set_your_status">Set your status</string>
+    <string name="set_presence_bottom_sheet_whats_is_your_status">What is your status?</string>
+
+    <!-- Connect Contact Long Click Dialog -->
+    <string name="set_do_not_disturb_bottom_sheet_set_your_duration">Set duration</string>
+    <string name="set_do_not_disturb_bottom_sheet_set_action_done">Done</string>
+
+    <!-- Set Presence Bottom Sheet -->
+    <string name="set_do_not_disturb_bottom_sheet_duration_until_status_change">Until I change my status</string>
+    <string name="set_do_not_disturb_bottom_sheet_duration_until_time">Until %s</string>
+
+    <!-- Set Do Not Disturb Duration Bottom Sheet -->
+    <string name="set_do_not_disturb_bottom_sheet_duration_30_minute">30 minutes</string>
+    <string name="set_do_not_disturb_bottom_sheet_duration_1_hour">1 hour</string>
+    <string name="set_do_not_disturb_bottom_sheet_duration_6_hours">6 hours</string>
+    <string name="set_do_not_disturb_bottom_sheet_duration_today">Today</string>
+    <string name="set_do_not_disturb_bottom_sheet_duration_custom">Custom</string>
+    <string name="set_do_not_disturb_bottom_sheet_duration_date">%1$s %2$s, %3$s</string>
+    <string name="bottom_sheet_sms_details_overflow">%d others</string>
+    <string name="bottom_sheet_sms_details_participant_count">%d people</string>
+    <string name="bottom_sheet_sms_details_self_indicator">(You)</string>
+    <string name="bottom_sheet_phone_for_audio_title">Join using a phone for audio</string>
+
+    <!-- Bottom Sheet Sms Details -->
+    <string name="bottom_sheet_phone_for_audio_join_now_message">Using your phone to listen and speak. You can still click \"Join now\" to connect your video.</string>
+    <string name="bottom_sheet_phone_for_audio_join_message">Using your phone to listen and speak. You can still click \"Join\" to connect your video.</string>
+    <string name="bottom_sheet_phone_for_audio_phone_message">On your phone, dial:</string>
+
+    <!-- Bottom Sheet Phone For Audio -->
+    <string name="bottom_sheet_phone_for_audio_meeting_message">Meeting ID:</string>
+    <string name="bottom_sheet_phone_for_audio_alert_only_host">You are the only host. If you would like to join via a phone only, you may not have access to some features. Assign co-host to help you moderate the meeting.</string>
+    <string name="bottom_sheet_phone_for_audio_alert_host">You are the host. If you would like to join via a phone only, you may not have access to some features. Assign co-host to help you moderate the meeting.</string>
+    <string name="bottom_sheet_phone_for_audio_alert_clickable">Assign co-host</string>
+    <string name="bottom_sheet_phone_for_audio_button">One-touch dial now</string>
+    <string name="bottom_sheet_assign_cohost_title">Assign co-host</string>
+    <string name="bottom_sheet_assign_cohost_message">Assign a co-host to help you moderate the meeting while you join the meeting via a phone.</string>
+    <string name="bottom_sheet_assign_cohost_button_assign">Assign</string>
+    <string name="bottom_sheet_assign_cohost_success_message">You have assigned %s as a co-host.</string>
+
+    <!-- Bottom Sheet Assign co-host -->
+    <string name="bottom_sheet_assign_cohost_multiple_success_message">You have assigned %s as co-hosts.</string>
+    <string name="bottom_sheet_assign_cohost_error_message">Something went wrong! Try again.</string>
+    <string name="bottom_sheet_assign_cohost_no_cohost">There are no eligible meeting participants to be assigned as a co-host. Only Teammates may be assigned as a co-host.</string>
+    <string name="bottom_sheet_scheduled_meetings_title">Recent meetings</string>
+    <string name="bottom_sheet_scheduled_meetings_time_meeting" translatable="false">%1$s · %2$s - %3$s</string>
+    <string name="bottom_sheet_scheduled_meetings_time_all_day_meeting">%1$s · All day</string>
+    <string name="bottom_sheet_meeting_notification_no_internet">The Internet connection appears to be offline.</string>
+
+    <!-- Bottom Sheet Scheduled Meetings -->
+    <string name="bottom_sheet_meeting_notification_please_check">Please check with the meeting host if you have any questions.</string>
+    <string name="bottom_sheet_meeting_notification_rejoin">Rejoin the meeting</string>
+    <string name="bottom_sheet_meeting_notification_collaborate">Want to collaborate with your team on NextivaONE?</string>
+
+    <!-- Bottom Sheet Meeting Notification -->
+    <string name="bottom_sheet_meeting_notification_learn_more">Learn more</string>
+    <string name="notification_create_schedule_name">SCHEDULE NAME *</string>
+    <string name="notification_create_schedule_name_edit_text_hint">Enter Schedule name</string>
+    <string name="notification_create_schedule_daily_hours">Daily hours</string>
+    <string name="notification_create_schedule_daily_hours_radio_all_week">Use the same hours Monday - Friday</string>
+
+    <!-- Notification Create Schedule Screen -->
+    <string name="notification_create_schedule_daily_hours_radio_custom_hours">Custom hours per day</string>
+    <string name="notification_create_schedule_holidays">Holidays</string>
+    <string name="notification_create_schedule_holidays_subhead">Select the holidays or time away you\'d like to exclude from this schedule.</string>
+    <string name="notification_create_schedule_holiday_observed_holiday">Observed holidays</string>
+    <string name="notification_create_schedule_holiday_specified_dates">Specified dates</string>
+    <string name="notification_create_schedule_holiday_custom_dates">Custom dates</string>
+    <string name="notification_create_schedule_start_time_label">START TIME</string>
+    <string name="notification_create_schedule_end_time_label">END TIME</string>
+    <string name="notification_create_schedule_save">Save</string>
+    <string name="notification_create_schedule_cancel">Cancel</string>
+    <string name="notification_create_schedule_validation_error_end_time_before_start">End time cannot be before the start time.</string>
+    <string name="notification_create_schedule_validation_error_start_date_time_before_end_date_time">The start date and time must be before the end date and time.</string>
+    <string name="notification_create_schedule_validation_error_break_times_range">Break times must be between the scheduled time range.</string>
+    <string name="notification_create_schedule_validation_error_break_times_overlapping">The break times selected cannot be overlapping.</string>
+    <string name="notification_create_schedule_validation_error_schedule_name_in_use">This schedule name is already in use. Please enter a different name.</string>
+    <string name="notification_create_schedule_validation_error_schedule_name_max_limit_reached">Schedule Name must be between 1 and 40 characters.</string>
+    <string name="notification_create_schedule_validation_error_schedule_name_empty">Please enter a schedule name.</string>
+    <string name="notification_create_schedule_txt_saving">Saving …</string>
+    <string name="notification_create_schedule_prefix_break">break</string>
+    <string name="notification_create_schedule_txt_monday_friday">Monday-friday</string>
+    <string name="notification_create_schedule_hours_default_start_time">9:00 am</string>
+    <string name="notification_create_schedule_hours_default_end_time">5:00 pm</string>
+    <string name="notification_create_schedule_breaks_default_start_time">12:00 pm</string>
+    <string name="notification_create_schedule_breaks_default_end_time">1:00 pm</string>
+    <string name="notification_create_schedule_discard_title">Discard changes</string>
+    <string name="notification_create_schedule_discard_message">Are you sure you want to discard any changes to this schedule?</string>
+    <string name="notification_create_schedule_discard_primary">Yes, discard</string>
+    <string name="notification_create_schedule_discard_go_back">Go back</string>
+    <string name="notification_create_schedule_label_scheduled_holidays">Scheduled Holidays</string>
+    <string name="notification_create_schedule_save_success">Schedule has been successfully saved.</string>
+    <string name="create_schedule_please_enter_a_valid_schedule">Please enter a valid schedule</string>
+    <string name="work_schedule_custom_dates_enter_date_message">Enter date you\'d like to exclude from the schedule.</string>
+    <string name="work_schedule_custom_dates_occurrence">OCCURRENCE</string>
+    <string name="work_schedule_custom_dates_occurrences">Occurrence(s)</string>
+    <string name="work_schedule_custom_dates_day">DAY</string>
+    <string name="work_schedule_custom_dates_occurrence_day_of_month">%1$s %2$s of %3$s</string>
+    <string name="work_schedule_custom_dates_occurrence_time_hours">(%1$s-%2$s)</string>
+    <string name="work_schedule_custom_dates_occurrence_years">%1$s-%2$s</string>
+    <string name="work_schedule_custom_dates_occurrence_am">am</string>
+    <string name="work_schedule_custom_dates_occurrence_pm">pm</string>
+    <string name="work_schedule_custom_dates_occurrence_short_am">a</string>
+    <string name="work_schedule_custom_dates_occurrence_short_pm">p</string>
+    <string name="work_schedule_custom_dates_schedule">Schedule</string>
+
+    <!--Custom dates -->
+    <string name="work_schedule_custom_dates_month">MONTH</string>
+    <string name="work_schedule_custom_dates_this_is_an_all_day_event">This is an all day event</string>
+    <string name="work_schedule_custom_dates_this_event_repeats_forever">This event repeats forever</string>
+    <string name="work_schedule_custom_dates_end_after">END AFTER</string>
+    <string name="work_schedule_custom_dates_first">First</string>
+    <string name="work_schedule_custom_dates_1st">1st</string>
+    <string name="work_schedule_custom_dates_second">Second</string>
+    <string name="work_schedule_custom_dates_2nd">2nd</string>
+    <string name="work_schedule_custom_dates_third">Third</string>
+    <string name="work_schedule_custom_dates_3rd">3rd</string>
+    <string name="work_schedule_custom_dates_fourth">Fourth</string>
+    <string name="work_schedule_custom_dates_4th">4th</string>
+    <string name="work_schedule_custom_dates_last">Last</string>
+    <string name="title_activity_custom_date">Custom dates</string>
+    <string-array name="work_schedule_custom_dates">
+        <item>@string/work_schedule_custom_dates_first</item>
+        <item>@string/work_schedule_custom_dates_second</item>
+        <item>@string/work_schedule_custom_dates_third</item>
+        <item>@string/work_schedule_custom_dates_fourth</item>
+        <item>@string/work_schedule_custom_dates_last</item>
+    </string-array>
+    <string-array name="general_days_of_the_week">
+        <item>@string/general_Monday</item>
+        <item>@string/general_Tuesday</item>
+        <item>@string/general_Wednesday</item>
+        <item>@string/general_Thursday</item>
+        <item>@string/general_Friday</item>
+        <item>@string/general_Saturday</item>
+        <item>@string/general_Sunday</item>
+    </string-array>
+    <string-array name="general_all_caps_days_of_the_week">
+        <item>@string/general_MONDAY</item>
+        <item>@string/general_TUESDAY</item>
+        <item>@string/general_WEDNESDAY</item>
+        <item>@string/general_THURSDAY</item>
+        <item>@string/general_FRIDAY</item>
+        <item>@string/general_SATURDAY</item>
+        <item>@string/general_SUNDAY</item>
+    </string-array>
+    <string-array name="general_truncated_days_of_the_week">
+        <item>@string/general_Mon</item>
+        <item>@string/general_Tue</item>
+        <item>@string/general_Wed</item>
+        <item>@string/general_Thu</item>
+        <item>@string/general_Fri</item>
+        <item>@string/general_Sat</item>
+        <item>@string/general_Sun</item>
+    </string-array>
+    <string-array name="general_months">
+        <item>@string/general_january</item>
+        <item>@string/general_february</item>
+        <item>@string/general_march</item>
+        <item>@string/general_april</item>
+        <item>@string/general_may</item>
+        <item>@string/general_june</item>
+        <item>@string/general_july</item>
+        <item>@string/general_august</item>
+        <item>@string/general_september</item>
+        <item>@string/general_october</item>
+        <item>@string/general_november</item>
+        <item>@string/general_december</item>
+    </string-array>
+
+    <!-- Switch Conversation Bottom Sheet -->
+    <string name="bottom_sheet_switch_conversation_title">Switch Conversation?</string>
+    <string name="bottom_sheet_switch_conversation_message_one">By changing this number, we will need to switch the conversation to a view that has the necessary contacts included.</string>
+    <string name="bottom_sheet_switch_conversation_message_two">Are you sure you want to switch the conversation?</string>
+    <string name="bottom_sheet_switch_conversation_confirm_button">Yes, switch conversation</string>
+
+    <!-- User Details Screen -->
+    <string name="user_details_header_title">My details</string>
+    <string name="user_details_item_work">Work</string>
+    <string name="user_details_item_work_extension">Work extension</string>
+    <string name="user_details_item_primary_email">Primary</string>
+    <string name="user_details_item_time_zone">Time zone</string>
+    <string name="user_details_change_time_zone">Change time zone</string>
+    <string name="user_details_no_time_zone_message">No time zone selected</string>
+    <string name="user_details_no_data_available">No data available</string>
+
+    <!-- Connect EditMode Section -->
+    <string name="connect_edit_mode_section_done">Done</string>
+    <string name="connect_calls_delete_communications_title">Delete communications</string>
+    <string name="connect_calls_delete_message_sub_title">Deleting communications will remove them permanently everywhere. \n\n Are you sure you want to delete communications?</string>
+    <string name="connect_calls_delete_done_message">Communications deleted.</string>
+    <string name="connect_calls_single_delete_done_message">Communication deleted.</string>
+    <string name="connect_calls_delete_communication_title">Delete communication</string>
+    <string name="connect_calls_delete_communication_subtitle">Are you sure you want to delete this communication?</string>
+    <string name="connect_sms_delete_communication_subtitle">Deleting communications will remove them permanently everywhere.</string>
+    <string name="connect_calls_retry_delete_error_message">Sorry, we were unable to delete. Try again</string>
+    <string name="connect_calls_single_delete_unable_to_delete">Unable to delete. Please try again.</string>
+    <string name="connect_calls_retry_update_error_message">Something went wrong. Try again</string>
+    <string name="connect_item_count_description_selected">%1$s selected</string>
+    <string name="connect_item_count_description_showing">Showing %1$s</string>
+
+    <string name="connect_sms_delete_single_message_title">Delete message</string>
+    <string name="connect_sms_delete_single_message_subtitle">Message will be deleted only for you. Are you sure you want to delete this message?</string>
+    <string name="connect_sms_message_deleted_success">Message deleted.</string>
+    <string name="connect_sms_message_deleted_failed">Unable to delete. Please try again.</string>
+    <string name="connect_sms_message_updated_failed">Unable to update. Please try again.</string>
+
+    <!-- Sip Configuration Screen -->
+    <string name="sip_configuration_title">SIP Configuration</string>
+    <string name="sip_configuration_audio_codecs">Audio Codecs</string>
+    <string name="sip_configuration_video_codecs">Video Codecs</string>
+    <string name="sip_configuration_enable_all">Enable All</string>
+    <string name="sip_configuration_disable_all">Disable All</string>
+    <string name="sip_configuration_current_codecs">Current Codecs: %1$s</string>
+    <string name="sip_configuration_current_tracking_id">Current X-BroadWorks-Correlation-Info: %1$s</string>
+    <string name="sip_echo_cancellation_option">Echo Cancellation: %1$s</string>
+    <string name="sip_aec_aggressiveness">Echo Cancellation Aggressiveness: %1$s</string>
+    <string name="sip_noise_suppression">Noise Suppression Enabled</string>
+
+    <!-- Connect Contact Selection Screen -->
+    <string name="connect_contact_selection_search_hint">Enter name or number</string>
+    <string name="connect_contact_selection_make_call">Make a new call</string>
+    <string name="connect_contact_selection_make_call_subtitle">Call another person</string>
+    <string name="connect_contact_selection_transfer_call_title">Transfer</string>
+    <string name="connect_contact_selection_transfer_call_subtitle">Transfer this call to another person.</string>
+    <string name="connect_contact_selection_no_result_try_dialing_text">Try dialing a phone number instead</string>
+    <string name="connect_contact_selection_transfer_to_mobile_title">Transfer to mobile</string>
+    <string name="connect_contact_selection_transfer_to_mobile_subtitle">Move the call from the Nextiva app directly to your mobile device</string>
+
+    <!-- Call Transfer Type Selection Screen -->
+    <string name="call_transfer_type_option_blind">Blind</string>
+    <string name="call_transfer_type_option_warm">Warm</string>
+    <string name="call_transfer_complete">Complete transfer</string>
+    <string name="call_transfer_cancel">Cancel transfer</string>
+
+    <!-- Call Participants Screen -->
+    <string name="call_participants_self_indicator">(you)</string>
+    <string name="call_participants_unknown">Unknown</string>
+    <string name="title_activity_next_auth_login">NextAuthLoginActivity</string>
+
+
+</resources>

@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="42dp"
+    android:height="47dp"
+    android:viewportWidth="42"
+    android:viewportHeight="47">
+  <path
+      android:pathData="M11.7813,18.0224L32.1921,15.7424C32.2673,15.7313 32.3438,15.7452 32.4119,15.7825C32.48,15.8197 32.5366,15.8786 32.5745,15.9516C32.6124,16.0246 32.63,16.1085 32.625,16.1926C32.62,16.2767 32.5926,16.3573 32.5464,16.4242L20.5669,34.9224C20.5203,34.9924 20.4554,35.0447 20.3811,35.0725C20.3069,35.1002 20.2267,35.102 20.1515,35.0775C20.0763,35.0531 20.0096,35.0036 19.9605,34.9358C19.9113,34.868 19.8821,34.7851 19.8767,34.6982L18.8155,25.22C18.8083,25.0881 18.7735,24.9598 18.714,24.8453C18.6546,24.7309 18.5719,24.6333 18.4727,24.5604L11.6164,18.8032C11.55,18.7551 11.4987,18.6852 11.4695,18.6032C11.4403,18.5213 11.4348,18.4313 11.4536,18.3457C11.4724,18.2601 11.5146,18.1831 11.5744,18.1252C11.6343,18.0674 11.7088,18.0317 11.7877,18.0229L11.7813,18.0224Z"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.5"
+      android:fillColor="#00000000"
+      android:strokeColor="@color/nextivaPrimaryBlue"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M32.4667,16.0186L18.7813,24.7977"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.5"
+      android:fillColor="#00000000"
+      android:strokeColor="@color/nextivaPrimaryBlue"
+      android:strokeLineCap="round"/>
+</vector>

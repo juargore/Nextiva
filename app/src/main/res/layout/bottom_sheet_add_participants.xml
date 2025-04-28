@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transparent" >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/connectGrey01"
+        android:background="@drawable/connect_sheet_view_background"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <ImageView
+            android:id="@+id/pull_down_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="@dimen/general_padding_xsmall"
+            android:src="@drawable/ic_bottom_sheet_pull_down" />
+
+        <LinearLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/general_padding_medium"
+            android:paddingStart="@dimen/general_padding_medium"
+            android:paddingEnd="@dimen/general_padding_xsmall"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottom_sheet_new_sms_pull_down_icon">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:text="@string/connect_bottom_sheet_room_search_add"
+                android:textColor="@color/connectSecondaryDarkBlue"
+                android:textSize="@dimen/material_text_headline"
+                android:textStyle="bold" />
+
+            <include layout="@layout/view_toolbar_close_button"
+                android:id="@+id/cancel_icon_include"/>
+        </LinearLayout>
+
+        <com.nextiva.nextivaapp.android.features.rooms.view.components.ChipSelectorView
+            android:id="@+id/chip_selector_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/general_view_xlarge"
+            android:layout_marginHorizontal="@dimen/general_horizontal_margin_medium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/general_vertical_margin_medium"
+            android:paddingVertical="@dimen/general_padding_xmedium"
+            android:paddingHorizontal="@dimen/general_padding_medium"
+            android:text="@string/connect_bottom_sheet_room_search_warning"
+            android:textColor="@color/connectSecondaryDarkBlue"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/connectSecondaryLightBlue"
+            style="@style/DS_Caption1" />
+
+    </LinearLayout>
+
+    <com.nextiva.nextivaapp.android.util.TouchEventInterceptorLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/connectWhite"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toTopOf="@id/button_layout" >
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/connectWhite"
+            tools:layout="@layout/fragment_connect_sms_contacts_list" />
+
+    </com.nextiva.nextivaapp.android.util.TouchEventInterceptorLayout>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/connectWhite"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent" >
+
+        <TextView
+            android:id="@+id/add_button"
+            style="@style/CreateConnectContactButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/general_vertical_margin_medium"
+            android:backgroundTint="@color/connectGrey03"
+            android:enabled="true"
+            android:text="@string/connect_bottom_sheet_room_search_add"
+            android:textColor="@color/connectPrimaryGrey" />
+
+        <TextView
+            android:id="@+id/cancel_button"
+            style="@style/ConnectBorderlessButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/general_vertical_margin_medium"
+            android:text="@string/general_cancel" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

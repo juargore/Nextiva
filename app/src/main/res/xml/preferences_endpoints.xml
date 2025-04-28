@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:id="@+id/preferences_preference_domain"
+        android:key="@string/login_preferences_key_endpoints"
+        android:title="@string/login_preference_endpoints" />
+</PreferenceScreen>

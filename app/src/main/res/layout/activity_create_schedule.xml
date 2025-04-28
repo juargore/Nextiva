@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraint_schedule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/connectWhite">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/create_schedule_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/connectGrey01"
+        android:fitsSystemWindows="true"
+        android:stateListAnimator="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/connect_create_Schedule_toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll|snap"
+            app:titleEnabled="false"
+            app:titleMarginStart="0dp"
+            app:titleTextAppearance="@style/Toolbar.ConnectTitleText" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scroll_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@id/txt_schedule_save"
+        app:layout_constraintTop_toBottomOf="@id/create_schedule_app_bar_layout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/connect_linear_schedule_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/general_horizontal_margin_medium"
+                android:layout_marginTop="@dimen/general_vertical_margin_large"
+                android:layout_marginRight="@dimen/general_horizontal_margin_medium"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/label_schedule_name"
+                    style="@style/DS_Overline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="@string/notification_create_schedule_name"
+                    android:textColor="@color/connectGrey10" />
+
+                <EditText
+                    android:id="@+id/edit_schedule_name"
+                    style="@style/Body1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_vertical_margin_small"
+                    android:background="@drawable/connect_text_input_background"
+                    android:fontFamily="@font/lato_regular"
+                    android:hint="@string/notification_create_schedule_name_edit_text_hint"
+                    android:padding="@dimen/general_padding_xmedium"
+                    android:singleLine="true"
+                    android:textColor="@color/connectSecondaryDarkBlue"
+                    android:textColorHint="@color/connectGrey08"
+                    android:textSize="@dimen/material_text_subhead" />
+
+                <TextView
+                    android:id="@+id/edit_txt_validation_message"
+                    style="@style/DS_Caption1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_vertical_margin_xsmall"
+                    android:text="Please enter a valid schedule"
+                    android:textColor="@color/connectSecondaryRed"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginTop="@dimen/general_padding_large"
+                android:background="@color/connectGrey01"
+                app:layout_constraintTop_toBottomOf="@+id/connect_linear_schedule_name" />
+
+            <LinearLayout
+                android:id="@+id/connect_linear_schedule_daily_hours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/general_horizontal_margin_medium"
+                android:layout_marginTop="@dimen/general_padding_large"
+                android:layout_marginRight="@dimen/general_horizontal_margin_medium"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/divider1">
+
+                <TextView
+                    style="@style/DS_Subtitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notification_create_schedule_daily_hours" />
+
+                <RadioGroup
+                    android:id="@+id/radio_groups_schedule_daily_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_view_xmedium">
+
+                    <RadioButton
+                        android:id="@+id/radio_button_schedule_mon_fri"
+                        style="@style/DS_Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_regular"
+                        android:paddingStart="@dimen/general_padding_small"
+                        android:paddingEnd="0dp"
+                        android:text="@string/notification_create_schedule_daily_hours_radio_all_week"
+                        android:textColor="@color/connectSecondaryDarkBlue"
+                        android:theme="@style/connectPrimaryRadioButton" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_schedule_custom_hours"
+                        style="@style/DS_Body1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lato_regular"
+                        android:paddingStart="@dimen/general_padding_small"
+                        android:paddingEnd="0dp"
+                        android:text="@string/notification_create_schedule_daily_hours_radio_custom_hours"
+                        android:textColor="@color/connectSecondaryDarkBlue"
+                        android:theme="@style/connectPrimaryRadioButton" />
+
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:id="@+id/linear_hours_breaks_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginTop="@dimen/general_vertical_margin_large"
+                android:background="@color/connectGrey01"
+                app:layout_constraintTop_toBottomOf="@+id/connect_linear_schedule_daily_hours" />
+
+            <LinearLayout
+                android:id="@+id/connect_linear_schedule_holidays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/general_vertical_margin_large"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@id/divider2">
+
+                <TextView
+                    style="@style/DS_Subtitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/general_horizontal_margin_medium"
+                    android:layout_marginRight="@dimen/general_horizontal_margin_medium"
+                    android:text="@string/notification_create_schedule_holidays" />
+
+                <TextView
+                    style="@style/DS_Body1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/general_horizontal_margin_medium"
+                    android:layout_marginTop="@dimen/general_vertical_margin_medium"
+                    android:layout_marginRight="@dimen/general_horizontal_margin_medium"
+                    android:fontFamily="@font/lato_regular"
+                    android:text="@string/notification_create_schedule_holidays_subhead"
+                    android:textColor="@color/connectGrey10" />
+
+                <TextView
+                    android:id="@+id/txt_schedule_observed_holiday"
+                    style="@style/DS_Body1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/general_horizontal_margin_medium"
+                    android:layout_marginTop="@dimen/general_vertical_margin_small"
+                    android:layout_marginRight="@dimen/general_horizontal_margin_medium"
+                    android:paddingTop="@dimen/general_padding_xmedium"
+                    android:paddingBottom="@dimen/general_padding_xmedium"
+                    android:text="@string/notification_create_schedule_holiday_observed_holiday"
+                    android:textColor="@color/connectSecondaryDarkBlue"
+                    app:drawableRightCompat="@drawable/ic_connect_keyboard_arrow_right" />
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/connectGrey01"
+                    app:layout_constraintTop_toBottomOf="@+id/connect_linear_schedule_daily_hours" />
+
+
+                <TextView
+                    android:id="@+id/txt_schedule_specified_dates"
+                    style="@style/DS_Body1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/general_horizontal_margin_medium"
+                    android:layout_marginRight="@dimen/general_horizontal_margin_medium"
+                    android:paddingTop="@dimen/general_padding_xmedium"
+                    android:paddingBottom="@dimen/general_padding_xmedium"
+                    android:text="@string/notification_create_schedule_holiday_specified_dates"
+                    android:textColor="@color/connectSecondaryDarkBlue"
+                    app:drawableEndCompat="@drawable/ic_connect_keyboard_arrow_right" />
+
+                <View
+                    android:id="@+id/divider4"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/connectGrey01"
+                    app:layout_constraintTop_toBottomOf="@+id/connect_linear_schedule_daily_hours" />
+
+
+                <TextView
+                    android:id="@+id/txt_schedule_custom_dates"
+                    style="@style/DS_Body1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/general_horizontal_margin_medium"
+                    android:layout_marginRight="@dimen/general_horizontal_margin_medium"
+                    android:paddingTop="@dimen/general_padding_xmedium"
+                    android:paddingBottom="@dimen/general_padding_xmedium"
+                    android:text="@string/notification_create_schedule_holiday_custom_dates"
+                    android:textColor="@color/connectSecondaryDarkBlue"
+                    app:drawableEndCompat="@drawable/ic_connect_keyboard_arrow_right" />
+
+                <View
+                    android:id="@+id/divider5"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/connectGrey01"
+                    app:layout_constraintTop_toBottomOf="@+id/connect_linear_schedule_daily_hours" />
+
+
+                <androidx.compose.ui.platform.ComposeView
+                    android:id="@+id/compose_scheduled_holidays_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/txt_schedule_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/general_horizontal_margin_medium"
+        android:layout_marginTop="@dimen/general_horizontal_margin_xlarge"
+        android:layout_marginRight="@dimen/general_horizontal_margin_medium"
+        android:layout_marginBottom="@dimen/general_horizontal_margin_medium"
+        android:fontFamily="@font/lato_bold"
+        android:inputType="textCapSentences"
+        android:text="@string/notification_create_schedule_save"
+        android:textAlignment="center"
+        android:textSize="@dimen/material_text_button"
+        app:layout_constraintBottom_toTopOf="@id/txt_schedule_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_schedule_cancel"
+        style="@style/DS_Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/general_horizontal_margin_medium"
+        android:layout_marginRight="@dimen/general_horizontal_margin_medium"
+        android:layout_marginBottom="@dimen/general_horizontal_margin_large"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/notification_create_schedule_cancel"
+        android:textColor="@color/connectPrimaryBlue"
+        android:textSize="@dimen/material_text_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

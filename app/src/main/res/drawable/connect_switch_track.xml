@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" />
+            <solid android:color="@color/connectGrey08" />
+            <size android:height="@dimen/general_view_medium"/>
+        </shape>
+    </item>
+    <item android:state_checked="true"
+        android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" />
+            <solid android:color="@color/connectPrimaryBlue" />
+            <size android:height="@dimen/general_view_medium"/>
+        </shape>
+    </item>
+    <item android:state_checked="true"
+        android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp" />
+            <solid android:color="@color/connectPrimaryBlue_28" />
+            <size android:height="@dimen/general_view_medium" />
+        </shape>
+    </item>
+</selector>

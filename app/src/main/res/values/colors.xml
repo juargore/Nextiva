@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/nextivaPrimaryBlue</color>
+    <color name="colorPrimaryDark">@color/nextivaDarkBlue</color>
+    <color name="colorAccent">@color/nextivaOrange</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="colorDarkPrimary">#303030</color>
+    <color name="blackOverlay20">#33000000</color>
+    <color name="blackOverlay40">#66000000</color>
+    <color name="blackOverlay80">#CC000000</color>
+    <color name="darkToolbar">@color/colorDarkPrimary</color>
+    <color name="white">#FFFFFF</color>
+    <color name="almostWhite">#FFFFFE</color>
+    <color name="whiteOverlay40">#66FFFFFF</color>
+    <color name="whiteOverlay80">#CCFFFFFF</color>
+    <color name="whiteoverlay70">#B3ffffff</color>
+
+    <color name="nextivaBlue">#0445A5</color>
+    <color name="nextivaLightBlue">#E6F0FE</color>
+    <color name="nextivaDarkBlue">#033073</color>
+    <color name="nextivaPrimaryBlue">#005FEC</color>
+    <color name="nextivaOrange">#F8B400</color>
+    <color name="nextivaDarkOrange">#9C7200</color>
+    <color name="nextivaLightOrange">#FFF1CC</color>
+    <color name="nextivaOrange_70">#B3F8B400</color>
+    <color name="nextivaOrange_30">#48F8B400</color>
+    <color name="nextivaGrey">#909194</color>
+    <color name="nextivaGreen">#20D57F</color>
+    <color name="nextivaRed">#F44336</color>
+    <color name="nextivaChatHeaderTextColor">#222648</color>
+    <color name="nextivaChatMessageTextColor">#3D3D3D</color>
+    <color name="nextivaNewBlue">#0A84FF</color>
+
+    <color name="ltGrey_55">#8CFAF7FB</color>
+    <color name="ltGrey">#FAF7FB</color>
+    <color name="mediumGrey">#E0E0E0</color>
+    <color name="coolGray_50">#99ADC2</color>
+    <color name="grey">#A2A2A2</color>
+    <color name="grey01">#F7F8FA</color>
+    <color name="grey03">#EDEFF4</color>
+    <color name="grey10">#54687F</color>
+    <color name="secondaryLightGrey">#A9B3BE</color>
+    <color name="dkGrey">#656565</color>
+    <color name="darkerGray">#3C3C3C</color>
+    <color name="darkerGray_55">#8C3C3C3C</color>
+    <color name="disabledTextGrey">#D7D7D7</color>
+    <color name="backgroundGrey">#EDEFF4</color>
+    <color name="secondaryDarkBlue">#222648</color>
+    <color name="secondaryLtGrey">#A9B3BE</color>
+    <color name="seekBackgroundGrey">#D0D9E8</color>
+
+    <color name="statusBusyRed">@color/errorRed</color>
+    <color name="statusAwayOrange">#C89200</color>
+    <color name="statusMobileGreen">#4FA517</color>
+
+    <color name="activeCallDisabledGrey">#54677A</color>
+    <color name="activeCallDisabledTextGrey">#ACACAC</color>
+    <color name="activeCallDkGrey">#56616E</color>
+    <color name="activeCallDkGrey2">#69737E</color>
+    <color name="activeCallMediumGrey">#728295</color>
+
+    <color name="darkModeHeaderGrey">#38383A</color>
+
+    <color name="gradientBackgroundOuterColor">#000000</color>
+    <color name="gradientBackgroundInnerColor">#137092</color>
+
+    <color name="messageToggleTabBg">#F5F7F8</color>
+
+    <color name="errorRed">#DC3648</color>
+    <color name="ratingToast">#222648</color>
+
+    <color name="warningTitleTextColor">#E9B945</color>
+
+    <!-- Avatar Colors -->
+    <color name="avatarBackground">#D0D9E8</color>
+    <color name="avatarOnlinePresence">#11CE68</color>
+    <color name="avatarAwayPresence">#F88F00</color>
+    <color name="avatarBusyPresence">#CE1111</color>
+    <color name="avatarOfflinePresence">#99ADC2</color>
+    <color name="avatarConnectOfflinePresenceStroke">#7A7D8C</color>
+    <color name="avatarConnectOfflinePresenceFill">#FCFFFF</color>
+    <color name="avatarPendingPresence">#DCB200</color>
+
+    <!-- Group Header List Item -->
+    <color name="groupHeaderBackground">#F5F7F8</color>
+
+    <!-- Text Colors -->
+    <color name="contactListItemSubtitle">#A2B6CA</color>
+    <color name="contactListItemSubtitleDark">#A2B6CA</color>
+
+    <color name="smsMessageListItemSubtitle">#A2B6CA</color>
+    <color name="smsMessageListItemtitle">#232649</color>
+
+    <color name="voicemailListItemSubtitle">#A2B6CA</color>
+
+    <color name="colorDialerText">@color/black</color>
+
+    <!-- Divider Colors -->
+    <color name="listItemDividerLight">#F0F3F7</color>
+    <color name="listItemDividerDark">#494949</color>
+    <!-- Tabbar Colors -->
+    <color name="tabbarChatStroke">@color/nextivaPrimaryBlue</color>
+    <color name="chatChipBarBackgroundColor">@color/white</color>
+    <color name="menuButtonFillColor">@color/black</color>
+    <color name="darkModeMenuBar">#B3ffffff</color>
+
+    <!-- Navigation Drawer -->
+    <color name="navigationDrawerDividerColor">#F0F3F7</color>
+    <color name="navigationDrawerSignOut">#DA3444</color>
+    <color name="navigationDrawerPresenceStatusColor">#993C3C43</color>
+
+    <color name="searchTextHighlight">#FBEAB7</color>
+
+    <color name="emptyListIconBackground">@color/black</color>
+
+    <color name="counter_blue_button_outline_color">@color/white</color>
+    <color name="selector_gray_circle_button_background">@color/coolGray_50</color>
+    <color name="dialer_backspace_button_tint">@color/colorPrimary</color>
+    <color name="dialer_call_button_background">#35C759</color>
+
+    <!-- Connect -->
+    <!-- Primary Colors ( Light ) -->
+    <color name="connectPrimaryBlue">#005FEC</color>
+    <color name="connectPrimaryLightBlue">#F5FAFF</color>
+    <color name="connectPrimaryGrey">#A9B3BE</color>
+    <color name="connectPrimaryGreen">#008763</color>
+    <color name="connectPrimaryRed">#DB3545</color>
+    <color name="connectPrimaryLightRed">#FCE9E6</color>
+    <color name="connectPrimaryYellow">#FFCB00</color>
+    <color name="connectPrimaryOrange">#ED6A21</color>
+
+    <color name="surfaceWarning">#FFF2E1</color>
+    <color name="surfaceError">#FCE9E6</color>
+
+    <!-- Secondary Colors ( Light ) -->
+    <color name="connectSecondaryGrey">#D2D8E1</color>
+    <color name="connectSecondaryBlue">#1D3BCD</color>
+    <color name="connectSecondaryLightBlue">#E2F2FF</color>
+    <color name="connectSecondaryBrightBlue">#53B4E9</color>
+    <color name="connectSecondaryDarkBlue">#222648</color>
+    <color name="connectSecondaryRed">#C33000</color>
+    <color name="connectSecondaryYellow">#F2E29C</color>
+    <color name="connectMarkToCopyBlue">#000F8C</color>
+    <color name="connectMarkToCopyWhite">#ADAFB4</color>
+
+    <!-- Grey Colors ( Light ) -->
+    <color name="connectWhite">#FFFFFF</color>
+    <color name="connectGrey01">#F7F8FA</color>
+    <color name="connectGrey02">#F0F3F7</color>
+    <color name="connectGrey03">#EDEFF4</color>
+    <color name="connectGrey08">#A2B6CA</color>
+    <color name="connectGrey09">#758BA3</color>
+    <color name="connectGrey10">#54687F</color>
+    <color name="connectGreyDisabled">#ACAEB8</color>
+
+    <!-- Other -->
+    <color name="connectPrimaryBlue_28">#28005FEC</color>
+    <color name="mainStatusBarDim">#a87c7c7d</color>
+    <color name="dialogDim">#52000000</color>
+    <color name="connectSecondaryDarkBlue_95">#F2222648</color>
+    <color name="connectSecondaryDarkBlue_50">#7F222648</color>
+    <color name="dangerSecondaryLight">#F5DCCF</color>
+    <color name="draftMessageColor">#EDEFF4</color>
+
+    <!-- Contact Avatar Background Colors -->
+    <color name="orange_200">#FFC985</color>
+    <color name="deepOrange_200">#FFAA8C</color>
+    <color name="teal_200">#76D5BF</color>
+    <color name="green_200">#A5F2C9</color>
+    <color name="lightGreen_300">#7EEDB4</color>
+    <color name="red_100">#FAA9B8</color>
+    <color name="purple_100">#D5BFEC</color>
+    <color name="lightBlue_100">#B8E4F8</color>
+    <color name="blue_200">#87CBFF</color>
+    <color name="avatarDefaultBgColor">#EDEFF4</color>
+    <color name="avatarCustomTextColor">#222648</color>
+    <color name="avatarDefaultTextColor">#A2B6CA</color>
+    <color name="avatarConferenceCountBoxColor">#C3CED9</color>
+
+
+    <array name="ContactAvatar">
+        <item>@color/orange_200</item>
+        <item>@color/deepOrange_200</item>
+        <item>@color/teal_200</item>
+        <item>@color/green_200</item>
+        <item>@color/lightGreen_300</item>
+        <item>@color/red_100</item>
+        <item>@color/purple_100</item>
+        <item>@color/lightBlue_100</item>
+        <item>@color/blue_200</item>
+    </array>
+
+    <!-- Meetings Colors -->
+    <color name="meetingButtonTint">#FFFFFF</color>
+    <color name="meetingVideoOverlayButtonText">#FFFFFF</color> <!--connectGrey10 only in light mode-->
+    <color name="meetingVideoOverlayButtonBackgroundTint">#54687F</color>
+    <color name="connectGrey10Alpha_05">#54687F80</color>
+    <color name="activeMeetingToolbarBackground">#80222348</color>
+
+    <!-- Active Call Screens -->
+    <color name="activeCallBackground">#54687F</color>
+    <color name="activeCallIcon">#758BA3</color>
+    <color name="activeCallButtonDisabled">#F7F8FA</color>
+    <color name="activeCallButtonSelected">#FFCB00</color>
+    <color name="activeCallCallerText">#A2B6CA</color>
+    <color name="activeCallEndBackground">#DB3545</color>
+
+    <!-- Rooms Colors -->
+    <color name="roomButtonActive">#FF9325</color>
+
+    <!-- Assign CoHost -->
+    <color name="blueIconColor">@color/nextivaPrimaryBlue</color>
+
+    <!-- Phone number type label background colors -->
+    <color name="phoneTypeWork">#E3F5FC</color>
+    <color name="phoneTypeHome">#EFE5F7</color>
+    <color name="phoneTypeMobile">#F8FDED</color>
+    <color name="phoneTypeOther">#DEF5F0</color>
+
+    <!-- Phone number type label text colors -->
+    <color name="phoneTypeWorkLabelTxt">#2E568A</color>
+    <color name="phoneTypeHomeLabelTxt">#3E0093</color>
+    <color name="phoneTypeMobileLabelTxt">#304A01</color>
+    <color name="phoneTypeOtherLabelTxt">#005A39</color>
+
+    <!--Audio device popup colors -->
+    <color name="audioDevicePopupBackground">#FFFFFF</color>
+
+    <!-- Delete snackbar colors -->
+    <color name="snackbarUnableToDelete">#FFFFFF</color>
+
+    <!-- Delete confirmation dialog, swipe delete -->
+    <color name="checkBoxTextColorDelete">#54687F</color>
+
+</resources>

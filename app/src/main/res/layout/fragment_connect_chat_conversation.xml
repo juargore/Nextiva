@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017 Nextiva, Inc. to Present.
+  ~ All rights reserved.  -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/connectWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/chat_conversation_fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:theme="@style/AppTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context="com.nextiva.nextivaapp.android.fragments.ChatConversationFragment">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/chat_conversation_group_icon_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/general_vertical_margin_small"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/chat_conversation_contact_name_text_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_group"
+            app:tint="@color/connectSecondaryDarkBlue" />
+
+        <com.nextiva.nextivaapp.android.view.EmptyStateView
+            android:id="@+id/chat_conversation_empty_state_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chat_conversation_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingTop="@dimen/general_vertical_margin_xsmall"
+            android:paddingBottom="@dimen/general_vertical_margin_xsmall" />
+
+        <TextView
+            android:id="@+id/chat_conversation_contact_action_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:paddingStart="@dimen/general_vertical_margin_small"
+            android:paddingEnd="@dimen/general_vertical_margin_small"
+            android:paddingBottom="@dimen/general_horizontal_margin_small"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/chat_conversation_error_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/connectGrey01"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hairline_small"
+                android:background="@color/connectGrey03" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/general_padding_medium" >
+
+                <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/general_padding_xsmall"
+                    android:textSize="@dimen/material_text_title"
+                    android:textColor="@color/connectGrey09"
+                    android:includeFontPadding="false"
+                    app:icon_string="@string/fa_exclamation_circle" />
+
+                <TextView
+                    android:id="@+id/chat_conversation_error_banner_text"
+                    style="@style/DS_Body2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/general_padding_xsmall"
+                    android:layout_weight="1"
+                    android:text="@string/chat_conversation_max_participants_error"
+                    android:textColor="@color/connectSecondaryDarkBlue" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hairline_small"
+                android:background="@color/connectGrey03" />
+
+        </LinearLayout>
+
+        <androidx.compose.ui.platform.ComposeView
+            android:id="@+id/chat_conversation_message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/chip_card_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="32dp"
+        android:clickable="true"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/connectPrimaryBlue"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chat_conversation_fragment_layout"
+        tools:visibility="gone">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/general_padding_medium">
+
+            <com.nextiva.nextivaapp.android.view.AvatarView
+                android:id="@+id/list_item_chat_conversation_avatar_view"
+                android:layout_width="@dimen/general_view_xxxlarge"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/list_item_chat_conversation_avatar_view"
+                app:layout_constraintStart_toEndOf="@+id/list_item_chat_conversation_avatar_view"
+                app:layout_constraintTop_toTopOf="@+id/list_item_chat_conversation_avatar_view">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/chip_card_name_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/general_horizontal_margin_small"
+                    android:layout_marginTop="@dimen/general_horizontal_margin_small"
+                    android:textColor="@color/connectWhite"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/chip_card_phone_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/connectWhite"
+                    android:layout_marginBottom="@dimen/general_horizontal_margin_small"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/chip_card_name_text_view"
+                    app:layout_constraintTop_toBottomOf="@id/chip_card_name_text_view" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/close_chip_card_image_view"
+                android:layout_width="@dimen/general_view_medium"
+                android:layout_height="@dimen/general_view_medium"
+                android:background="@drawable/ic_cancel_white_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.75"
+            android:background="@color/connectWhite"/>
+        <ProgressBar
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/connectPrimaryYellow"/>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

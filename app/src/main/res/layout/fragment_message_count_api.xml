@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2023. Nextiva, inc. to Present.
+  ~ All rights reserved
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/message_count_api_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DevicePolicyFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/voice_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/general_horizontal_margin_large"
+        android:layout_marginStart="@dimen/general_horizontal_margin_large"
+        android:text="@string/app_preference_message_count_voice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/voicemail_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/general_horizontal_margin_large"
+        android:text="@string/app_preference_message_count_voicemail"
+        app:layout_constraintStart_toStartOf="@+id/voice_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/voice_text_view" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/chat_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/general_horizontal_margin_large"
+        android:text="@string/app_preference_message_count_chat"
+        app:layout_constraintStart_toStartOf="@+id/voicemail_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/voicemail_text_view"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/email_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/general_horizontal_margin_large"
+        android:text="@string/app_preference_message_count_email"
+        app:layout_constraintStart_toStartOf="@+id/chat_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/chat_text_view" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/sms_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/general_horizontal_margin_large"
+        android:text="@string/app_preference_message_count_sms"
+        app:layout_constraintStart_toStartOf="@+id/email_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/email_text_view" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/survey_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/general_horizontal_margin_large"
+        android:text="@string/app_preference_message_count_survey"
+        app:layout_constraintStart_toStartOf="@+id/sms_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/sms_text_view" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/meeting_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/general_horizontal_margin_large"
+        android:text="@string/app_preference_message_count_meeting"
+        app:layout_constraintStart_toStartOf="@+id/survey_text_view"
+        app:layout_constraintTop_toBottomOf="@+id/survey_text_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

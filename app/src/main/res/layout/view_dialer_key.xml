@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017 Nextiva, Inc. to Present.
+  ~ All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialer_key_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialer_key_title_text_view"
+        style="@style/Headline"
+        android:textStyle="bold"
+        android:textSize="@dimen/material_text_display1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/dialer_key_subtitle_text_view"
+        android:fontFamily="@font/lato_regular"
+        android:textSize="@dimen/material_text_body1"
+        android:textColor="@color/connectSecondaryDarkBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="ABC" />
+
+    <ImageView
+        android:id="@+id/dialer_key_subtitle_image_view"
+        android:layout_width="@dimen/general_view_small"
+        android:layout_height="@dimen/general_view_small"
+        android:visibility="gone" />
+</LinearLayout>

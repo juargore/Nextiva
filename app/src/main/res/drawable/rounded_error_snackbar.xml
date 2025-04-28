@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/general_padding_small" />
+    <solid android:color="@color/snackbarUnableToDelete" />
+    <stroke
+        android:width="1dp"
+        android:color="@color/connectPrimaryRed" />
+</shape>

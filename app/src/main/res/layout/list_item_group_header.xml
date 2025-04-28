@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017 Nextiva, Inc. to Present.
+  ~ All rights reserved.
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item_group_header_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/GroupHeaderBackgroundColor"
+    android:paddingBottom="@dimen/general_vertical_margin_medium"
+    android:paddingEnd="@dimen/general_horizontal_margin_small"
+    android:paddingStart="@dimen/general_horizontal_margin_small"
+    android:paddingTop="@dimen/general_vertical_margin_medium">
+
+    <TextView
+        android:id="@+id/list_item_group_header_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/general_horizontal_margin_small"
+        android:textSize="13sp"
+        android:fontFamily="sans-serif-medium"
+        style="@style/GroupHeaderTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Title" />
+
+    <ImageSwitcher
+        android:id="@+id/list_item_group_header_arrow_image_switcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inAnimation="@anim/anim_rotate_180_in"
+        android:outAnimation="@anim/anim_rotate_180_out"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/GroupHeaderIconTintColor"
+            app:srcCompat="@drawable/ic_group_header_arrow_down" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/GroupHeaderIconTintColor"
+            app:srcCompat="@drawable/ic_group_header_arrow_down" />
+    </ImageSwitcher>
+</androidx.constraintlayout.widget.ConstraintLayout>

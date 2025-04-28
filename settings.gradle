@@ -1,0 +1,38 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven { url "https://software.mobile.pendo.io/artifactory/androidx-release" }
+    }
+
+    resolutionStrategy {
+        eachPlugin {
+            if (requested.id.namespace == 'com.android') {
+                useModule("com.android.tools.build:gradle:${requested.version}")
+            } else if (requested.id.namespace == 'org.jetbrains.kotlin') {
+                useModule("org.jetbrains.kotlin:kotlin-gradle-plugin:${requested.version}")
+            } else if (requested.id.namespace == 'dagger.hilt.android') {
+                useModule("com.google.dagger:hilt-android-gradle-plugin:${requested.version}")
+            }
+        }
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        maven { url "https://software.mobile.pendo.io/artifactory/androidx-release" }
+    }
+
+}
+
+include ':app'
+include ':androidNextivaAuth'
+project(":androidNextivaAuth").projectDir = file("android-nextiva-auth/Sources")
+include ':pjsipLib'
+project(":pjsipLib").projectDir = file("android-nextiva-pjsip/pjsip-lib")

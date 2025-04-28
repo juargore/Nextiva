@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- Tabbar Colors -->
+    <color name="tabbarChatStroke">@color/darkToolbar</color>
+    <color name="chatChipBarBackgroundColor">@color/black</color>
+    <color name="menuButtonFillColor">@color/whiteoverlay70</color>
+
+    <color name="emptyListIconBackground">@color/whiteoverlay70</color>
+
+    <color name="colorDialerText">@color/white</color>
+
+    <color name="selector_gray_circle_button_background">#424242</color>
+    <color name="counter_blue_button_outline_color">@color/black</color>
+    <color name="dialer_backspace_button_tint">#838383</color>
+
+    <!-- Connect -->
+    <!-- Primary Colors ( Dark ) -->
+    <color name="connectPrimaryBlue">#49B6FF</color>
+    <color name="connectPrimaryLightBlue">#222648</color>
+    <color name="connectPrimaryGrey">#A9B3BE</color>
+    <color name="connectPrimaryGreen">#2EC3A5</color>
+    <color name="connectPrimaryRed">#F99F91</color>
+    <color name="connectPrimaryLightRed">#790B18</color>
+    <color name="connectPrimaryYellow">#AE8B00</color>
+    <color name="connectPrimaryOrange">#BF4C01</color>
+
+    <color name="surfaceWarning">#790B18</color>
+    <color name="surfaceError">#790B18</color>
+
+    <!-- Secondary Colors ( Light ) -->
+    <color name="connectSecondaryGrey">#292D41</color>
+    <color name="connectSecondaryBlue">#49B6FF</color>
+    <color name="connectSecondaryLightBlue">#1D3BCD</color>
+    <color name="connectSecondaryBrightBlue">#005FEC</color>
+    <color name="connectSecondaryDarkBlue">#F7F8FA</color>
+    <color name="connectSecondaryRed">#FDAEA8</color>
+    <color name="connectSecondaryYellow">#786200</color>
+    <color name="dangerSecondaryLight">#F5DCCF</color>
+    <color name="connectMarkToCopyBlue">#0986CF</color>
+    <color name="connectMarkToCopyWhite">#758BA3</color>
+
+    <!-- Grey Colors ( Light ) -->
+    <color name="connectWhite">#34384B</color>
+    <color name="connectGrey01">#171A2A</color>
+    <color name="connectGrey02">#202436</color>
+    <color name="connectGrey03">#292D41</color>
+    <color name="connectGrey08">#CCCDD6</color>
+    <color name="connectGrey09">#DDDFE7</color>
+    <color name="connectGrey10">#EAECF2</color>
+    <color name="disabledTextGrey">#656565</color>
+    <color name="nextivaPrimaryBlue">#48B6FF</color>
+    <color name="connectGreyDisabled">#ACAEB8</color>
+
+    <!-- Other -->
+    <color name="connectPrimaryBlue_28">#2849B6FF</color>
+    <color name="mainStatusBarDim">#11131E</color>
+    <color name="connectSecondaryDarkBlue_95">#F2F7F8FA</color>
+    <color name="draftMessageColor">#2C2D43</color>
+
+    <!-- Meetings Colors -->
+    <color name="meetingButtonTint">#34384B</color>
+    <color name="meetingVideoOverlayButtonText">#34384B</color> 
+    <color name="meetingVideoOverlayButtonBackgroundTint">@color/meetingVideoOverlayButtonText</color> <!--connectGrey10 only in light mode-->
+    <color name="connectGrey10Alpha_05">#54687F80</color>
+
+    <!-- Assign CoHost -->
+    <color name="blueIconColor">@color/connectSecondaryBlue</color>
+
+    <color name="phoneTypeWork">#2E568A</color>
+    <color name="phoneTypeHome">#5107A0</color>
+    <color name="phoneTypeMobile">#304A01</color>
+    <color name="phoneTypeOther">#005A39</color>
+
+    <color name="phoneTypeWorkLabelTxt">#E3F5FC</color>
+    <color name="phoneTypeHomeLabelTxt">#EFE5F7</color>
+    <color name="phoneTypeMobileLabelTxt">#F8FDED</color>
+    <color name="phoneTypeOtherLabelTxt">#DEF5F0</color>
+
+    <!--Audio device popup colors -->
+    <color name="audioDevicePopupBackground">#494D60</color>
+
+    <!-- Delete snackbar colors -->
+    <color name="snackbarUnableToDelete">#222648</color>
+
+    <!-- Delete confirmation dialog, swipe delete -->
+    <color name="checkBoxTextColorDelete">#DDDFE7</color>
+
+</resources>

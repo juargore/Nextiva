@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Font Awesome Pro v6.4.2 -->
+    <string name="fa_version_v6">fa_v6</string>
+
+    <!-- Font Awesome Pro v5.15 -->
+    <!-- Figma Link https://www.figma.com/file/fdBNf1jsPXhceYNCxh8NVW/Global-components?node-id=2802%3A4254 -->
+
+    <!-- People / Business -->
+    <string name="fa_user" translatable="false">&#xf007;</string>
+    <string name="fa_user_circle" translatable="false">&#xf2bd;</string>
+    <string name="fa_user_friends" translatable="false">&#xf500;</string>
+    <string name="fa_headset" translatable="false">&#xf590;</string>
+    <string name="fa_users" translatable="false">&#xf0c0;</string>
+    <string name="fa_building" translatable="false">&#xf1ad;</string>
+    <string name="fa_briefcase" translatable="false">&#xf0b1;</string>
+    <string name="fa_suitcase" translatable="false">&#xf0f2;</string>
+    <string name="fa_door_open" translatable="false">&#xf52b;</string>
+    <string name="fa_home" translatable="false">&#xf015;</string>
+    <string name="fa_user_plus" translatable="false">&#xf234;</string>
+    <string name="fa_address_book" translatable="false">&#xf2b9;</string>
+
+    <!-- Audio / Video -->
+    <string name="fa_microphone" translatable="false">&#xf130;</string>
+    <string name="fa_microphone_slash" translatable="false">&#xf131;</string>
+    <string name="fa_play" translatable="false">&#xf04b;</string>
+    <string name="fa_video" translatable="false">&#xf03d;</string>
+    <string name="fa_video_slash" translatable="false">&#xf4e2;</string>
+    <string name="fa_pause" translatable="false">&#xf04c;</string>
+    <string name="fa_voicemail" translatable="false">&#xf897;</string>
+    <string name="fa_circle" translatable="false">&#xf111;</string>
+    <string name="fa_do_not_disturb" translatable="false">&#xf5ec;</string>
+    <string name="fa_stop" translatable="false">&#xf04d;</string>
+    <string name="fa_volume" translatable="false">&#xf6a8;</string>
+    <string name="fa_volume_up" translatable="false">&#xf028;</string>
+    <string name="fa_volume_slash" translatable="false">&#xf2e2;</string>
+    <string name="fa_camera" translatable="false">&#xf030;</string>
+    <string name="fa_photo_video" translatable="false">&#xf87c;</string>
+    <string name="fa_bluetooth_b" translatable="false">&#xf293;</string>
+    <string name="fa_headings" translatable="false">&#xf025;</string>
+    <string name="fa_phone_volume" translatable="false">&#xf2a0;</string>
+    <string name="fa_phone" translatable="false">&#xf095;</string>
+    <string name="fa_dot_circle" translatable="false">&#xf192;</string>
+    <string name="fa_laptop_mobile" translatable="false">&#xf87a;</string>
+    <string name="fa_circle_play" translatable="false">&#xf144;</string>
+
+    <!-- Communication -->
+    <string name="fa_phone_alt" translatable="false">&#xf879;</string>
+    <string name="fa_phone_icon" translatable="false">&#xf095;</string>
+    <string name="fa_phone_hang_up" translatable="false">&#xe225;</string>
+    <string name="fa_phone_plus" translatable="false">&#xf4d2;</string>
+    <string name="fa_phone_arrow_right" translatable="false">&#xe5be;</string>
+    <string name="fa_paper_plane" translatable="false">&#xf1d8;</string>
+    <string name="fa_envelope" translatable="false">&#xf0e0;</string>
+    <string name="fa_comment_dots" translatable="false">&#xf4ad;</string>
+    <string name="fa_comment_plus" translatable="false">&#xf4b2;</string>
+    <string name="fa_comments_alt" translatable="false">&#xf4b6;</string>
+    <string name="fa_inbox" translatable="false">&#xf01c;</string>
+    <string name="fa_calendar" translatable="false">&#xf133;</string>
+    <string name="fa_calendar_alt" translatable="false">&#xf073;</string>
+    <string name="fa_reply" translatable="false">&#xf3e5;</string>
+    <string name="fa_share" translatable="false">&#xf064;</string>
+    <string name="fa_at" translatable="false">&#xf1fa;</string>
+    <string name="fa_exchange" translatable="false">&#xf0ec;</string>
+    <string name="fa_envelope_open" translatable="false">&#xf2b6;</string>
+    <string name="fa_user_headset" translatable="false">&#xf82d;</string>
+
+    <!-- Utility / Actions -->
+    <string name="fa_search" translatable="false">&#xf002;</string>
+    <string name="fa_ellipsis_v" translatable="false">&#xf142;</string>
+    <string name="fa_cog" translatable="false">&#xf013;</string>
+    <string name="fa_ban" translatable="false">&#xf05e;</string>
+    <string name="fa_sync" translatable="false">&#xf021;</string>
+    <string name="fa_cloud" translatable="false">&#xf0c2;</string>
+    <string name="fa_lock" translatable="false">&#xf023;</string>
+    <string name="fa_times" translatable="false">&#xf00d;</string>
+    <string name="fa_plus" translatable="false">&#xf067;</string>
+    <string name="fa_flag" translatable="false">&#xf024;</string>
+    <string name="fa_folder" translatable="false">&#xf07b;</string>
+    <string name="fa_archive" translatable="false">&#xf187;</string>
+    <string name="fa_sticky_note" translatable="false">&#xf249;</string>
+    <string name="fa_highlighter" translatable="false">&#xf591;</string>
+    <string name="fa_edit" translatable="false">&#xf044;</string>
+    <string name="fa_pen" translatable="false">&#xf304;</string>
+    <string name="fa_trash_alt" translatable="false">&#xf2ed;</string>
+    <string name="fa_filter" translatable="false">&#xf0b0;</string>
+    <string name="fa_clock" translatable="false">&#xf017;</string>
+    <string name="fa_expand_alt" translatable="false">&#xf424;</string>
+    <string name="fa_compress_alt" translatable="false">&#xf422;</string>
+    <string name="fa_clipboard_check" translatable="false">&#xf46c;</string>
+    <string name="fa_download" translatable="false">&#xf019;</string>
+    <string name="fa_upload" translatable="false">&#xf093;</string>
+    <string name="fa_copy" translatable="false">&#xf0c5;</string>
+    <string name="fa_paste" translatable="false">&#xf0ea;</string>
+    <string name="fa_caret_down_solid" translatable="false">&#xf0d7;</string>
+    <string name="fa_chevron_left" translatable="false">&#xf053;</string>
+    <string name="fa_chevron_right" translatable="false">&#xf054;</string>
+    <string name="fa_chevron_down" translatable="false">&#xf078;</string>
+    <string name="fa_check" translatable="false">&#xf00c;</string>
+    <string name="fa_star" translatable="false">&#xf005;</string>
+    <string name="fa_dollar_sign" translatable="false">&#xf155;</string>
+    <string name="fa_tasks" translatable="false">&#xf0ae;</string>
+    <string name="fa_ellipsis_h" translatable="false">&#xf141;</string>
+    <string name="fa_times_circle" translatable="false">&#xf057;</string>
+    <string name="fa_plus_circle" translatable="false">&#xf055;</string>
+    <string name="fa_minus_circle" translatable="false">&#xf056;</string>
+    <string name="fa_search_plus" translatable="false">&#xf00e;</string>
+    <string name="fa_check_circle" translatable="false">&#xf058;</string>
+    <string name="fa_minus" translatable="false">&#xf068;</string>
+    <string name="fa_delete_left" translatable="false">&#xf55a;</string>
+    <string name="fa_thumbs_up" translatable="false">&#xf164;</string>
+    <string name="fa_thumbs_down" translatable="false">&#xf165;</string>
+
+    <!-- Files / Documents -->
+    <string name="fa_file" translatable="false">&#xf15b;</string>
+    <string name="fa_file_alt" translatable="false">&#xf15c;</string>
+    <string name="fa_file_word" translatable="false">&#xf1c2;</string>
+    <string name="fa_file_spreadsheet" translatable="false">&#xf65b;</string>
+    <string name="fa_file_archive" translatable="false">&#xf1c6;</string>
+    <string name="fa_file_pdf" translatable="false">&#xf1c1;</string>
+    <string name="fa_file_powerpoint" translatable="false">&#xf1c4;</string>
+    <string name="fa_file_music" translatable="false">&#xf8b6;</string>
+
+    <!-- Information / Alerts -->
+    <string name="fa_question_circle" translatable="false">&#xf059;</string>
+    <string name="fa_info_circle" translatable="false">&#xf05a;</string>
+    <string name="fa_exclamation_circle" translatable="false">&#xf06a;</string>
+    <string name="fa_bell" translatable="false">&#xf0f3;</string>
+    <string name="fa_bell_slash" translatable="false">&#xf1f6;</string>
+    <string name="fa_lightbulb_on" translatable="false">&#xf672;</string>
+    <string name="fa_exclamation" translatable="false">&#xf12a;</string>
+
+    <!-- Display -->
+    <string name="fa_eye" translatable="false">&#xf06e;</string>
+    <string name="fa_eye_slash" translatable="false">&#xf070;</string>
+    <string name="fa_window_maximize" translatable="false">&#xf2d0;</string>
+    <string name="fa_chart_bar" translatable="false">&#xf080;</string>
+    <string name="fa_bold" translatable="false">&#xf032;</string>
+    <string name="fa_italic" translatable="false">&#xf033;</string>
+    <string name="fa_underline" translatable="false">&#xf0cd;</string>
+    <string name="fa_list_ul" translatable="false">&#xf0ca;</string>
+    <string name="fa_list_ol" translatable="false">&#xf0cb;</string>
+    <string name="fa_indent" translatable="false">&#xf03c;</string>
+    <string name="fa_link" translatable="false">&#xf0c1;</string>
+    <string name="fa_smile" translatable="false">&#xf118;</string>
+    <string name="fa_paperclip" translatable="false">&#xf0c6;</string>
+
+    <!-- Navigation -->
+    <string name="fa_th_solid" translatable="false">&#xf00a;</string>
+    <string name="fa_globe" translatable="false">&#xf0ac;</string>
+    <string name="fa_map_marker_alt" translatable="false">&#xf3c5;</string>
+    <string name="fa_external_link" translatable="false">&#xf08e;</string>
+    <string name="fa_arrow_left" translatable="false">&#xf060;</string>
+    <string name="fa_arrow_down" translatable="false">&#xf063;</string>
+    <string name="fa_arrow_up_right" translatable="false">&#xe09f;</string>
+    <string name="fa_hamburger_icon" translatable="false">&#xf0c9;</string>
+    <string name="fa_grid_2" translatable="false">&#xf009;</string>
+
+
+
+    <!-- Social Media -->
+    <string name="fa_linkedin" translatable="false">&#xf08c;</string>
+    <string name="fa_twitter" translatable="false">&#xf099;</string>
+    <string name="fa_facebook" translatable="false">&#xf09a;</string>
+    <string name="fa_instagram" translatable="false">&#xe055;</string>
+    <string name="fa_telegram" translatable="false">&#xf2c6;</string>
+
+    <!-- Custom -->
+    <!-- Created by pulling the custom icons from Figma, going to https://icomoon.io/app/#/select/font,
+        making the icons as large as they can be in their grids, then downloading the font -->
+    <string name="fa_custom_team_chat" translatable="false">&#xe901;</string>
+    <string name="fa_custom_report" translatable="false">&#xe902;</string>
+    <string name="fa_custom_present_share" translatable="false">&#xe903;</string>
+    <string name="fa_custom_outbound_call" translatable="false">&#xe905;</string>
+    <string name="fa_custom_inbound_call" translatable="false">&#xe904;</string>
+    <string name="fa_custom_dialer" translatable="false">&#xe906;</string>
+    <string name="fa_custom_missed_call" translatable="false">&#xe900;</string>
+
+</resources>

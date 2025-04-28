@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017 Nextiva, Inc. to Present.
+  ~ All rights reserved.
+  -->
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialer_pad_include_layout"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+    <com.nextiva.nextivaapp.android.view.DialerPadView
+        android:id="@+id/dialer_pad_include_dialer_pad_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</merge>

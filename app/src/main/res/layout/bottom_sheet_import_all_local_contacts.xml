@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/bottom_sheet_import_all_pull_down_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_bottom_sheet_background_tinted"
+        android:paddingTop="@dimen/general_padding_xsmall"
+        android:src="@drawable/ic_bottom_sheet_pull_down" />
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet_import_all_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/connectGrey01"
+        android:orientation="horizontal"
+        android:padding="@dimen/general_padding_small">
+
+        <include layout="@layout/view_toolbar_back_arrow"
+            android:id="@+id/back_arrow_include" />
+
+        <TextView
+            android:id="@+id/bottom_sheet_import_all_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:text="@string/connect_import_local_contacts_bottom_sheet_import_contacts_as"
+            android:textColor="@color/connectSecondaryDarkBlue"
+            android:textSize="@dimen/material_text_headline"
+            android:textStyle="bold"
+            app:fontFamily="@font/lato_heavy" />
+
+        <include layout="@layout/view_toolbar_close_button"
+            android:id="@+id/cancel_icon_include" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/bottom_sheet_import_all_shared_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/general_vertical_margin_large"
+        android:padding="@dimen/general_padding_medium"
+        android:text="@string/connect_import_local_contacts_bottom_sheet_share_the_contact"
+        android:textOn="@string/connect_import_local_contacts_bottom_sheet_share_the_contact"
+        android:textOff="@string/connect_import_local_contacts_bottom_sheet_share_the_contact"
+        android:textColor="@color/connectSecondaryDarkBlue"
+        android:textSize="@dimen/material_text_subhead"
+        android:thumb="@drawable/connect_switch_thumb"
+        app:switchPadding="@dimen/general_padding_large"
+        app:track="@drawable/connect_switch_track" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/connectWhite">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/bottom_sheet_import_all_message_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+                android:layout_marginTop="@dimen/general_padding_large"
+                android:layout_marginEnd="@dimen/general_horizontal_margin_medium"
+                android:background="@drawable/rounded_corners"
+                android:backgroundTint="@color/connectSecondaryLightBlue"
+                android:orientation="horizontal"
+                android:padding="@dimen/general_padding_xmedium">
+
+                <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+                    android:id="@+id/bottom_sheet_import_all_message_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_padding_small"
+                    android:text="@string/fa_info_circle"
+                    android:textColor="@color/connectPrimaryBlue"
+                    android:textSize="@dimen/material_text_headline" />
+
+                <TextView
+                    android:id="@+id/bottom_sheet_import_all_message_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/general_padding_small"
+                    android:text="@string/connect_import_local_contacts_bottom_sheet_private_message"
+                    android:textColor="@color/connectSecondaryDarkBlue"
+                    android:textSize="@dimen/material_text_subhead" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bottom_sheet_import_all_primary_button"
+                style="@style/CreateConnectContactButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+                android:layout_marginTop="@dimen/general_vertical_margin_xxxxlarge"
+                android:layout_marginEnd="@dimen/general_horizontal_margin_medium"
+                android:layout_marginBottom="@dimen/general_vertical_margin_medium"
+                android:backgroundTint="@color/connectPrimaryBlue"
+                android:text="@string/connect_import_local_contacts_bottom_sheet_import_contacts"
+                android:textColor="@color/connectWhite" />
+
+            <TextView
+                android:id="@+id/bottom_sheet_import_all_cancel"
+                style="@style/CreateConnectContactButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+                android:layout_marginEnd="@dimen/general_horizontal_margin_medium"
+                android:layout_marginBottom="@dimen/general_vertical_margin_medium"
+                android:backgroundTint="@color/connectWhite"
+                android:text="@string/general_cancel"
+                android:textAlignment="center"
+                android:textColor="@color/connectPrimaryBlue" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

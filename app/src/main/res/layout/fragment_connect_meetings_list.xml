@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/connectWhite"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/recentTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/connectGrey01"
+        android:paddingStart="@dimen/general_padding_medium"
+        android:paddingEnd="0dp"
+        android:paddingBottom="@dimen/general_padding_medium"
+        android:text="@string/meeting_meetings_header"
+        android:textColor="@color/connectSecondaryDarkBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/search_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/connect_meeting_list_swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/connect_meeting_list_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <com.nextiva.nextivaapp.android.view.ConnectEmptyStateView
+            android:id="@+id/connect_meeting_list_empty_state_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:emptyStateButtonText=""
+            app:emptyStateImage="@drawable/empty_state_meeting_camera"
+            app:emptyStateMessage="@string/connect_meeting_list_no_results_empty_state_view_message_text"
+            app:emptyStateTitle="@string/connect_meeting_list_no_results_empty_state_view_title_text"
+            android:contentDescription="" />
+
+        <com.nextiva.nextivaapp.android.view.ConnectEmptyStateView
+            android:id="@+id/connect_meeting_list_no_results_empty_state_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:emptyStateIcon="@string/fa_search"
+            app:emptyStateMessage="@string/connect_contacts_search_no_results_message"
+            app:emptyStateTitle="@string/connect_contacts_search_no_results_title" />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

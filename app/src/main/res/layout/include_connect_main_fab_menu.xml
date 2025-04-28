@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/connect_main_fab_menu_layout"
+    android:visibility="gone"
+    android:background="@drawable/rounded_dialog_background"
+    android:translationZ="25dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/connect_main_menu_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/general_padding_large"
+        android:paddingEnd="@dimen/general_padding_large"
+        android:paddingTop="@dimen/general_padding_medium"
+        android:paddingBottom="@dimen/general_padding_medium"
+        android:contentDescription="@string/connect_main_make_a_call_content_description">
+
+        <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+            android:id="@+id/connect_main_menu_call_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/connectGrey09"
+            android:textSize="@dimen/material_text_subhead"
+            app:icon_string="@string/fa_phone_alt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/connect_main_bottom_sheet_call"
+            android:textColor="@color/connectSecondaryDarkBlue"
+            android:textSize="@dimen/material_text_subhead"
+            android:paddingStart="@dimen/general_padding_medium"
+            android:paddingEnd="@dimen/general_padding_xsmall"
+            app:layout_constraintStart_toEndOf="@id/connect_main_menu_call_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/connect_main_menu_text_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/connectGrey03"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/connect_main_menu_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/general_padding_large"
+        android:paddingEnd="@dimen/general_padding_large"
+        android:paddingTop="@dimen/general_padding_medium"
+        android:paddingBottom="@dimen/general_padding_medium"
+        android:contentDescription="@string/connect_main_send_a_text_message_content_description">
+
+        <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+            android:id="@+id/connect_main_menu_text_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/connectGrey09"
+            android:textSize="@dimen/material_text_subhead"
+            app:icon_string="@string/fa_comment_dots"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/connect_main_bottom_sheet_message"
+            android:textColor="@color/connectSecondaryDarkBlue"
+            android:textSize="@dimen/material_text_subhead"
+            android:paddingStart="@dimen/general_padding_medium"
+            android:paddingEnd="@dimen/general_padding_xsmall"
+            app:layout_constraintStart_toEndOf="@id/connect_main_menu_text_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/connect_main_menu_chat_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/connectGrey03"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/connect_main_menu_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/general_padding_large"
+        android:paddingEnd="@dimen/general_padding_large"
+        android:paddingTop="@dimen/general_padding_medium"
+        android:paddingBottom="@dimen/general_padding_medium"
+        android:contentDescription="@string/connect_main_send_a_text_message_content_description">
+
+        <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+            android:id="@+id/connect_main_menu_chat_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/connectGrey09"
+            android:textSize="@dimen/material_text_subhead"
+            app:icon_string="@string/fa_custom_team_chat"
+            app:custom_icon="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/connect_main_bottom_sheet_chat"
+            android:textColor="@color/connectSecondaryDarkBlue"
+            android:textSize="@dimen/material_text_subhead"
+            android:paddingStart="@dimen/general_padding_medium"
+            android:paddingEnd="@dimen/general_padding_xsmall"
+            app:layout_constraintStart_toEndOf="@id/connect_main_menu_chat_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/connect_main_menu_meeting_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/connectGrey03"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/connect_main_menu_meeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/general_padding_large"
+        android:paddingEnd="@dimen/general_padding_large"
+        android:paddingTop="@dimen/general_padding_medium"
+        android:paddingBottom="@dimen/general_padding_medium"
+        android:contentDescription="@string/connect_main_start_a_meeting_content_description">
+
+        <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+            android:id="@+id/connect_main_menu_meeting_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/connectGrey09"
+            android:textSize="@dimen/material_text_subhead"
+            app:icon_string="@string/fa_video"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/connect_main_bottom_sheet_meeting"
+            android:textColor="@color/connectSecondaryDarkBlue"
+            android:textSize="@dimen/material_text_subhead"
+            android:paddingStart="@dimen/general_padding_medium"
+            android:paddingEnd="@dimen/general_padding_xsmall"
+            app:layout_constraintStart_toEndOf="@id/connect_main_menu_meeting_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

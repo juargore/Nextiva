@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Back to front -->
+    <item
+        android:drawable="@drawable/avatar_state_gradient"
+        android:gravity="center" />
+
+    <item
+        android:drawable="@drawable/ic_lock_blue"
+        android:gravity="center" />
+
+</layer-list>

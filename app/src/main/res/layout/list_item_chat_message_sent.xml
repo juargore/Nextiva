@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017 Nextiva, Inc. to Present.
+  ~ All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item_chat_message_sent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/general_view_xxxxxxxxxxlarge"
+    android:layout_marginEnd="@dimen/general_view_small"
+    android:layout_marginBottom="@dimen/general_vertical_margin_small"
+    android:animateLayoutChanges="true"
+    android:gravity="end"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/list_item_chat_message_datetime_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/general_vertical_margin_xsmall"
+        android:layout_marginBottom="@dimen/general_vertical_margin_xsmall"
+        android:textColor="@color/ltGrey"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/list_item_message_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_message_sent"
+        android:padding="@dimen/general_view_small">
+
+        <TextView
+            android:id="@+id/list_item_chat_message_user_text_view"
+            style="@style/ChatSentByTextColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/general_view_small"
+            android:layout_marginTop="@dimen/general_view_small"
+            android:paddingBottom="@dimen/general_padding_xsmall"
+            android:textAlignment="textStart"
+            android:textAppearance="@style/Body1"
+            android:textColor="@color/nextivaChatHeaderTextColor"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Tomas Gorny"
+            tools:visibility="gone" />
+
+        <com.nextiva.nextivaapp.android.view.LoaderImageView
+            android:id="@+id/list_item_chat_message_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:textAlignment="textStart"
+            android:textSize="15sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/list_item_chat_message_text_view"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/list_item_chat_message_text_view"
+            style="@style/Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textColor="@color/nextivaChatMessageTextColor"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/list_item_chat_message_user_text_view"
+            tools:text="This is a test message to test the layout ryles it still is This is a test message to test the layout ryles it still is " />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/list_item_audio_constraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:paddingTop="@dimen/general_padding_small"
+            app:layout_constraintTop_toBottomOf="@+id/list_item_chat_message_text_view">
+
+            <include
+                android:id="@+id/list_item_layout_audio_attachment"
+                layout="@layout/include_layout_audio_attachment" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/list_item_chat_message_file_not_supported"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="@string/file_not_supported"
+            android:textColor="@color/errorRed"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/list_item_chat_message_image_view" />
+
+
+        <TextView
+            android:id="@+id/list_item_chat_message_file_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="middle"
+            android:paddingTop="4dp"
+            android:singleLine="true"
+            android:text="@string/file_name"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/list_item_chat_message_file_not_supported"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/list_item_chat_message_image_view" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/list_item_chat_message_failed_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="@dimen/general_vertical_margin_small"
+            android:paddingStart="@dimen/general_vertical_margin_small"
+            android:src="@drawable/ic_failed_exclamation" />
+
+        <TextView
+            android:id="@+id/list_item_chat_message_failed_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/general_vertical_margin_xsmall"
+            android:layout_marginTop="@dimen/general_vertical_margin_xsmall"
+            android:text="@string/chat_details_message_failed"
+            android:textColor="@color/connectPrimaryRed" />
+
+        <TextView
+            android:id="@+id/list_item_chat_message_failed_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/general_vertical_margin_xsmall"
+            android:layout_marginTop="@dimen/general_vertical_margin_xsmall"
+            android:paddingStart="@dimen/general_vertical_margin_xsmall"
+            android:text="@string/room_conversation_retry"
+            android:textColor="@color/connectPrimaryBlue"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

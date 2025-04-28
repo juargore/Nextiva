@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:id="@+id/preferences_preference_troubleshooting"
+        android:key="@string/login_preferences_key_troubleshooting"
+        android:title="@string/app_preference_troubleshooting" />
+
+    <Preference
+        android:id="@+id/preferences_preference_this_phone_number"
+        android:key="@string/login_preferences_key_this_phone_number"
+        android:title="@string/login_preference_this_phone_number" />
+
+    <Preference
+        android:id="@+id/preferences_preference_about"
+        android:key="@string/login_preferences_key_about"
+        android:title="@string/login_preference_about" />
+
+    <Preference
+        android:id="@+id/preferences_preference_help"
+        android:key="@string/login_preferences_key_help"
+        android:title="@string/login_preference_help" />
+
+    <Preference
+        android:id="@+id/preferences_preference_email_login_logs"
+        android:key="@string/app_preferences_key_email_logs"
+        android:title="@string/app_preference_email_logs" />
+</PreferenceScreen>

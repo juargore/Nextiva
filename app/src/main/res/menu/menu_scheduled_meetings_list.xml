@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/meetings_list_action_scheduled_meetings"
+        android:orderInCategory="99"
+        android:title="@string/meeting_list_action_scheduled_meetings_content_description"
+        android:contentDescription="@string/meeting_list_action_scheduled_meetings_content_description"
+        app:showAsAction="ifRoom" />
+
+</menu>

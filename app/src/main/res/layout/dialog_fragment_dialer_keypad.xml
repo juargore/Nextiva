@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017 Nextiva, Inc. to Present.
+  ~ All rights reserved.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_dialer_keypad_fragment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"    style="@style/Display1">
+
+    <HorizontalScrollView
+        android:id="@+id/dialog_dialer_keypad_input_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/general_vertical_margin_small"
+        android:layout_marginEnd="@dimen/general_horizontal_margin_medium"
+        android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+        android:layout_marginTop="@dimen/general_vertical_margin_small"
+        android:fadingEdge="horizontal"
+        android:fadingEdgeLength="@dimen/general_view_medium"
+        android:fillViewport="true"
+        android:requiresFadingEdge="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_dialer_keypad_input_text_view"
+            style="@style/HeadlineColored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:scrollHorizontally="true"
+            android:singleLine="true" />
+    </HorizontalScrollView>
+
+    <include layout="@layout/include_dialer_pad" />
+
+</LinearLayout>

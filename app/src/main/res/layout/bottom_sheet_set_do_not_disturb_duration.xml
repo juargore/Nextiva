@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet_set_presence_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/general_horizontal_margin_xxxxxlarge"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/general_padding_xsmall"
+            android:paddingBottom="@dimen/general_padding_medium"
+            android:src="@drawable/ic_bottom_sheet_pull_down" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/general_horizontal_margin_large"
+            android:layout_marginTop="@dimen/general_padding_small"
+            android:layout_marginEnd="@dimen/general_horizontal_margin_large"
+            android:layout_marginBottom="@dimen/general_padding_small">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_do_not_disturb_bottom_sheet_set_your_duration"
+                android:textColor="@color/connectSecondaryDarkBlue"
+                android:textSize="@dimen/material_text_subhead"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/bottom_sheet_dnd_done_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/set_do_not_disturb_bottom_sheet_set_action_done"
+                android:textColor="@color/connectPrimaryBlue"
+                android:textSize="@dimen/material_text_subhead"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RadioGroup
+            android:id="@+id/radioGroupDndDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/general_horizontal_margin_large"
+            android:layout_marginTop="@dimen/general_vertical_margin_large"
+            android:layout_marginEnd="@dimen/general_horizontal_margin_large"
+            android:layout_marginBottom="@dimen/general_vertical_margin_medium"
+            android:checkedButton="@id/radioBtbDndDurationAlways">
+
+            <RadioButton
+                android:id="@+id/radioBtbDndDurationAlways"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/connectPrimaryRadioButton"
+                android:textColor="@color/connectGrey10"
+                android:layout_marginBottom="@dimen/general_vertical_margin_small"
+                android:paddingStart="@dimen/general_padding_small"
+                android:paddingEnd="0dp"
+                android:text="@string/set_do_not_disturb_bottom_sheet_duration_until_status_change" />
+
+            <RadioButton
+                android:id="@+id/radioBtbDndDuration30m"
+                android:layout_width="match_parent"
+                android:theme="@style/connectPrimaryRadioButton"
+                android:textColor="@color/connectGrey10"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/general_vertical_margin_small"
+                android:paddingStart="@dimen/general_padding_small"
+                android:paddingEnd="0dp"
+                android:text="@string/set_do_not_disturb_bottom_sheet_duration_30_minute" />
+
+            <RadioButton
+                android:id="@+id/radioBtbDndDuration1h"
+                android:layout_width="match_parent"
+                android:theme="@style/connectPrimaryRadioButton"
+                android:layout_height="wrap_content"
+                android:textColor="@color/connectGrey10"
+                android:layout_marginBottom="@dimen/general_vertical_margin_small"
+                android:paddingStart="@dimen/general_padding_small"
+                android:paddingEnd="0dp"
+                android:text="@string/set_do_not_disturb_bottom_sheet_duration_1_hour" />
+
+            <RadioButton
+                android:id="@+id/radioBtbDndDuration6h"
+                android:layout_width="match_parent"
+                android:theme="@style/connectPrimaryRadioButton"
+                android:layout_height="wrap_content"
+                android:textColor="@color/connectGrey10"
+                android:layout_marginBottom="@dimen/general_vertical_margin_small"
+                android:paddingStart="@dimen/general_padding_small"
+                android:paddingEnd="0dp"
+                android:text="@string/set_do_not_disturb_bottom_sheet_duration_6_hours" />
+
+            <RadioButton
+                android:id="@+id/radioBtbDndDurationDay"
+                android:layout_width="match_parent"
+                android:theme="@style/connectPrimaryRadioButton"
+                android:textColor="@color/connectGrey10"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/general_vertical_margin_small"
+                android:paddingStart="@dimen/general_padding_small"
+                android:paddingEnd="0dp"
+                android:text="@string/set_do_not_disturb_bottom_sheet_duration_today" />
+
+            <RadioButton
+                android:id="@+id/radioButtonDndDurationCustom"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:theme="@style/connectPrimaryRadioButton"
+                android:textColor="@color/connectGrey10"
+                android:layout_marginBottom="@dimen/general_vertical_margin_small"
+                android:paddingStart="@dimen/general_padding_small"
+                android:paddingEnd="0dp"
+                android:text="@string/set_do_not_disturb_bottom_sheet_duration_custom"/>
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/bottom_sheet_do_not_disturb_duration_custom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:paddingStart="@dimen/general_padding_medium"
+            android:paddingEnd="@dimen/general_padding_medium">
+
+            <TextView
+                android:id="@+id/bottom_sheet_do_not_disturb_duration_date_picker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/connectGrey03"
+                android:background="@drawable/rounded_corners"
+                android:textAlignment="center"
+                android:textColor="@color/connectSecondaryDarkBlue"
+                style="@style/DS_Body1"
+                android:padding="@dimen/general_padding_small"
+                android:layout_margin="@dimen/general_horizontal_margin_small"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/bottom_sheet_do_not_disturb_duration_time_picker"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/connectGrey03"
+                android:background="@drawable/rounded_corners"
+                android:padding="@dimen/general_padding_small"
+                android:textAlignment="center"
+                style="@style/DS_Body1"
+                android:textColor="@color/connectSecondaryDarkBlue"
+                android:layout_margin="@dimen/general_horizontal_margin_small"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_calls_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/connectWhite"
+    android:orientation="vertical"
+    tools:context=".fragments.ConnectCallsFragment">
+
+    <com.nextiva.nextivaapp.android.view.ConnectSearchView
+        android:id="@+id/connect_calls_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general_view_xxxlarge"
+        android:gravity="center_vertical"
+        android:background="@color/connectGrey01"
+        android:paddingHorizontal="@dimen/general_padding_medium" />
+
+    <androidx.compose.ui.platform.ComposeView
+        android:id="@+id/compose_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/call_history_list_action_tablayout_filter" />
+
+    <LinearLayout
+        android:id="@+id/connect_calls_action_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/connectWhite"
+        android:paddingBottom="@dimen/general_padding_small"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/general_vertical_margin_small">
+
+        <TextView
+            android:id="@+id/connect_calls_recent_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/connect_calls_recent_calls"
+            android:textColor="@color/connectSecondaryDarkBlue"
+            android:textSize="@dimen/material_text_subhead" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/connect_calls_edit_icon"
+            style="@style/CreateConnectContactButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/general_horizontal_margin_small"
+            android:gravity="center_vertical"
+            android:padding="@dimen/general_horizontal_margin_small"
+            android:visibility="gone"
+            android:backgroundTint="@color/connectWhite"
+            android:textColor="@color/connectPrimaryBlue"
+            android:text="@string/connect_calls_edit_button"
+            android:contentDescription="@string/connect_calls_edit_button" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/connect_calls_swipe_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/connect_calls_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="@dimen/general_view_xxxxxxxlarge"
+                android:visibility="gone" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <com.nextiva.nextivaapp.android.view.ConnectEmptyStateView
+            android:id="@+id/connect_calls_empty_state_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:emptyStateButtonText="@string/general_start"
+            app:emptyStateImage="@drawable/connect_empty_state"
+            app:emptyStateMessage="@string/connect_calls_empty_state_message"
+            app:emptyStateTitle="@string/connect_calls_empty_state_title" />
+
+        <com.nextiva.nextivaapp.android.view.ConnectEmptyStateView
+            android:id="@+id/connect_calls_no_results_empty_state_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:emptyStateIcon="@string/fa_search"
+            app:emptyStateMessage="@string/connect_contacts_search_no_results_message"
+            app:emptyStateTitle="@string/connect_contacts_search_no_results_title" />
+    </FrameLayout>
+</LinearLayout>

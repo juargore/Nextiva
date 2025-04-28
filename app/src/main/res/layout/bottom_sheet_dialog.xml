@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/bottom_sheet_dialog_pull_down_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/general_padding_medium"
+        android:src="@drawable/ic_bottom_sheet_pull_down"
+        android:background="@drawable/rounded_bottom_sheet_background_tinted"
+        android:paddingTop="@dimen/general_padding_xsmall"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet_dialog_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/connectGrey01"
+        android:paddingStart="@dimen/general_padding_medium"
+        android:paddingEnd="@dimen/general_padding_small"
+        android:paddingBottom="@dimen/general_padding_medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottom_sheet_dialog_pull_down_icon">
+
+        <TextView
+            android:id="@+id/bottom_sheet_dialog_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/connectSecondaryDarkBlue"
+            android:textStyle="bold"
+            android:textSize="@dimen/material_text_headline"
+            app:fontFamily="@font/lato_heavy" />
+
+        <include layout="@layout/view_toolbar_close_button"
+            android:id="@+id/cancel_icon_include"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bottom_sheet_dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/general_padding_medium"
+        android:paddingEnd="@dimen/general_padding_medium"
+        android:paddingTop="@dimen/general_padding_xxlarge"
+        android:paddingBottom="@dimen/general_padding_xxxxxxlarge"
+        android:textColor="@color/connectGrey10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottom_sheet_dialog_title_layout"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/bottom_sheet_dialog_primary_button"
+        style="@style/CreateConnectContactButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/general_vertical_margin_medium"
+        android:textColor="@color/connectWhite"
+        app:layout_constraintTop_toBottomOf="@id/bottom_sheet_dialog_message"
+        app:layout_constraintBottom_toTopOf="@id/bottom_sheet_dialog_secondary_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/bottom_sheet_dialog_secondary_button"
+        style="@style/CreateConnectContactButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/general_vertical_margin_medium"
+        android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+        android:layout_marginEnd="@dimen/general_horizontal_margin_medium"
+        android:backgroundTint="@color/connectGrey03"
+        android:textColor="@color/connectSecondaryDarkBlue"
+        app:layout_constraintTop_toBottomOf="@id/bottom_sheet_dialog_primary_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item_connect_contact_detail_header_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general_view_small"
+        android:background="@color/connectGrey01" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/list_item_connect_contact_detail_header_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/connectWhite"
+        android:paddingStart="@dimen/general_horizontal_margin_small"
+        android:paddingTop="@dimen/general_vertical_margin_medium"
+        android:paddingEnd="@dimen/general_horizontal_margin_small"
+        android:paddingBottom="@dimen/general_vertical_margin_medium">
+
+        <TextView
+            android:id="@+id/list_item_connect_contact_detail_header_text_view"
+            android:textColor="@color/connectSecondaryDarkBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+            android:textAllCaps="true"
+            android:textSize="@dimen/material_text_caption"
+            android:textStyle="bold"
+            app:fontFamily="@font/lato_heavy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Title" />
+
+        <ImageSwitcher
+            android:id="@+id/list_item_connect_contact_detail_header_arrow_image_switcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inAnimation="@anim/anim_rotate_90_in"
+            android:outAnimation="@anim/anim_rotate_90_out"
+            android:paddingStart="@dimen/general_padding_small"
+            android:paddingEnd="@dimen/general_padding_large"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                style="@style/ConnectGroupHeaderIconTintColor"
+                android:layout_width="@dimen/tab_badge_text_size"
+                android:layout_height="@dimen/tab_badge_text_size"
+                app:srcCompat="@drawable/ic_group_header_arrow_down" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                style="@style/ConnectGroupHeaderIconTintColor"
+                android:layout_width="@dimen/tab_badge_text_size"
+                android:layout_height="@dimen/tab_badge_text_size"
+                app:srcCompat="@drawable/ic_group_header_arrow_side" />
+        </ImageSwitcher>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

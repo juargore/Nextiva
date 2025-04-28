@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017 Nextiva, Inc. to Present.
+  ~ All rights reserved.
+  -->
+
+<resources>
+
+    <attr name="titleText" format="string" />
+    <attr name="subTitleText" format="string" />
+
+    <declare-styleable name="DialerKeyView">
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="titleText" />
+        <attr name="subTitleText" />
+        <attr name="titleTint" format="color" />
+        <attr name="subTitleTint" format="color" />
+        <attr name="subTitleSrc" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MaxHeightScrollView">
+        <attr name="maxHeight" format="dimension" />
+        <attr name="autoScrollDown" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ContentDescription">
+        <attr name="contentDescription" />
+    </declare-styleable>
+
+    <declare-styleable name="VectorCompoundDrawableTextView">
+        <attr name="drawableTop" format="reference" />
+        <attr name="drawableBottom" format="reference" />
+        <attr name="drawableLeft" format="reference" />
+        <attr name="drawableRight" format="reference" />
+        <attr name="drawableTint" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="DetailItemView">
+        <attr name="titleText" />
+        <attr name="subTitleText" />
+        <attr name="action1Drawable" format="reference" />
+        <attr name="action2Drawable" format="reference" />
+        <attr name="subTitleModeEnabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="EmptyStateView">
+        <attr name="emptyImageSrc" format="reference" />
+        <attr name="emptyText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="PresenceView">
+        <attr name="visibleTextView" format="enum">
+            <enum name="none" value="0" />
+            <enum name="left" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="textColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ActiveCallButtonView">
+        <attr name="text" format="string" />
+        <attr name="firstText" format="string" />
+        <attr name="secondText" format="string" />
+        <attr name="imageSrc" format="reference" />
+        <attr name="imageTint" format="color" />
+        <attr name="primaryIcon" format="reference" />
+        <attr name="iconTint" format="color" />
+        <attr name="secondaryIcon" format="reference" />
+        <attr name="subTextColor" format="color" />
+        <attr name="contentDescription" format="string" />
+        <attr name="imageAnimationIn" format="reference" />
+        <attr name="imageAnimationOut" format="reference" />
+        <attr name="textAnimationIn" format="reference" />
+        <attr name="textAnimationOut" format="reference" />
+        <attr name="iconBackground" format="reference" />
+        <attr name="iconRotation" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="FontTextView">
+        <attr name="solid_icon" format="boolean" />
+        <attr name="custom_icon" format="boolean" />
+        <attr name="brand_icon" format="boolean" />
+        <attr name="icon_string" format="string" />
+        <attr name="fa_version" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ConnectBottomNavigationItem">
+        <attr name="icon_id" format="reference" />
+        <attr name="is_default" format="boolean" />
+        <attr name="title" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ChipGroup">
+        <attr name="maxRow" format="reference|integer"/>
+        <attr format="dimension" name="lineSpacing"/>
+        <attr format="dimension" name="itemSpacing"/>
+    </declare-styleable>
+
+    <declare-styleable name="ConnectTextInputView">
+        <attr name="text_input_title" format="string" />
+        <attr name="text_input_hint" format="string" />
+        <attr name="text_input_max_length" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ConnectGroupAddItemView">
+        <attr name="add_item_type" format="enum">
+            <enum name="PHONE" value="0"/>
+            <enum name="EMAIL" value="1"/>
+            <enum name="DATE" value="2"/>
+            <enum name="SOCIAL" value="3"/>
+            <enum name="ADDRESS" value="4"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ConnectEmptyStateView">
+        <attr name="emptyStateTitle" format="string"/>
+        <attr name="emptyStateMessage" format="string"/>
+        <attr name="emptyStateIcon" format="string"/>
+        <attr name="emptyStateImage" format="reference"/>
+        <attr name="emptyStateButtonText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalDottedProgress">
+        <attr name="color" format="color" />
+        <attr name="count" format="integer" />
+        <attr name="timeout" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ConnectFilterView">
+        <attr name="defaultText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ConnectPresenceFilterView">
+        <attr name="defaultPresence" format="enum">
+            <enum name="AUTOMATIC" value="0"/>
+            <enum name="AVAILABLE" value="1"/>
+            <enum name="BUSY" value="2"/>
+            <enum name="AWAY" value="3"/>
+            <enum name="OFFLINE" value="4"/>
+        </attr>
+    </declare-styleable>
+</resources>

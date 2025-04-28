@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:id="@+id/text_input_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/hostname_text_input_dialog_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/TextInputPrimaryColor">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/hostname_text_input_dialog_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:contentDescription="@string/text_input_dialog_edit_text_content_description"
+                android:drawableRight="@drawable/ic_cancel"
+                android:drawableTint="@color/nextivaOrange"
+                android:hint="@string/endpoints_hostname" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/broadsoft_api_url_text_input_dialog_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/TextInputPrimaryColor">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/broadsoft_api_url_text_input_dialog_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:contentDescription="@string/text_input_dialog_edit_text_content_description"
+                android:drawableRight="@drawable/ic_cancel"
+                android:drawableTint="@color/nextivaOrange"
+                android:hint="@string/endpoints_broadsoft_api_url" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/platform_api_url_text_input_dialog_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/TextInputPrimaryColor">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/platform_api_url_text_input_dialog_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:contentDescription="@string/text_input_dialog_edit_text_content_description"
+                android:drawableRight="@drawable/ic_cancel"
+                android:drawableTint="@color/nextivaOrange"
+                android:hint="@string/endpoints_platform_api_url" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/message_api_url_text_input_dialog_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/TextInputPrimaryColor">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/message_api_url_text_input_dialog_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:contentDescription="@string/text_input_dialog_edit_text_content_description"
+                android:drawableRight="@drawable/ic_cancel"
+                android:drawableTint="@color/nextivaOrange"
+                android:hint="@string/endpoints_messages_api_url" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/auth_proxy_public_host_text_input_dialog_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/TextInputPrimaryColor">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/auth_proxy_public_host_text_input_dialog_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:contentDescription="@string/text_input_dialog_edit_text_content_description"
+                android:drawableRight="@drawable/ic_cancel"
+                android:drawableTint="@color/nextivaOrange"
+                android:hint="@string/endpoints_auth_proxy_public_host" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/auth_proxy_rest_api_text_input_dialog_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/TextInputPrimaryColor">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/auth_proxy_rest_api_text_input_dialog_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:contentDescription="@string/text_input_dialog_edit_text_content_description"
+                android:drawableRight="@drawable/ic_cancel"
+                android:drawableTint="@color/nextivaOrange"
+                android:hint="@string/endpoints_auth_proxy_public_host" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/auth_tenant_rest_api_text_input_dialog_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/TextInputPrimaryColor">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/auth_tenant_rest_api_text_input_dialog_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:contentDescription="@string/text_input_dialog_edit_text_content_description"
+                android:drawableRight="@drawable/ic_cancel"
+                android:drawableTint="@color/nextivaOrange"
+                android:hint="@string/endpoints_auth_proxy_public_host" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/general_rest_api_text_input_dialog_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/TextInputPrimaryColor">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/general_rest_api_text_input_dialog_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:contentDescription="@string/text_input_dialog_edit_text_content_description"
+                android:drawableRight="@drawable/ic_cancel"
+                android:drawableTint="@color/nextivaOrange"
+                android:hint="@string/endpoints_auth_proxy_public_host" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/load_dev_settings_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/general_vertical_margin_large"
+            android:textColor="@color/nextivaOrange"
+            style="@style/Subhead"
+            android:text="@string/endpoints_load_dev_settings" />
+
+        <TextView
+            android:id="@+id/load_rc_settings_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/general_vertical_margin_large"
+            android:textColor="@color/nextivaOrange"
+            style="@style/Subhead"
+            android:text="@string/endpoints_load_rc_settings" />
+
+    </LinearLayout>
+
+</ScrollView>

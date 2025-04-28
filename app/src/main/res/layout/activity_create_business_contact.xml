@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/connectWhite"
+    tools:context=".CreateBusinessContactActivity">
+
+    <androidx.compose.ui.platform.ComposeView
+        android:id="@+id/active_call_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/create_business_contact_app_bar_layout"
+        android:visibility="gone"/>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/create_business_contact_app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/connectGrey01"
+        android:fitsSystemWindows="true"
+        android:stateListAnimator="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/active_call_toolbar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/create_business_contact_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:fitsSystemWindows="true"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:contentInsetStart="@dimen/general_horizontal_margin_xsmall"
+            app:titleMarginStart="0dp"
+            app:titleTextAppearance="@style/Toolbar.ConnectTitleText"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll|snap"
+            app:titleEnabled="false" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="@dimen/general_padding_small" >
+
+                <include layout="@layout/view_toolbar_back_arrow"
+                    android:id="@+id/back_arrow_include"
+                    android:layout_width="@dimen/toolbar_button_size"
+                    android:layout_height="@dimen/toolbar_button_size"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/title_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/back_arrow_include"
+                    android:layout_toStartOf="@id/delete_button_include"
+                    android:paddingEnd="@dimen/general_view_xsmall"
+                    android:paddingStart="@dimen/general_view_xsmall"
+                    style="@style/Toolbar.ConnectTitleText"
+                    android:textColor="@color/connectSecondaryDarkBlue"
+                    android:text="@string/new_chat_to"
+                    tools:text="Title Text"/>
+
+                <include layout="@layout/view_toolbar_button"
+                    android:id="@+id/delete_button_include"
+                    android:layout_width="@dimen/toolbar_button_size"
+                    android:layout_height="@dimen/toolbar_button_size"
+                    android:visibility="gone"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/create_business_contact_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toTopOf="@id/create_business_contact_save_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/create_business_contact_app_bar_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.nextiva.nextivaapp.android.view.AvatarView
+                android:id="@+id/create_business_contact_avatar_view"
+                android:layout_width="@dimen/general_view_xxxxxxlarge"
+                android:layout_height="@dimen/general_view_xxxxxxlarge"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/general_vertical_margin_xlarge" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/create_business_contact_shared_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/general_vertical_margin_large"
+                android:padding="@dimen/general_padding_medium"
+                android:text="@string/connect_create_contact_share"
+                android:textOn="@string/connect_create_contact_share"
+                android:textOff="@string/connect_create_contact_share"
+                android:textColor="@color/connectGrey10"
+                android:textStyle="bold"
+                android:thumb="@drawable/connect_switch_thumb"
+                app:fontFamily="@font/lato_heavy"
+                app:switchPadding="@dimen/general_padding_medium"
+                app:track="@drawable/connect_switch_track" />
+
+            <com.nextiva.nextivaapp.android.view.ConnectTextInputView
+                android:id="@+id/create_business_contact_first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/general_padding_medium"
+                app:text_input_hint="@string/connect_create_contact_first_name_hint"
+                app:text_input_title="@string/connect_create_contact_first_name_title"
+                android:contentDescription="@string/add_contact_first_name_edit_text_content_description"/>
+
+            <com.nextiva.nextivaapp.android.view.ConnectTextInputView
+                android:id="@+id/create_business_contact_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/general_padding_medium"
+                app:text_input_hint="@string/connect_create_contact_last_name_hint"
+                app:text_input_title="@string/connect_create_contact_last_name_title"
+                android:contentDescription="@string/add_contact_last_name_edit_text_content_description" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/general_view_small"
+                android:layout_marginTop="@dimen/general_vertical_margin_small"
+                android:layout_marginBottom="@dimen/general_vertical_margin_small"
+                android:background="@color/connectGrey01" />
+
+            <com.nextiva.nextivaapp.android.view.ConnectTextInputView
+                android:id="@+id/create_business_contact_company_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/general_padding_medium"
+                app:text_input_hint="@string/connect_create_contact_company_name_hint"
+                app:text_input_title="@string/connect_create_contact_company_name_title"
+                android:contentDescription="@string/add_contact_company_name_edit_text_content_description" />
+
+            <com.nextiva.nextivaapp.android.view.ConnectTextInputView
+                android:id="@+id/create_business_contact_job_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/general_padding_medium"
+                app:text_input_hint="@string/connect_create_contact_job_title_hint"
+                app:text_input_title="@string/connect_create_contact_job_title_title"
+                android:contentDescription="@string/add_contact_job_title_edit_text_content_description" />
+
+            <com.nextiva.nextivaapp.android.view.ConnectTextInputView
+                android:id="@+id/create_business_contact_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/general_padding_medium"
+                app:text_input_hint="@string/connect_create_contact_department_hint"
+                app:text_input_title="@string/connect_create_contact_department_title"
+                android:contentDescription="@string/add_contact_department_edit_text_content_description" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/general_view_small"
+                android:layout_marginTop="@dimen/general_vertical_margin_small"
+                android:layout_marginBottom="@dimen/general_vertical_margin_small"
+                android:background="@color/connectGrey01" />
+
+            <com.nextiva.nextivaapp.android.view.ConnectGroupAddItemView
+                android:id="@+id/create_business_contact_phone_group_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/general_padding_medium"
+                android:paddingEnd="@dimen/general_padding_medium"
+                app:add_item_type="PHONE" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/general_view_small"
+                android:layout_marginTop="@dimen/general_vertical_margin_small"
+                android:layout_marginBottom="@dimen/general_vertical_margin_small"
+                android:background="@color/connectGrey01" />
+
+            <com.nextiva.nextivaapp.android.view.ConnectGroupAddItemView
+                android:id="@+id/create_business_contact_email_group_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/general_padding_medium"
+                android:paddingEnd="@dimen/general_padding_medium"
+                app:add_item_type="EMAIL" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/general_view_small"
+                android:layout_marginTop="@dimen/general_vertical_margin_small"
+                android:layout_marginBottom="@dimen/general_vertical_margin_small"
+                android:background="@color/connectGrey01" />
+
+            <com.nextiva.nextivaapp.android.view.ConnectGroupAddItemView
+                android:id="@+id/create_business_contact_address_group_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/general_padding_medium"
+                android:paddingEnd="@dimen/general_padding_medium"
+                app:add_item_type="ADDRESS"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/general_view_small"
+                android:layout_marginTop="@dimen/general_vertical_margin_small"
+                android:layout_marginBottom="@dimen/general_vertical_margin_small"
+                android:background="@color/connectGrey01" />
+
+            <com.nextiva.nextivaapp.android.view.ConnectGroupAddItemView
+                android:id="@+id/create_business_contact_date_group_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/general_padding_medium"
+                android:paddingEnd="@dimen/general_padding_medium"
+                app:add_item_type="DATE"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/general_view_small"
+                android:layout_marginTop="@dimen/general_vertical_margin_small"
+                android:layout_marginBottom="@dimen/general_vertical_margin_small"
+                android:background="@color/connectGrey01" />
+
+            <com.nextiva.nextivaapp.android.view.ConnectGroupAddItemView
+                android:id="@+id/create_business_contact_social_profile_group_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/general_padding_medium"
+                android:paddingEnd="@dimen/general_padding_medium"
+                android:contentDescription="@string/add_contact_social_profile_edit_text_content_description"
+                app:add_item_type="SOCIAL"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/general_view_small"
+                android:layout_marginTop="@dimen/general_vertical_margin_small"
+                android:layout_marginBottom="@dimen/general_vertical_margin_small"
+                android:background="@color/connectGrey01" />
+
+            <com.nextiva.nextivaapp.android.view.ConnectTextInputView
+                android:id="@+id/create_business_contact_fax_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/general_padding_medium"
+                android:contentDescription="@string/add_contact_fax_number_edit_text_content_description"
+                app:text_input_hint="@string/connect_create_contact_fax_number_hint"
+                app:text_input_title="@string/connect_create_contact_fax_number_title" />
+
+            <com.nextiva.nextivaapp.android.view.ConnectTextInputView
+                android:id="@+id/create_business_contact_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/general_padding_medium"
+                android:contentDescription="@string/add_contact_website_edit_text_content_description"
+                app:text_input_hint="@string/connect_create_contact_website_hint"
+                app:text_input_title="@string/connect_create_contact_website_title" />
+
+            <com.nextiva.nextivaapp.android.view.ConnectTextInputView
+                android:id="@+id/create_business_contact_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/general_padding_medium"
+                android:contentDescription="@string/add_contact_description_edit_text_content_description"
+                app:text_input_max_length="1024"
+                app:text_input_hint="@string/connect_create_contact_description_hint"
+                app:text_input_title="@string/connect_create_contact_description_title" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <TextView
+        android:id="@+id/create_business_contact_save_button"
+        style="@style/CreateConnectContactButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/general_vertical_margin_medium"
+        android:backgroundTint="@color/connectGrey03"
+        android:enabled="false"
+        android:text="@string/general_save"
+        android:textColor="@color/connectPrimaryGrey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/create_business_contact_scroll_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

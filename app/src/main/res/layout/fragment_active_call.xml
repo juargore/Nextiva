@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017 Nextiva, Inc. to Present.
+  ~ All rights reserved.
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/active_call_parent_constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/active_call_gradient_background"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:theme="@style/ActiveCallTheme"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <com.nextiva.nextivaapp.android.view.CallerInformationView
+        android:id="@+id/active_call_hold_caller_information_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@color/blackOverlay20"
+        android:paddingTop="@dimen/general_padding_small"
+        android:paddingBottom="@dimen/general_padding_xsmall"
+        android:elevation="@dimen/general_elevation"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <com.nextiva.nextivaapp.android.view.CallerInformationView
+        android:id="@+id/active_call_active_caller_information_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:background="@color/blackOverlay40"
+        android:paddingTop="@dimen/general_padding_small"
+        android:paddingBottom="@dimen/general_padding_xsmall"
+        android:elevation="@dimen/general_elevation"
+        app:layout_constraintEnd_toEndOf="@+id/active_call_hold_caller_information_view"
+        app:layout_constraintStart_toStartOf="@+id/active_call_hold_caller_information_view"
+        app:layout_constraintTop_toBottomOf="@+id/active_call_hold_caller_information_view"
+        tools:visibility="visible" />
+
+    <com.nextiva.nextivaapp.android.view.CallerInformationView
+        android:id="@+id/active_call_transition_call_caller_information_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:background="@color/blackOverlay20"
+        android:paddingTop="@dimen/general_padding_small"
+        android:paddingBottom="@dimen/general_padding_xsmall"
+        android:elevation="@dimen/general_elevation"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/active_call_active_caller_information_view"
+        app:layout_constraintStart_toStartOf="@+id/active_call_active_caller_information_view"
+        app:layout_constraintTop_toBottomOf="@+id/active_call_active_caller_information_view"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/active_call_remote_video_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@drawable/active_call_gradient_background"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/base_constraint_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/active_call_hold_caller_information_view"
+        tools:visibility="gone">
+
+
+        <FrameLayout
+            android:id="@+id/active_call_remote_video_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/active_call_gradient_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/poor_connection_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/general_vertical_margin_small"
+        android:layout_marginEnd="@dimen/general_vertical_margin_small"
+        android:layout_marginBottom="@dimen/general_vertical_margin_large"
+        android:background="@drawable/rounded_poor_connection_background"
+        android:padding="@dimen/general_padding_small"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/base_constraint_layout"
+        app:layout_constraintEnd_toStartOf="@+id/active_call_local_video_container"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/poor_connection_close_app_compat_image_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@color/transparent"
+            app:srcCompat="@drawable/ic_close_x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/poor_connection_warning_app_compat_image_view"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="@dimen/general_horizontal_margin_small"
+            app:srcCompat="@drawable/ic_warning"
+            app:layout_constraintBottom_toBottomOf="@+id/poor_connection_description_text_view"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/poor_connection_title_text_view" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/poor_connection_description_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/general_horizontal_margin_small"
+            android:text="@string/active_call_poor_connection_text"
+            android:textSize="6pt"
+            app:layout_constraintEnd_toStartOf="@+id/poor_connection_close_app_compat_image_button"
+            app:layout_constraintStart_toStartOf="@+id/poor_connection_title_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/poor_connection_title_text_view" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/poor_connection_transfer_to_mobile_button_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/general_padding_small"
+            android:layout_marginStart="@dimen/general_padding_small"
+            android:layout_marginTop="@dimen/general_vertical_margin_small"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/white"
+            android:gravity="center"
+            android:paddingBottom="@dimen/general_padding_medium"
+            android:paddingTop="@dimen/general_padding_medium"
+            android:text="@string/transfer_to_mobile"
+            android:textColor="@color/nextivaPrimaryBlue"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/poor_connection_description_text_view"
+            app:layout_constraintStart_toStartOf="@+id/poor_connection_description_text_view"
+            app:layout_constraintTop_toBottomOf="@+id/poor_connection_description_text_view" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/poor_connection_title_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+            android:text="@string/active_call_poor_connection"
+            android:textColor="@color/warningTitleTextColor"
+            android:textSize="9pt"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/poor_connection_warning_app_compat_image_view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/base_constraint_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:divider="@drawable/divider_horizontal_nextiva_grey"
+        android:focusable="true"
+        android:paddingStart="@dimen/general_horizontal_margin_medium"
+        android:paddingEnd="@dimen/general_horizontal_margin_medium"
+        android:showDividers="beginning|middle|end"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <com.nextiva.nextivaapp.android.view.ActiveCallButtonView
+            android:id="@+id/active_call_mute_button"
+            style="@style/ActiveCallButtonStyle"
+            android:layout_marginEnd="@dimen/general_horizontal_margin_medium"
+            android:background="@drawable/selector_active_call_button"
+            android:contentDescription="@string/active_call_mute"
+            app:imageSrc="@drawable/ic_mic_off"
+            app:imageTint="@color/selector_active_call_text"
+            app:layout_constraintEnd_toStartOf="@+id/active_call_hold_button"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintTop_toTopOf="parent"
+            app:text="@string/active_call_mute" />
+
+        <com.nextiva.nextivaapp.android.view.ActiveCallButtonView
+            android:id="@+id/active_call_hold_button"
+            style="@style/ActiveCallButtonStyle"
+            android:background="@drawable/selector_active_call_button"
+            android:contentDescription="@string/active_call_pause"
+            app:imageSrc="@drawable/ic_pause"
+            app:imageTint="@color/selector_active_call_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/active_call_mute_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:text="@string/active_call_hold" />
+
+        <com.nextiva.nextivaapp.android.view.ActiveCallButtonView
+            android:id="@+id/active_call_speaker_button"
+            style="@style/ActiveCallButtonStyle"
+            android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+            android:background="@drawable/selector_active_call_button"
+            android:contentDescription="@string/active_call_speaker"
+            app:imageSrc="@drawable/ic_speaker"
+            app:imageTint="@color/selector_active_call_text"
+            app:layout_constraintStart_toEndOf="@+id/active_call_hold_button"
+            app:layout_constraintTop_toTopOf="parent"
+            app:text="@string/active_call_speaker" />
+
+
+        <com.nextiva.nextivaapp.android.view.ActiveCallButtonView
+            android:id="@+id/active_call_keypad_button"
+            style="@style/ActiveCallButtonStyle"
+            android:layout_marginTop="@dimen/general_vertical_margin_medium"
+            android:layout_marginEnd="@dimen/general_horizontal_margin_medium"
+            android:background="@drawable/selector_active_call_button"
+            android:contentDescription="@string/active_call_keypad"
+            app:imageSrc="@drawable/ic_dialpad"
+            app:imageTint="@color/selector_active_call_text"
+            app:layout_constraintEnd_toStartOf="@+id/active_call_video_add_participant_button"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintTop_toBottomOf="@+id/active_call_mute_button"
+            app:text="@string/active_call_keypad" />
+
+
+        <com.nextiva.nextivaapp.android.view.ActiveCallButtonView
+            android:id="@+id/active_call_video_add_participant_button"
+            style="@style/ActiveCallButtonStyle"
+            android:layout_marginTop="@dimen/general_vertical_margin_medium"
+            android:background="@drawable/selector_active_call_button"
+            android:contentDescription="@string/active_call_video"
+            app:imageAnimationIn="@anim/anim_fade_in_enlarge"
+            app:imageAnimationOut="@anim/anim_fade_out_shrink"
+            app:imageSrc="@drawable/ic_video"
+            app:imageTint="@color/selector_active_call_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/active_call_hold_button"
+            app:text="@string/active_call_video"
+            app:textAnimationIn="@anim/anim_fade_in_enlarge"
+            app:textAnimationOut="@anim/anim_fade_out_shrink" />
+
+
+        <com.nextiva.nextivaapp.android.view.ActiveCallButtonView
+            android:id="@+id/active_call_new_call_swap_button"
+            style="@style/ActiveCallButtonStyle"
+            android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+            android:layout_marginTop="@dimen/general_vertical_margin_medium"
+            android:background="@drawable/selector_active_call_button"
+            android:contentDescription="@string/active_call_new_call"
+            app:imageAnimationIn="@anim/anim_fade_in_enlarge"
+            app:imageAnimationOut="@anim/anim_fade_out_shrink"
+            app:imageSrc="@drawable/ic_call_new"
+            app:imageTint="@color/selector_active_call_text"
+            app:layout_constraintStart_toEndOf="@+id/active_call_video_add_participant_button"
+            app:layout_constraintTop_toBottomOf="@+id/active_call_speaker_button"
+            app:text="@string/active_call_new_call"
+            app:textAnimationIn="@anim/anim_fade_in_enlarge"
+            app:textAnimationOut="@anim/anim_fade_out_shrink" />
+
+        <com.nextiva.nextivaapp.android.view.ActiveCallButtonView
+            android:id="@+id/active_call_end_call_button"
+            style="@style/ActiveCallButtonStyle"
+            android:layout_marginStart="@dimen/general_vertical_margin_medium"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="@dimen/general_horizontal_margin_medium"
+            android:layout_marginBottom="@dimen/general_vertical_margin_medium"
+            android:background="@drawable/selector_active_call_red_button"
+            android:contentDescription="@string/active_call_end_call"
+            app:imageAnimationIn="@anim/anim_fade_in_enlarge"
+            app:imageAnimationOut="@anim/anim_fade_out_shrink"
+            app:imageSrc="@drawable/ic_call_end"
+            app:imageTint="@color/selector_active_call_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/active_call_video_add_participant_button"
+            app:text="@string/active_call_end_call"
+            app:textAnimationIn="@anim/anim_fade_in_enlarge"
+            app:textAnimationOut="@anim/anim_fade_out_shrink"
+            tools:visibility="gone" />
+
+        <com.nextiva.nextivaapp.android.view.ActiveCallButtonView
+            android:id="@+id/active_call_more_button"
+            style="@style/ActiveCallButtonStyle"
+            android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/selector_active_call_button"
+            android:contentDescription="@string/active_call_more"
+            app:imageAnimationIn="@anim/anim_fade_in_enlarge"
+            app:imageAnimationOut="@anim/anim_fade_out_shrink"
+            app:imageSrc="@drawable/ic_more_horiz"
+            app:imageTint="@color/selector_active_call_text"
+            app:layout_constraintStart_toEndOf="@+id/active_call_end_call_button"
+            app:layout_constraintTop_toBottomOf="@+id/active_call_new_call_swap_button"
+            app:text="@string/active_call_more"
+            app:textAnimationIn="@anim/anim_fade_in_enlarge"
+            app:textAnimationOut="@anim/anim_fade_out_shrink"
+            tools:visibility="gone" />
+
+        <com.nextiva.nextivaapp.android.view.ActiveCallButtonView
+            android:id="@+id/active_call_transfer_end_button"
+            style="@style/ActiveCallButtonStyle"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="@dimen/general_vertical_margin_medium"
+            android:background="@drawable/selector_active_call_red_button"
+            android:contentDescription="@string/active_call_end_transfer"
+            app:imageAnimationIn="@anim/anim_fade_in_enlarge"
+            app:imageAnimationOut="@anim/anim_fade_out_shrink"
+            app:imageSrc="@drawable/ic_call_end"
+            app:imageTint="@color/selector_active_call_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/active_call_video_add_participant_button"
+            app:layout_constraintStart_toStartOf="@+id/active_call_keypad_button"
+            app:layout_constraintTop_toBottomOf="@+id/active_call_keypad_button"
+            app:text="@string/active_call_end_transfer"
+            android:visibility="gone"
+            app:textAnimationIn="@anim/anim_fade_in_enlarge"
+            app:textAnimationOut="@anim/anim_fade_out_shrink"
+            tools:visibility="visible" />
+
+        <com.nextiva.nextivaapp.android.view.ActiveCallButtonView
+            android:id="@+id/active_call_transfer_complete_button"
+            style="@style/ActiveCallButtonStyle"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/selector_active_call_gray_button"
+            app:contentDescription="@string/active_call_complete_transfer"
+            app:imageAnimationIn="@anim/anim_fade_in_enlarge"
+            app:imageAnimationOut="@anim/anim_fade_out_shrink"
+            app:imageSrc="@drawable/ic_phone"
+            app:imageTint="@color/selector_active_call_text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/active_call_new_call_swap_button"
+            app:layout_constraintStart_toEndOf="@+id/active_call_video_add_participant_button"
+            app:layout_constraintTop_toBottomOf="@+id/active_call_new_call_swap_button"
+            app:text="@string/active_call_complete_transfer"
+            android:visibility="gone"
+            app:textAnimationIn="@anim/anim_fade_in_enlarge"
+            app:textAnimationOut="@anim/anim_fade_out_shrink"
+            tools:visibility="visible" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/active_call_local_video_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/active_call_active_caller_information_view"
+        tools:visibility="visible">
+
+
+        <ImageButton
+            android:id="@+id/active_call_switch_camera_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="@dimen/general_vertical_margin_small"
+            android:layout_marginEnd="@dimen/general_vertical_margin_small"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/in_call_swap_camera"
+            android:padding="@dimen/general_padding_small"
+            app:tint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_camera_rear" />
+
+        <FrameLayout
+            android:id="@+id/active_call_local_video_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/general_view_xxxxxxxxlarge"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="@dimen/general_vertical_margin_small"
+            android:background="@color/blackOverlay40"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="5:6"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+            android:id="@+id/connect_empty_state_view_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_background"
+            android:backgroundTint="@color/connectPrimaryLightBlue"
+            android:padding="@dimen/general_padding_large"
+            android:textColor="@color/connectGrey08"
+            android:textSize="@dimen/material_text_display3" />
+
+        <ImageView
+            android:id="@+id/connect_empty_state_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/general_padding_large"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/connect_empty_state_view_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/general_vertical_margin_medium"
+            android:textAlignment="center"
+            android:textColor="@color/connectSecondaryDarkBlue"
+            android:textSize="@dimen/text_connect_empty_title_font_size"
+            android:textStyle="bold"
+            app:fontFamily="@font/lato_heavy" />
+
+        <TextView
+            android:id="@+id/connect_empty_state_view_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/general_vertical_margin_medium"
+            android:layout_marginBottom="@dimen/general_vertical_margin_medium"
+            android:textSize="@dimen/text_connect_empty_description_font_size"
+            android:textAlignment="center"
+            android:textColor="@color/connectGrey10" />
+
+        <TextView
+            android:id="@+id/connect_empty_state_view_button"
+            style="@style/CreateConnectContactButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/general_horizontal_margin_medium"
+            android:layout_marginTop="@dimen/general_vertical_margin_xlarge"
+            android:layout_marginEnd="@dimen/general_horizontal_margin_medium"
+            android:layout_marginBottom="@dimen/general_vertical_margin_medium"
+            android:backgroundTint="@color/connectPrimaryBlue"
+            android:textAllCaps="false"
+            android:textColor="@color/connectWhite" />
+    </LinearLayout>
+</ScrollView>

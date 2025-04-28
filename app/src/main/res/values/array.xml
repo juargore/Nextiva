@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="status_change_photo_items">
+        <item>@string/my_status_new_profile_photo</item>
+        <item>@string/my_status_clear_profile_photo</item>
+    </string-array>
+
+    <string-array name="status_change_photo_items_android_r">
+        <item>@string/my_status_new_profile_photo_from_camera</item>
+        <item>@string/my_status_new_profile_photo_from_gallery</item>
+        <item>@string/my_status_clear_profile_photo</item>
+    </string-array>
+
+    <string-array name="status_change_photo_items_android_r_no_clear">
+        <item>@string/my_status_new_profile_photo_from_camera</item>
+        <item>@string/my_status_new_profile_photo_from_gallery</item>
+    </string-array>
+
+    <string-array name="call_history_list_list_item_context_menu">
+        <item>@string/call_history_list_call_context_menu_delete</item>
+        <item>@string/call_call_type_video</item>
+    </string-array>
+
+    <string-array name="call_history_list_filter">
+        <item>@string/call_history_list_filter_all</item>
+        <item>@string/call_history_list_filter_missed</item>
+    </string-array>
+
+    <string-array name="call_settings_dialing_service_options">
+        <item>@string/call_dialing_service_voip</item>
+        <item>@string/call_dialing_service_call_back</item>
+        <item>@string/call_dialing_service_call_through</item>
+        <item>@string/call_dialing_service_this_phone</item>
+        <item>@string/set_call_settings_dialing_service_always_ask</item>
+    </string-array>
+
+    <string-array name="call_settings_call_forwarding_when_no_answer_number_of_rings_options">
+        <item>@string/set_call_settings_call_forwarding_forward_when_unanswered_no_rings</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+
+    <string-array name="contact_list_long_press_dialog_options">
+        <item>@string/contact_list_edit_contact</item>
+        <item>@string/contact_list_delete_contact</item>
+    </string-array>
+
+    <string-array name="contact_list_header_long_press_dialog_options">
+        <item>@string/contact_list_remove_group</item>
+    </string-array>
+
+    <string-array name="phone_type_array">
+        <item>@string/phone_type_work</item>
+        <item>@string/phone_type_work_extension</item>
+        <item>@string/phone_type_mobile</item>
+        <item>@string/phone_type_conference_number</item>
+        <item>@string/phone_type_home</item>
+        <item>@string/phone_type_personal</item>
+        <item>@string/phone_type_custom</item>
+        <item>@string/phone_type_other</item>
+    </string-array>
+
+    <string-array name="feature_flags">
+        <item>@string/feature_flag_visual_voice_functionality</item>
+        <item>@string/feature_flag_logging_functionality</item>
+        <item>@string/feature_flag_connect_functionality</item>
+        <item>@string/feature_flag_sms_functionality</item>
+        <item>@string/feature_flag_team_chat_functionality</item>
+        <item>@string/feature_flag_video_calls_functionality</item>
+        <item>@string/feature_flag_notification_functionality</item>
+        <item>@string/feature_flag_voicemail_count_functionality</item>
+        <item>@string/feature_flag_custom_tone_functionality</item>
+        <item>@string/feature_flag_voice_page_functionality</item>
+        <item>@string/feature_flag_communications_bulk_deletes</item>
+        <item>@string/feature_flag_communications_bulk_updates</item>
+        <item>@string/feature_flag_communications_bulk_actions_update</item>
+        <item>@string/feature_flag_sms_campaign</item>
+        <item>@string/feature_flag_block_number_for_calling</item>
+    </string-array>
+
+</resources>

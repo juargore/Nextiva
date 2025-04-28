@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/general_padding_xsmall"
+    android:paddingEnd="@dimen/general_padding_xsmall"
+    android:paddingTop="@dimen/general_padding_medium"
+    android:paddingBottom="@dimen/general_padding_medium"
+    android:orientation="horizontal"
+    android:backgroundTint="@color/secondaryDarkBlue"
+    android:background="@drawable/rounded_dialog_background"
+    android:layout_marginTop="@dimen/general_vertical_margin_small"
+    android:layout_marginStart="@dimen/general_vertical_margin_xmedium"
+    android:layout_marginEnd="@dimen/general_vertical_margin_xmedium"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.nextiva.nextivaapp.android.view.AvatarView
+        android:id="@+id/caller_information_caller_avatar_view"
+        android:layout_width="@dimen/avatar_connect_call_size"
+        android:layout_height="@dimen/avatar_connect_call_size"
+        android:layout_marginStart="@dimen/general_horizontal_margin_medium"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/general_vertical_margin_xmedium"
+        android:layout_marginEnd="@dimen/general_horizontal_margin_medium">
+
+        <TextView
+            android:id="@+id/caller_information_caller_name_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            style="@style/DS_Body2Heavy"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+            android:id="@+id/caller_information_status_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/activeCallCallerText"
+            app:icon_string="@string/fa_phone_alt"
+            android:layout_marginTop="@dimen/general_horizontal_margin_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/caller_information_caller_name_text_view"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/caller_information_caller_number_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/activeCallCallerText"
+            android:layout_marginStart="@dimen/general_horizontal_margin_small"
+            android:layout_marginTop="@dimen/general_horizontal_margin_small"
+            style="@style/DS_Caption1"
+            app:layout_constraintStart_toEndOf="@id/caller_information_status_icon"
+            app:layout_constraintTop_toBottomOf="@id/caller_information_caller_name_text_view"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/caller_information_status_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        style="@style/DS_Caption1"
+        android:layout_marginEnd="@dimen/general_horizontal_margin_small"/>
+
+</LinearLayout>

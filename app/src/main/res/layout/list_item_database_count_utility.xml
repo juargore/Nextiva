@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@color/connectWhite"
+    android:padding="@dimen/general_vertical_margin_xmedium"
+    android:paddingTop="@dimen/general_vertical_margin_xmedium">
+
+    <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+        android:id="@+id/list_item_database_count_utility_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/general_horizontal_margin_large"
+        android:gravity="center_vertical"
+        android:textColor="@color/connectGrey09"
+        android:textSize="@dimen/material_text_subhead" />
+
+    <TextView
+        android:id="@+id/list_item_database_count_utility_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/general_horizontal_margin_small"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textColor="@color/connectSecondaryDarkBlue"
+        android:textSize="@dimen/material_text_subhead"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/list_item_database_count_utility_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/general_horizontal_margin_medium"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="@color/connectGrey03"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/recycler_view_thumb_width"
+        android:paddingTop="@dimen/general_padding_xsmall"
+        android:paddingEnd="@dimen/recycler_view_thumb_width"
+        android:paddingBottom="@dimen/general_padding_xsmall"
+        android:textColor="@color/grey10"
+        android:textStyle="bold" />
+</LinearLayout>

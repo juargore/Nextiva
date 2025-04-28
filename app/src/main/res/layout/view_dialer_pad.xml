@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017 Nextiva, Inc. to Present.
+  ~ All rights reserved.
+  -->
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialer_pad_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/general_horizontal_margin_xlarge"
+    android:layout_marginEnd="@dimen/general_horizontal_margin_xlarge"
+    android:focusable="true">
+
+    <TableRow
+        android:id="@+id/dialer_pad_dialer_table_row_1"
+        android:layout_weight="1">
+
+        <com.nextiva.nextivaapp.android.view.DialerKeyView
+            android:id="@+id/dialer_pad_1_key"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/dialer_pad_1_key_content_description"
+            app:subTitleTint="@color/connectSecondaryDarkBlue"
+            app:titleText="1"
+            app:titleTint="@color/colorDialerText" />
+
+        <com.nextiva.nextivaapp.android.view.DialerKeyView
+            android:id="@+id/dialer_pad_2_key"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:longClickable="false"
+            android:contentDescription="@string/dialer_pad_2_key_content_description"
+            app:subTitleText="@string/dialer_key_2_sub_title"
+            app:subTitleTint="@color/connectSecondaryDarkBlue"
+            app:titleText="2"
+            app:titleTint="@color/colorDialerText" />
+
+        <com.nextiva.nextivaapp.android.view.DialerKeyView
+            android:id="@+id/dialer_pad_3_key"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:longClickable="false"
+            android:contentDescription="@string/dialer_pad_3_key_content_description"
+            app:subTitleText="@string/dialer_key_3_sub_title"
+            app:subTitleTint="@color/connectSecondaryDarkBlue"
+            app:titleText="3"
+            app:titleTint="@color/colorDialerText" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/dialer_pad_dialer_table_row_2"
+        android:layout_weight="1">
+
+        <com.nextiva.nextivaapp.android.view.DialerKeyView
+            android:id="@+id/dialer_pad_4_key"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:longClickable="false"
+            android:contentDescription="@string/dialer_pad_4_key_content_description"
+            app:subTitleText="@string/dialer_key_4_sub_title"
+            app:subTitleTint="@color/connectSecondaryDarkBlue"
+            app:titleText="4"
+            app:titleTint="@color/colorDialerText" />
+
+        <com.nextiva.nextivaapp.android.view.DialerKeyView
+            android:id="@+id/dialer_pad_5_key"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:longClickable="false"
+            android:contentDescription="@string/dialer_pad_5_key_content_description"
+            app:subTitleText="@string/dialer_key_5_sub_title"
+            app:subTitleTint="@color/connectSecondaryDarkBlue"
+            app:titleText="5"
+            app:titleTint="@color/colorDialerText" />
+
+        <com.nextiva.nextivaapp.android.view.DialerKeyView
+            android:id="@+id/dialer_pad_6_key"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:longClickable="false"
+            android:contentDescription="@string/dialer_pad_6_key_content_description"
+            app:subTitleText="@string/dialer_key_6_sub_title"
+            app:subTitleTint="@color/connectSecondaryDarkBlue"
+            app:titleText="6"
+            app:titleTint="@color/colorDialerText" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/dialer_pad_dialer_table_row_3"
+        android:layout_weight="1">
+
+        <com.nextiva.nextivaapp.android.view.DialerKeyView
+            android:id="@+id/dialer_pad_7_key"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:longClickable="false"
+            android:contentDescription="@string/dialer_pad_7_key_content_description"
+            app:subTitleText="@string/dialer_key_7_sub_title"
+            app:subTitleTint="@color/connectSecondaryDarkBlue"
+            app:titleText="7"
+            app:titleTint="@color/colorDialerText" />
+
+        <com.nextiva.nextivaapp.android.view.DialerKeyView
+            android:id="@+id/dialer_pad_8_key"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:longClickable="false"
+            android:contentDescription="@string/dialer_pad_8_key_content_description"
+            app:subTitleText="@string/dialer_key_8_sub_title"
+            app:subTitleTint="@color/connectSecondaryDarkBlue"
+            app:titleText="8"
+            app:titleTint="@color/colorDialerText" />
+
+        <com.nextiva.nextivaapp.android.view.DialerKeyView
+            android:id="@+id/dialer_pad_9_key"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:longClickable="false"
+            android:contentDescription="@string/dialer_pad_9_key_content_description"
+            app:subTitleText="@string/dialer_key_9_sub_title"
+            app:subTitleTint="@color/connectSecondaryDarkBlue"
+            app:titleText="9"
+            app:titleTint="@color/colorDialerText" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/dialer_pad_dialer_table_row_4"
+        android:layout_weight="1">
+
+        <com.nextiva.nextivaapp.android.view.DialerKeyView
+            android:id="@+id/dialer_pad_star_key"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/dialer_pad_star_key_content_description"
+            app:titleText="*"
+            app:titleTextSize="@dimen/material_text_display1"
+            app:titleTint="@color/colorDialerText" />
+
+        <com.nextiva.nextivaapp.android.view.DialerKeyView
+            android:id="@+id/dialer_pad_0_key"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/dialer_pad_0_key_content_description"
+            app:subTitleText="+"
+            app:subTitleTint="@color/connectSecondaryDarkBlue"
+            app:titleText="0"
+            app:titleTint="@color/colorDialerText" />
+
+        <com.nextiva.nextivaapp.android.view.DialerKeyView
+            android:id="@+id/dialer_pad_pound_key"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/dialer_pad_pound_key_content_description"
+            app:titleText="#"
+            app:titleTint="@color/colorDialerText" />
+    </TableRow>
+</TableLayout>

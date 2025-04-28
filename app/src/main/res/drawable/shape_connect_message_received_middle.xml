@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017 Nextiva, Inc. to Present.
+  ~ All rights reserved.
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:topLeftRadius="@dimen/connect_message_bubble_square_corner"
+        android:topRightRadius="@dimen/connect_message_bubble_round_corner"
+        android:bottomLeftRadius="@dimen/connect_message_bubble_square_corner"
+        android:bottomRightRadius="@dimen/connect_message_bubble_round_corner" />
+
+    <solid android:color="@color/connectGrey03" />
+</shape>

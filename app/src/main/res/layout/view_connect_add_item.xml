@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_connect_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/general_vertical_margin_small"
+    android:layout_marginBottom="@dimen/general_vertical_margin_small"
+    android:orientation="vertical">
+
+    <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+        android:id="@+id/view_connect_remove_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/connectPrimaryRed"
+        android:textSize="@dimen/material_text_headline"
+        app:icon_string="@string/fa_minus_circle"
+        app:layout_constraintBottom_toBottomOf="@id/view_connect_item_type_selector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:solid_icon="true" />
+
+    <LinearLayout
+        android:id="@+id/view_connect_item_type_selector"
+        android:layout_width="@dimen/general_view_xxxxxxxxxlarge"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/general_horizontal_margin_small"
+        android:layout_marginEnd="@dimen/general_horizontal_margin_small"
+        android:background="@drawable/connect_text_input_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/general_padding_medium"
+        android:paddingEnd="@dimen/general_padding_medium"
+        app:layout_constraintBottom_toBottomOf="@id/view_connect_item_value"
+        app:layout_constraintStart_toEndOf="@id/view_connect_remove_item_icon"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/view_connect_item_type_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/general_horizontal_margin_small"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/connectSecondaryDarkBlue" />
+
+        <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+            android:id="@+id/view_connect_item_type_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textColor="@color/connectSecondaryDarkBlue"
+            app:icon_string="@string/fa_caret_down_solid"
+            app:solid_icon="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_connect_item_value"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/general_horizontal_margin_small"
+        android:background="@drawable/connect_text_input_background"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/view_connect_item_type_selector"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/view_connect_item_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:ellipsize="end"
+            android:paddingStart="@dimen/general_padding_medium"
+            android:paddingTop="@dimen/general_padding_xmedium"
+            android:paddingEnd="@dimen/general_padding_medium"
+            android:paddingBottom="@dimen/general_padding_xmedium"
+            android:singleLine="true"
+            android:textColor="@color/connectSecondaryDarkBlue"
+            android:textColorHint="@color/connectGrey08" />
+
+        <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+            android:id="@+id/view_connect_item_type_date_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:paddingStart="0dp"
+            android:paddingEnd="@dimen/general_padding_medium"
+            android:textColor="@color/connectGrey09"
+            android:textSize="@dimen/material_text_headline"
+            android:visibility="gone"
+            app:icon_string="@string/fa_calendar" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_connect_address_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/general_vertical_margin_small"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/view_connect_item_type_selector"
+        app:layout_constraintTop_toBottomOf="@id/view_connect_item_type_selector">
+
+        <EditText
+            android:id="@+id/view_connect_item_street_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/connect_text_input_background"
+            android:ellipsize="end"
+            android:hint="@string/connect_create_contact_address_street_one_hint"
+            android:paddingStart="@dimen/general_padding_medium"
+            android:paddingTop="@dimen/general_padding_xmedium"
+            android:paddingEnd="@dimen/general_padding_medium"
+            android:paddingBottom="@dimen/general_padding_xmedium"
+            android:singleLine="true"
+            android:textColor="@color/connectSecondaryDarkBlue"
+            android:textColorHint="@color/connectGrey08"
+            android:contentDescription="@string/add_contact_street_1_edit_text_content_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/view_connect_item_street_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/general_vertical_margin_small"
+            android:layout_marginEnd="@dimen/general_horizontal_margin_xsmall"
+            android:layout_marginBottom="@dimen/general_vertical_margin_small"
+            android:layout_weight="1"
+            android:background="@drawable/connect_text_input_background"
+            android:ellipsize="end"
+            android:hint="@string/connect_create_contact_address_street_two_hint"
+            android:paddingStart="@dimen/general_padding_medium"
+            android:paddingTop="@dimen/general_padding_xmedium"
+            android:paddingEnd="@dimen/general_padding_medium"
+            android:paddingBottom="@dimen/general_padding_xmedium"
+            android:singleLine="true"
+            android:textColor="@color/connectSecondaryDarkBlue"
+            android:textColorHint="@color/connectGrey08"
+            android:contentDescription="@string/add_contact_street_2_edit_text_content_description"
+            app:layout_constraintEnd_toStartOf="@id/view_connect_item_city"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_connect_item_street_1" />
+
+        <EditText
+            android:id="@+id/view_connect_item_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/general_horizontal_margin_xsmall"
+            android:layout_marginTop="@dimen/general_vertical_margin_small"
+            android:layout_marginBottom="@dimen/general_vertical_margin_small"
+            android:layout_weight="1"
+            android:background="@drawable/connect_text_input_background"
+            android:ellipsize="end"
+            android:hint="@string/connect_create_contact_address_city_hint"
+            android:paddingStart="@dimen/general_padding_medium"
+            android:paddingTop="@dimen/general_padding_xmedium"
+            android:paddingEnd="@dimen/general_padding_medium"
+            android:paddingBottom="@dimen/general_padding_xmedium"
+            android:singleLine="true"
+            android:textColor="@color/connectSecondaryDarkBlue"
+            android:textColorHint="@color/connectGrey08"
+            android:contentDescription="@string/add_contact_city_edit_text_content_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/view_connect_item_street_2"
+            app:layout_constraintTop_toBottomOf="@id/view_connect_item_street_1" />
+
+        <EditText
+            android:id="@+id/view_connect_item_state"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/general_vertical_margin_small"
+            android:layout_marginEnd="@dimen/general_horizontal_margin_xsmall"
+            android:layout_marginBottom="@dimen/general_vertical_margin_small"
+            android:layout_weight="1"
+            android:background="@drawable/connect_text_input_background"
+            android:ellipsize="end"
+            android:hint="@string/connect_create_contact_address_state_hint"
+            android:paddingStart="@dimen/general_padding_medium"
+            android:paddingTop="@dimen/general_padding_xmedium"
+            android:paddingEnd="@dimen/general_padding_medium"
+            android:paddingBottom="@dimen/general_padding_xmedium"
+            android:singleLine="true"
+            android:textColor="@color/connectSecondaryDarkBlue"
+            android:textColorHint="@color/connectGrey08"
+            android:contentDescription="@string/add_contact_state_edit_text_content_description"
+            app:layout_constraintEnd_toStartOf="@id/view_connect_item_zip"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_connect_item_street_2" />
+
+        <EditText
+            android:id="@+id/view_connect_item_zip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/general_horizontal_margin_xsmall"
+            android:layout_marginTop="@dimen/general_vertical_margin_small"
+            android:layout_marginBottom="@dimen/general_vertical_margin_small"
+            android:layout_weight="1"
+            android:background="@drawable/connect_text_input_background"
+            android:ellipsize="end"
+            android:hint="@string/connect_create_contact_address_zip_hint"
+            android:paddingStart="@dimen/general_padding_medium"
+            android:paddingTop="@dimen/general_padding_xmedium"
+            android:paddingEnd="@dimen/general_padding_medium"
+            android:paddingBottom="@dimen/general_padding_xmedium"
+            android:singleLine="true"
+            android:textColor="@color/connectSecondaryDarkBlue"
+            android:textColorHint="@color/connectGrey08"
+            android:contentDescription="@string/add_contact_zip_edit_text_content_description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/view_connect_item_state"
+            app:layout_constraintTop_toBottomOf="@id/view_connect_item_city" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/view_connect_item_error_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/connectPrimaryRed"
+        android:paddingTop="@dimen/general_padding_small"
+        android:visibility="gone"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_connect_address_layout"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

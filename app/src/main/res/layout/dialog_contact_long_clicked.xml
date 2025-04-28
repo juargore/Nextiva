@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_dialog_background">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dialog_contact_long_clicked_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/dialog_contact_long_clicked_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_drawer_spacing"
+        android:background="@color/connectGrey01"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_contact_long_clicked_recycler_view" />
+
+    <FrameLayout
+        android:id="@+id/bottom_sheet_room_detail_list_fragment_container_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/connectWhite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_contact_long_clicked_view">
+
+        <LinearLayout
+            android:id="@+id/button_group_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/general_padding_medium"
+            android:paddingBottom="@dimen/general_padding_medium"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed|snap">
+
+            <LinearLayout
+                android:id="@+id/edit_button_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/general_padding_large"
+                android:paddingEnd="@dimen/general_padding_large"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+                    android:id="@+id/edit_button"
+                    android:layout_width="@dimen/general_view_xxlarge"
+                    android:layout_height="@dimen/general_view_xxlarge"
+                    android:gravity="center"
+                    android:background="@drawable/selector_gray_circle_dialog_button"
+                    android:textColor="@color/connectGrey09"
+                    android:textSize="@dimen/material_text_title"
+                    app:icon_string="@string/fa_edit" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_vertical_margin_xsmall"
+                    style="@style/DS_Caption1"
+                    android:textColor="@color/connectGrey10"
+                    android:text="@string/contact_detail_menu_edit" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/delete_button_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/general_padding_large"
+                android:paddingEnd="@dimen/general_padding_large"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <com.nextiva.nextivaapp.android.view.fontawesome.FontTextView
+                    android:id="@+id/delete_button"
+                    android:layout_width="@dimen/general_view_xxlarge"
+                    android:layout_height="@dimen/general_view_xxlarge"
+                    android:gravity="center"
+                    android:background="@drawable/selector_gray_circle_dialog_button"
+                    android:textColor="@color/connectPrimaryRed"
+                    android:textSize="@dimen/material_text_title"
+                    app:icon_string="@string/fa_trash_alt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/general_vertical_margin_xsmall"
+                    style="@style/DS_Caption1"
+                    android:textColor="@color/connectPrimaryRed"
+                    android:text="@string/contact_detail_menu_delete" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.75"
+            android:background="@color/connectWhite"/>
+
+        <ProgressBar
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/connectPrimaryYellow" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

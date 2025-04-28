@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text_input_view_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_dialog_input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/text_input_dialog_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/my_status_whats_on_mind"
+            android:background="@color/transparent"
+            android:drawableRight="@drawable/ic_cancel"
+            android:drawableTint="@color/nextivaOrange"
+            android:contentDescription="@string/text_input_dialog_edit_text_content_description"
+            app:theme="@style/TextInputPrimaryColor" />
+    </com.google.android.material.textfield.TextInputLayout>
+</FrameLayout>

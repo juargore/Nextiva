@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/contact_details_menu_menu">
+
+    <item
+        android:id="@+id/contact_details_edit"
+        android:orderInCategory="0"
+        android:title="@string/contact_detail_menu_edit"
+        android:contentDescription="@string/contact_details_edit_content_description"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/contact_details_delete"
+        android:orderInCategory="0"
+        android:title="@string/contact_detail_menu_delete"
+        android:contentDescription="@string/contact_details_delete_content_description"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?><!--
-  ~ Copyright (c) 2017 Nextiva, Inc. to Present.
-  ~ All rights reserved.
-  -->
-
-<com.nextiva.nextivaapp.android.view.DetailItemView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/list_item_detail_item_view"
-    style="@style/DetailItemViewLayoutStyle"
-    android:background="@drawable/selector_nextiva_orange_30" />
